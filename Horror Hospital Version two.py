@@ -8,7 +8,7 @@ import math
 #import keyboard
 import turtle
 
-import winsound
+# import winsound
 # Blood message: Icons made by <a href="https://www.flaticon.com/free-icon/blood_2068417" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 
@@ -45,10 +45,24 @@ import winsound
 
 
 
+
+#Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+
+
+
+#Wheelchairs:Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+
+#Pills: Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+
+
+
 wn = turtle.Screen()
 wn.setup(935,650)
 wn.title("Horror Hospital")
-wn.bgpic("brookhavenmap.gif")
+# wn.bgpic("brookhavenmap.gif")
 wn.bgcolor("black")
 wn.update()
 wn.tracer(0)
@@ -157,18 +171,315 @@ turtle.register_shape("exam_room_hand_trigger_ten.gif")
 turtle.register_shape("exam_room_hand_trigger_eleven.gif")
 turtle.register_shape("exam_room_hand_trigger_twelve.gif")
 turtle.register_shape("exam_room_hand_trigger_thirteen.gif")
+turtle.register_shape("large_pupil.gif")
+turtle.register_shape("closed-eye.gif")
+turtle.register_shape("exam_room_message_one.gif")
+turtle.register_shape("exam_room_message_two.gif")
+turtle.register_shape("exam_room_message_three.gif")
+turtle.register_shape("exam_room_breathing_wall_one.gif")
+turtle.register_shape("exam_room_breathing_wall_two.gif")
+turtle.register_shape("exam_room_breathing_wall_three.gif")
+turtle.register_shape("exam_room_breathing_wall_four.gif")
+turtle.register_shape("exam_room_failed_exit.gif")
+
+
+turtle.register_shape("C1_locked_text_one.gif")
+turtle.register_shape("C1_locked_text_two.gif")
+turtle.register_shape("C1_locked_text_three.gif")
+turtle.register_shape("C2_entrance_text_one.gif")
+turtle.register_shape("C2_entrance_text_two.gif")
+turtle.register_shape("C2_entrance_text_three.gif")
+turtle.register_shape("C2_entrance_text_four.gif")
+turtle.register_shape("C2_entrance_text_five.gif")
+turtle.register_shape("C2_entrance_text_six.gif")
+turtle.register_shape("C2_entrance_text_seven.gif")
+turtle.register_shape("C2_entrance_eight.gif")
+turtle.register_shape("C2_entrance_nine.gif")
+turtle.register_shape("C2_entrance_ten.gif")
+turtle.register_shape("C2_entrance_eleven.gif")
+turtle.register_shape("C2_entrance_twelve.gif")
+turtle.register_shape("C2_find_key_one.gif")
+turtle.register_shape("C2_find_key_two.gif")
+turtle.register_shape("C2_find_key_three.gif")
+turtle.register_shape("C2_find_key_four.gif")
+turtle.register_shape("C2_find_key_five.gif")
+turtle.register_shape("C2_find_key_six.gif")
+turtle.register_shape("C2_find_key_seven.gif")
+turtle.register_shape("C2_find_key_eight.gif")
+turtle.register_shape("C2_find_key_nine.gif")
+turtle.register_shape("C2_exit_to_hallway_one.gif")
+turtle.register_shape("C2_exit_to_hallway_two.gif")
+turtle.register_shape("C2_exit_to_hallway_three.gif")
+turtle.register_shape("C2_exit_to_hallway_four.gif")
+
+
+turtle.register_shape("blob_monster_hallway_two_game_over_one.gif")
+turtle.register_shape("blob_monster_hallway_two_game_over_two.gif")
+turtle.register_shape("Exam_room_exit_text_one.gif")
+turtle.register_shape("Exam_room_exit_text_two.gif")
+turtle.register_shape("Exam_room_exit_text_three.gif")
+turtle.register_shape("body_bag_monster_death_horizontal_one.gif")
+turtle.register_shape("body_bag_monster_death_horizontal_two.gif")
+turtle.register_shape("body_bag_monster_death_horizontal_three.gif")
+turtle.register_shape("body_bag_monster_death_horizontal_four.gif")
+turtle.register_shape("body_bag_monster_death_horizontal_five.gif")
+turtle.register_shape("body_bag_monster_death_horizontal_six.gif")
+turtle.register_shape("body_bag_monster_death_vertical_one.gif")
+turtle.register_shape("body_bag_monster_death_vertical_two.gif")
+turtle.register_shape("blob_monster_pool_hallway_death_one.gif")
+turtle.register_shape("blob_monster_pool_hallway_death_two.gif")
+
+
+turtle.register_shape("exit_last_hallway_one.gif")
+turtle.register_shape("exit_last_hallway_two.gif")
+turtle.register_shape("exit_last_hallway_three.gif")
+turtle.register_shape("exit_pool_area_one.gif")
+turtle.register_shape("exit_pool_area_two.gif")
+turtle.register_shape("exit_pool_area_three.gif")
+turtle.register_shape("exit_pool_area_four.gif")
+turtle.register_shape("exit_to_pool_hallway_one.gif")
+turtle.register_shape("exit_to_pool_hallway_two.gif")
+turtle.register_shape("exit_to_pool_hallway_three.gif")
+turtle.register_shape("exit_to_pool_hallway_four.gif")
+turtle.register_shape("exit_to_pool_hallway_five.gif")
+turtle.register_shape("exit_to_pool_hallway_six.gif")
+turtle.register_shape("look_at_pool_one.gif")
+turtle.register_shape("look_at_pool_two.gif")
+turtle.register_shape("look_at_pool_three.gif")
+turtle.register_shape("medicines.gif")
+turtle.register_shape("wheelchair.gif")
+turtle.register_shape("finished_game_one.gif")
+turtle.register_shape("finished_game_two.gif")
+turtle.register_shape("finished_game_three.gif")
+turtle.register_shape("finished_game_four.gif")
+turtle.register_shape("C2_failed_exit.gif")
+turtle.register_shape("hand_monster_hallway_game_over.gif")
 
 
 
+
+turtle.register_shape("title-screen.gif")
+turtle.register_shape("ending_title_screen.gif")
+
+
+turtle.register_shape("step_on_glass_one.gif")
+turtle.register_shape("step_on_glass_two.gif")
+turtle.register_shape("blob_monster_pool_hallway_death_three.gif")
+turtle.register_shape("spider_monster_last_hallway_death_one.gif")
+turtle.register_shape("spider_monster_last_hallway_death_two.gif")
+turtle.register_shape("exam_room_hand_monster_game_over_one_text.gif")
+turtle.register_shape("exam_room_hand_monster_game_over_two_text.gif")
+turtle.register_shape("exam_room_hand_monster_game_over_three_text.gif")
+turtle.register_shape("exam_room_reenter_game_over_one.gif")
+turtle.register_shape("exam_room_reenter_game_over_two.gif")
+turtle.register_shape("exam_room_reenter_game_over_three.gif")
 
 
 class Pen(turtle.Turtle):
     def __init__(self):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("white")
+        self.color("")
         self.penup()
         self.speed(0)
+
+
+
+class Exam_Room_Reenter_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_reenter_game_over_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Reenter_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_reenter_game_over_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Reenter_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_reenter_game_over_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Exam_Room_Hand_Game_Over_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_monster_game_over_one_text.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Hand_Game_Over_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_monster_game_over_two_text.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Hand_Game_Over_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_monster_game_over_three_text.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Step_On_Glass_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("step_on_glass_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Step_On_Glass_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("step_on_glass_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Blob_Monster_Pool_Hallway_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("blob_monster_pool_hallway_death_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Blob_Monster_Pool_Hallway_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("blob_monster_pool_hallway_death_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Blob_Monster_Pool_Hallway_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("blob_monster_pool_hallway_death_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Title(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("title-screen.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class End(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("ending_title_screen.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
 
 
 
@@ -184,6 +495,1390 @@ class Firsttextbox(turtle.Turtle):
     def destroy(self):
         self.goto(2000, 2000)
         self.hideturtle()
+
+
+
+
+class Exam_Room_Exit_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("Exam_room_exit_text_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+class Exam_Room_Exit_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("Exam_room_exit_text_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Exit_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("Exam_room_exit_text_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+class C1_Locked_Text_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C1_locked_text_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+class C1_Locked_Text_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C1_locked_text_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+class C1_Locked_Text_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C1_locked_text_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+class C2_Entrance_Text_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_text_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+class C2_Entrance_Text_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_text_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class C2_Entrance_Text_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_text_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class C2_Entrance_Text_Four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_text_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+
+class C2_Entrance_Text_Five(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_text_five.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+class C2_Entrance_Text_Six(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_text_six.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+
+class C2_Entrance_Text_Seven(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_text_seven.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class C2_Entrance_Text_Eight(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_eight.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class C2_Entrance_Text_Nine(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_nine.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class C2_Entrance_Text_Ten(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_ten.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class C2_Entrance_Text_Eleven(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_eleven.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class C2_Entrance_Text_Twelve(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_entrance_twelve.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class C2_Failed_exit(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_failed_exit.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Body_bag_monster_death_horizontal_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("body_bag_monster_death_horizontal_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Body_bag_monster_death_horizontal_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("body_bag_monster_death_horizontal_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Body_bag_monster_death_horizontal_three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("body_bag_monster_death_horizontal_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Body_bag_monster_death_horizontal_four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("body_bag_monster_death_horizontal_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Body_bag_monster_death_horizontal_five(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("body_bag_monster_death_horizontal_five.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Body_bag_monster_death_horizontal_six(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("body_bag_monster_death_horizontal_six.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Body_bag_monster_death_vertical_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("body_bag_monster_death_vertical_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Body_bag_monster_death_vertical_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("body_bag_monster_death_vertical_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+class C2_exit_to_hallway_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_exit_to_hallway_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class C2_exit_to_hallway_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_exit_to_hallway_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class C2_exit_to_hallway_three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_exit_to_hallway_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class C2_exit_to_hallway_four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_exit_to_hallway_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class C2_find_key_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class C2_find_key_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class C2_find_key_three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class C2_find_key_four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class C2_find_key_five(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_five.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class C2_find_key_six(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_six.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class C2_find_key_seven(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_seven.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class C2_find_key_eight(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_eight.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class C2_find_key_nine(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("C2_find_key_nine.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+class Exit_last_hallway_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_last_hallway_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exit_last_hallway_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_last_hallway_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exit_last_hallway_three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_last_hallway_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exit_pool_area_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_pool_area_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exit_pool_area_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_pool_area_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exit_pool_area_three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_pool_area_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exit_pool_area_four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_pool_area_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exit_pool_area_five(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_pool_area_five.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exit_to_pool_hallway_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_to_pool_hallway_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exit_to_pool_hallway_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_to_pool_hallway_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exit_to_pool_hallway_three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_to_pool_hallway_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exit_to_pool_hallway_four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_to_pool_hallway_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exit_to_pool_hallway_five(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_to_pool_hallway_five.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exit_to_pool_hallway_six(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exit_to_pool_hallway_six.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Look_at_pool_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("look_at_pool_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Look_at_pool_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("look_at_pool_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Look_at_pool_three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("look_at_pool_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Wheelchair(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("wheelchair.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Medicines(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("medicines.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Finished_game_one(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("finished_game_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Finished_game_two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("finished_game_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Finished_game_three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("finished_game_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Finished_game_four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("finished_game_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Blob_Monster_Hall_Two_Game_Over_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("blob_monster_hallway_two_game_over_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Blob_Monster_Hall_Two_Game_Over_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("blob_monster_hallway_two_game_over_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+
+
+
+
+class Exam_Room_Failed_Exit(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_failed_exit.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Closed_Eye(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("closed-eye.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+
+
+
+
+class Exam_Room_Eye(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("large_pupil.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Hand_Trigger_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Exam_Room_Hand_Trigger_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Exam_Room_Hand_Trigger_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Exam_Room_Hand_Trigger_Four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Exam_Room_Hand_Trigger_Five(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_five.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Hand_Trigger_Six(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_six.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Exam_Room_Hand_Trigger_Seven(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_seven.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Hand_Trigger_Eight(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_eight.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Exam_Room_Hand_Trigger_Nine(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_nine.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Exam_Room_Hand_Trigger_Ten(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_ten.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Hand_Trigger_Eleven(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_eleven.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Hand_Trigger_Twelve(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_twelve.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Hand_Trigger_Thirteen(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_hand_trigger_thirteen.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Hand_Message_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_message_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Hand_Message_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_message_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Hand_Message_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_message_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+class Exam_Room_Hand_Breathing_Wall_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_breathing_wall_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Hand_Breathing_Wall_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_breathing_wall_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Hand_Breathing_Wall_Three(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_breathing_wall_three.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Hand_Breathing_Wall_Four(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("exam_room_breathing_wall_four.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+
+
+
 
 
 
@@ -648,7 +2343,7 @@ class Door_to_Exit_Text_Box(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -665,7 +2360,7 @@ class Door_To_Second_C4_Textbox(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -680,7 +2375,7 @@ class Door_To_Start_Game(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -696,7 +2391,7 @@ class C4_Blocked_Door(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -716,7 +2411,7 @@ class C4_Door_Reenter(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -737,7 +2432,7 @@ class C4_Blocked_Second_Door(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -754,7 +2449,7 @@ class C4_Blocked_Return_To_Game(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -982,13 +2677,14 @@ class C4_Door_Text_Exit_Flashlight(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
 
-
-
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class C4_Exit_Blood_Text(Door_to_Exit_Text_Box):
@@ -996,11 +2692,14 @@ class C4_Exit_Blood_Text(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
 
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class C4_Exit_To_Hole_Two(Door_to_Exit_Text_Box):
@@ -1008,10 +2707,14 @@ class C4_Exit_To_Hole_Two(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class C4_Exit_To_Hole_Three(Door_to_Exit_Text_Box):
@@ -1019,10 +2722,14 @@ class C4_Exit_To_Hole_Three(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class C4_Exit_To_Hole_Four(Door_to_Exit_Text_Box):
@@ -1030,10 +2737,14 @@ class C4_Exit_To_Hole_Four(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class C4_Exit_To_Hole_Five(Door_to_Exit_Text_Box):
@@ -1041,10 +2752,14 @@ class C4_Exit_To_Hole_Five(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class C4_Exit_Hole_Text(Door_to_Exit_Text_Box):
@@ -1052,17 +2767,21 @@ class C4_Exit_Hole_Text(Door_to_Exit_Text_Box):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class C4_Exit_Second_Bed_Text(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -1076,7 +2795,7 @@ class C4_Exit_End_Door (turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -1092,7 +2811,7 @@ class Door(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -1106,7 +2825,7 @@ class Door_2(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -1127,6 +2846,8 @@ class DoortoenterC3(turtle.Turtle):
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+
 
 
 class DoortoexitC3(turtle.Turtle):
@@ -1150,6 +2871,10 @@ class Door_to_enter_examination_room(turtle.Turtle):
         self.speed(0)
         self.goto(x, y)
 
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
 
 class Door_to_exit_examination_room(turtle.Turtle):
     def __init__(self, x, y):
@@ -1161,6 +2886,7 @@ class Door_to_exit_examination_room(turtle.Turtle):
         self.goto(x, y)
 
 
+
 class Door_to_Enter_C2(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
@@ -1169,6 +2895,10 @@ class Door_to_Enter_C2(turtle.Turtle):
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class Door_to_Exit_C2(turtle.Turtle):
@@ -1179,6 +2909,9 @@ class Door_to_Exit_C2(turtle.Turtle):
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+
+
 
 class Door_to_Exit_C2_with_key(turtle.Turtle):
     def __init__(self, x, y):
@@ -1191,14 +2924,19 @@ class Door_to_Exit_C2_with_key(turtle.Turtle):
 
 
 
+
 class Door_to_Exit_Hallway(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
 
 
 class Door_to_Exit_to_Pool_Area(turtle.Turtle):
@@ -1211,6 +2949,7 @@ class Door_to_Exit_to_Pool_Area(turtle.Turtle):
         self.goto(x, y)
 
 
+
 class Door_to_exit_game(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
@@ -1220,13 +2959,17 @@ class Door_to_exit_game(turtle.Turtle):
         self.speed(0)
         self.goto(x, y)
 
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
 
 
 class Trigger_Hand_Monster(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("black")
+        self.color("")
         self.penup()
         self.speed(0)
         self.goto(x, y)
@@ -1308,6 +3051,56 @@ class Spiderwebs(turtle.Turtle):
 
 
 
+class Exam_Room_Blood_Message_One(turtle.Turtle):
+ def __init__(self, x, y):
+    turtle.Turtle.__init__(self)
+    self.shape("exam_room_message_one.gif")
+    self.color("black")
+    self.penup()
+    self.speed(0)
+    self.goto(x, y)
+
+ def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+class Exam_Room_Blood_Message_Two(turtle.Turtle):
+ def __init__(self, x, y):
+    turtle.Turtle.__init__(self)
+    self.shape("exam_room_message_two.gif")
+    self.color("black")
+    self.penup()
+    self.speed(0)
+    self.goto(x, y)
+
+ def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Exam_Room_Blood_Message_Three(turtle.Turtle):
+ def __init__(self, x, y):
+    turtle.Turtle.__init__(self)
+    self.shape("exam_room_message_three.gif")
+    self.color("black")
+    self.penup()
+    self.speed(0)
+    self.goto(x, y)
+
+ def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+
 
 
 
@@ -1322,12 +3115,10 @@ class Blobmonster(turtle.Turtle):
         self.penup()
         self.speed(0)
         self.goto(x, y)
-        self.direction = random.choice(["up", "down"])
+        self.direction = random.choice(["up", "down", "left", "right"])
 
     def move(self):
-        dx = 0
 
-        dy = 0
 
         if self.direction == "up":
 
@@ -1369,12 +3160,12 @@ class Blobmonster(turtle.Turtle):
         if self.is_close(player):
             if player.xcor() < self.xcor():
                 self.direction = "left"
-            elif player.xcor() < self.xcor():
+            elif player.xcor() > self.xcor():
                 self.direction = "right"
             elif player.ycor() < self.ycor():
-                self.direction = "up"
-            elif player.ycor() < self.ycor():
                 self.direction = "down"
+            elif player.ycor() > self.ycor():
+                self.direction = "up"
 
 
 
@@ -1386,10 +3177,17 @@ class Blobmonster(turtle.Turtle):
             self.goto(move_to_x, move_to_y)
         else:
             #choose a different direction
-            self.direction = random.choice(["up", "down"])
+            self.direction = random.choice(["up", "down", "left", "right"])
+
+        if (move_to_x, move_to_y) not in walls:
+            self.goto(move_to_x, move_to_y)
+        else:
+            #choose a different direction
+            self.direction = random.choice(["up", "down", "left", "right"])
+
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(100, 300))
+        wn.ontimer(self.move, t=random.randint(100000, 300000))
 
     def is_close(self, other):
 
@@ -1414,25 +3212,25 @@ class Spidermonster(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("eye-flurry-monster-24.gif")
-        self.color("")
+        self.color("red")
         self.penup()
         self.speed(0)
         self.goto(x, y)
-        self.direction = random.choice(["left", "right"])
+        self.direction = random.choice(["up", "down","left", "right"])
 
     def move(self):
-        if self.direction == "left":
-            dx = -24
-            dy = 0
-        elif self.direction == "right":
-            dx = 24
-            dy = 0
-        elif self.direction == "up":
+        if self.direction == "up":
             dx = 0
             dy = 24
         elif self.direction == "down":
             dx = 0
             dy = -24
+        elif self.direction == "left":
+            dx = -24
+            dy = 0
+        elif self.direction == "right":
+            dx = 24
+            dy = 0
         else:
             dx = 0
             dy = 0
@@ -1443,16 +3241,16 @@ class Spidermonster(turtle.Turtle):
         if self.is_close(player):
             if player.xcor() < self.xcor():
                 self.direction = "left"
-            elif player.xcor() < self.xcor():
+            elif player.xcor() > self.xcor():
                 self.direction = "right"
             elif player.ycor() < self.ycor():
-                self.direction = "up"
-            elif player.ycor() < self.ycor():
                 self.direction = "down"
+            elif player.ycor() > self.ycor():
+                self.direction = "up"
 
 
 
-        #calculate the spot to move to
+        # calculate the spot to move to
         move_to_x = self.xcor() + dx
         move_to_y = self.ycor() + dy
         #check if a space has a wall
@@ -1460,10 +3258,10 @@ class Spidermonster(turtle.Turtle):
             self.goto(move_to_x, move_to_y)
         else:
             #choose a different direction
-            self.direction = random.choice(["left", "right", "up", "down"])
+            self.direction = random.choice(["up", "down", "left", "right"])
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(100, 300))
+        wn.ontimer(self.move, t=random.randint(10000, 30000))
 
     def is_close(self, other):
 
@@ -1503,12 +3301,12 @@ class Hand_Monster_Hallway(turtle.Turtle):
         elif self.direction == "right":
             dx = 24
             dy = 0
-        elif self.direction == "up":
-            dx = 0
-            dy = 24
-        elif self.direction == "down":
-            dx = 0
-            dy = -24
+        # elif self.direction == "up":
+        #     dx = 0
+        #     dy = 24
+        # elif self.direction == "down":
+        #     dx = 0
+        #     dy = -24
         else:
             dx = 0
             dy = 0
@@ -1519,12 +3317,12 @@ class Hand_Monster_Hallway(turtle.Turtle):
         if self.is_close(player):
             if player.xcor() < self.xcor():
                 self.direction = "left"
-            elif player.xcor() < self.xcor():
+            elif player.xcor() > self.xcor():
                 self.direction = "right"
             elif player.ycor() < self.ycor():
-                self.direction = "up"
-            elif player.ycor() < self.ycor():
                 self.direction = "down"
+            elif player.ycor() > self.ycor():
+                self.direction = "up"
 
 
 
@@ -1536,10 +3334,10 @@ class Hand_Monster_Hallway(turtle.Turtle):
             self.goto(move_to_x, move_to_y)
         else:
             #choose a different direction
-            self.direction = random.choice(["left", "right", "up", "down"])
+            self.direction = random.choice(["left", "right"])
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(100, 300))
+        wn.ontimer(self.move, t=random.randint(10000, 30000))
 
     def is_close(self, other):
 
@@ -1573,21 +3371,21 @@ class Handmonster(turtle.Turtle):
         self.penup()
         self.speed(0)
         self.goto(x, y)
-        self.direction = random.choice(["left", "right"])
+        self.direction = random.choice(["down", "up"])
 
     def move(self):
-        if self.direction == "left":
-            dx = -24
-            dy = 0
-        elif self.direction == "right":
-            dx = 24
-            dy = 0
+        # if self.direction == "left":
+        #     dx = -24
+        #     dy = 0
+        # elif self.direction == "right":
+        #     dx = 24
+        #     dy = 0
+        if self.direction == "down":
+            dx = 0
+            dy = -24
         elif self.direction == "up":
             dx = 0
             dy = 24
-        elif self.direction == "down":
-            dx = 0
-            dy = -24
         else:
             dx = 0
             dy = 0
@@ -1596,14 +3394,14 @@ class Handmonster(turtle.Turtle):
         # If so, go that direction
 
         if self.is_close(player):
-            if player.xcor() < self.xcor():
-                self.direction = "left"
-            elif player.xcor() < self.xcor():
-                self.direction = "right"
-            elif player.ycor() < self.ycor():
-                self.direction = "up"
-            elif player.ycor() < self.ycor():
+            # if player.xcor() < self.xcor():
+            #     self.direction = "left"
+            # elif player.xcor() > self.xcor():
+            #     self.direction = "right"
+            if player.ycor() < self.ycor():
                 self.direction = "down"
+            elif player.ycor() > self.ycor():
+                self.direction = "up"
 
 
 
@@ -1615,10 +3413,10 @@ class Handmonster(turtle.Turtle):
             self.goto(move_to_x, move_to_y)
         else:
             #choose a different direction
-            self.direction = random.choice(["left", "right", "up", "down"])
+            self.direction = random.choice([ "down", "up"])
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(100, 300))
+        wn.ontimer(self.move, t=random.randint(100000, 300000))
 
     def is_close(self, other):
 
@@ -1661,7 +3459,7 @@ class Body_Bag_monster_moving(turtle.Turtle):
         self.penup()
         self.speed(0)
         self.goto(x, y)
-        self.direction = random.choice(["left", "right"])
+        self.direction = random.choice(["left", "right","up","down"])
 
     def move(self):
         if self.direction == "left":
@@ -1686,12 +3484,12 @@ class Body_Bag_monster_moving(turtle.Turtle):
         if self.is_close(player):
             if player.xcor() < self.xcor():
                 self.direction = "left"
-            elif player.xcor() < self.xcor():
+            elif player.xcor() > self.xcor():
                 self.direction = "right"
             elif player.ycor() < self.ycor():
-                self.direction = "up"
-            elif player.ycor() < self.ycor():
                 self.direction = "down"
+            elif player.ycor() > self.ycor():
+                self.direction = "up"
 
 
 
@@ -1708,7 +3506,7 @@ class Body_Bag_monster_moving(turtle.Turtle):
             self.direction = random.choice(["left", "right", "up", "down"])
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(100, 300))
+        wn.ontimer(self.move, t=random.randint(10000, 30000))
 
     def is_close(self, other):
 
@@ -1959,6 +3757,47 @@ class Exam_Entrance_Text_Six(turtle.Turtle):
         self.hideturtle()
 
 
+class Hand_Hallway_Monster_Game_Over(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("hand_monster_hallway_game_over.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Spider_Last_Hallway_Monster_Game_Over_One(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("spider_monster_last_hallway_death_one.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+class Spider_Last_Hallway_Monster_Game_Over_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("spider_monster_last_hallway_death_two.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
 
 
 
@@ -1968,8 +3807,8 @@ levels=[""]
 #Level when player doesn't have flashlight
 level_1 = [
 
-
-     "XXXX4XXXX",
+    "    X     ",
+     "XXXX4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  F  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -1983,8 +3822,8 @@ level_1 = [
 
 level_failed_exit_C4 = [
 
-
-     "XXXXEXXXXX",
+    "    X",
+     "XXXX4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  F  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -2001,7 +3840,8 @@ level_failed_exit_C4 = [
 
 #Level where player has flashlight and can leave the room
 level_2 = [
-     "XXXXEXXX",
+     "    X",
+     "XXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -2011,12 +3851,14 @@ level_2 = [
      "XX  V  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XXXXXXXXX"
 
+
 ]
 
 
 
 level_exit_message = [
-     "XXXXEXXX",
+    "    X    ",
+     "XXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -2030,7 +3872,8 @@ level_exit_message = [
 
 
 level_3 = [
-     "XXXCCCXX",
+    "XXXXXXXXX",
+     "XXXCCCXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -2044,32 +3887,81 @@ level_3 = [
 
 
 level_examinationroom = [
+    "XXXXXXXXX",
      "XXXXXXXX",
      "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  C  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  Y  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX    +XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XXD    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "  XXZZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     ",
      "XXXXXXXXX"
 
 ]
 
 
+
+
+
+
+level_examination_room_near_message = [
+    "XXXXXXXXX",
+     "XXXXXXXX",
+     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX  C  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX  Y  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX    +XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XXDP   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "  XXZZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     ",
+     "XXXXXXXXX"
+
+]
+
+
+
+level_examination_room_near_closed_eye = [
+    "XXXXXXXXX",
+     "XXXXXXXX",
+     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX  C  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX  Y  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX   P+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XXD    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "  XXZZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     ",
+     "XXXXXXXXX"
+
+]
+
+
+
+
+
+
 level_examination_room_with_monster = [
-     "XXZ1234X",
+    "XXXXXXXXXX",
      "XX56789X",
+     "XX*1234X",
      "XX  C  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX    BXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XXD    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-     "XX  A  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "  XXAAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     ",
      "XXXXXXXXX"
 
 ]
@@ -2083,13 +3975,14 @@ level_examination_room_with_monster = [
 
 
 level_C2 = [
-     "XXXIIIXXX",
+    "XXXXXXXXXXX",
+     "XXXIIIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX   V XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX L   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX M   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  K  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XXXXXXXXX"
 
@@ -2099,12 +3992,13 @@ level_C2 = [
 level_C2_with_moving_monster = [
 
      "XXXXXXXXX",
-     "XX  J  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XXXXXXXX",
+     "XX JJJ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX   U XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-     "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX L   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+     "XX M   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX  P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
      "XXXXXXXXX"
 
@@ -2153,7 +4047,7 @@ level_with_text = [
 level_with_text_C4_text_one = [
     "  X                               X       ",
     "  X                                                                                                                                X       ",
-    "XXXXXXXX                                                                                                                          XPX                   RXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                                                                                                        ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
@@ -2161,7 +4055,9 @@ level_with_text_C4_text_one = [
     "X                     X             ",
     "X                A      X             ",
     "XXXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "X                                                      PX                   RXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx"
 
 
 
@@ -2174,7 +4070,7 @@ level_with_text_C4_text_one = [
 level_with_text_C4_text_two = [
     "  X                                                                                                                                      X       ",
     "  X    XX                                                                                                                               XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXx                         X       ",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                                                                                                                               ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
@@ -2195,9 +4091,9 @@ level_with_text_C4_text_two = [
 level_with_text_C4_text_three = [
 
     "                                                                                                                           X",
-    "  X     XXXXXXXXX                                                                                                         XPX                   3                      X       ",
+    "  X     XXXXXXXXX                                                                                                         XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                      X       ",
     "  X     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                            X       ",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                                                                   ",
     "XXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
@@ -2219,7 +4115,7 @@ level_with_text_C4_text_three = [
 level_with_text_C4_see_door_without_flashlight_one = [
     "  X                                                      X       ",
     "  X                             X       ",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                                                   ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
@@ -2228,7 +4124,13 @@ level_with_text_C4_see_door_without_flashlight_one = [
     "X                D      X             ",
     "XXXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"  X                                                                                                                      XPX                   4",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+"  X                                                                                                                                                                                                                                                                                                            XPX                   4",
 "                                                                                                                          X",
     "                    X"
 
@@ -2242,7 +4144,7 @@ level_with_text_C4_see_door_without_flashlight_one = [
 level_with_text_C4_see_door_without_flashlight_two = [
     "  X                               X       ",
     "  X                             X       ",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                              ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
@@ -2252,7 +4154,12 @@ level_with_text_C4_see_door_without_flashlight_two = [
     "XXXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "        X                                                                                                                X",
-    "XXXXXXX                                                                                                                 XPX                   5XXXXX",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "XXXXXXX                                                                                                   XPX                   5XXXXX",
     "X                                                                                                                        X"
 
 
@@ -2268,7 +4175,7 @@ level_with_text_C4_see_door_without_flashlight_two = [
 level_with_text_C4_look_at_the_bed = [
     "  X                               X       ",
     "  X                             X       ",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                                  ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
@@ -2279,7 +4186,7 @@ level_with_text_C4_look_at_the_bed = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "X                                     X",
     "                                                                       X",
-    "                                                                      XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                     ",
+    "                                                                      XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                     ",
     "                                                                       X "
 
 
@@ -2294,17 +4201,22 @@ level_with_text_C4_look_at_the_bed = [
 level_with_text_C4_text_flashlight = [
     "  X                               X       ",
     "  X                             X       ",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "                                                          ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
-    "X                     X             ",
-    "X                I      X             ",
-    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                                      X",
-    "                                                                                                                           XPX                   7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-    "                                                                                                                            X"
+    "X                                                    X             ",
+    "X                I      X                           XPX                   7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        ",
+    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXX               XXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                                                                                        X",
+    "                                                                                                                                                                             XXXXXXXXXXXXx",
+    "                                                                                                                                                                              X"
 
 
 
@@ -2328,9 +4240,9 @@ level_with_text_C4_text_bed_with_flashlight = [
     "X                     X             ",
     "X                ?      X             ",
     "XXXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                                                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "                                                                        XPX                   WXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-    "                                                                         X"
+    "              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                                 XPX                   WXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "                                                  X"
 
 
 
@@ -2343,29 +4255,31 @@ level_with_text_C4_text_bed_with_flashlight = [
 
 
 level_with_text_C4_hole_one = [
-    "  X                               X       ",
-    "  X                             X       ",
+ "  X                               X       ",
+    "  X                            X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
-    "X                    X             ",
-    "X               K       X           ",
-    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                                                                                          X                                ",
-"                                                                                                         XPX                   9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                        ",
-    "                                                                                                          X                          "
+    "X                     X             ",
+    "X                K      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+    "                                           X"
 
 
 
@@ -2378,29 +4292,31 @@ level_with_text_C4_hole_one = [
 
 
 level_with_text_C4_hole_two = [
-    "  X                               X       ",
-    "  X                             X       ",
+ "  X                               X       ",
+    "  X                            X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
     "X                     X             ",
     "X                L      X             ",
-    "XXXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "                                     ",
-    "                                     ",
-    "                                     ",
-    "                                     ",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                      ",
-    "                                     X",
-    "                                    XPX                   0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-    "                                     X"
-
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+    "                                           X"
 
 
 
@@ -2410,8 +4326,8 @@ level_with_text_C4_hole_two = [
 
 
 level_with_text_C4_hole_three = [
-    "  X                               X       ",
-    "  X                             X       ",
+ "  X                               X       ",
+    "  X                            X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -2419,17 +4335,23 @@ level_with_text_C4_hole_three = [
     "X                     X            ",
     "X                     X             ",
     "X                M      X             ",
-    "XXXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                           ",
-    "                                            ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
     "                                             ",
-    "                                              ",
-    "                                              ",
-    "                                               ",
-    "                                               ",
-    "                                         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"                                             XPX                   QXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-    "                                          X"
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   QXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
 
 
 
@@ -2441,8 +4363,8 @@ level_with_text_C4_hole_three = [
 
 
 level_with_text_C4_hole_four = [
-    "  X                               X       ",
-    "  X                             X       ",
+ "  X                               X       ",
+    "  X                            X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -2450,12 +4372,22 @@ level_with_text_C4_hole_four = [
     "X                     X            ",
     "X                     X             ",
     "X                N      X             ",
-    "XXXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                           ",
-    "                                            ",
-    "                                                               XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"                                                                            XPX                   SXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "                                                                             X"
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   SXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
 
 
 
@@ -2467,8 +4399,8 @@ level_with_text_C4_hole_four = [
 
 
 level_with_text_C4_hole_five = [
-    "  X                               X       ",
-    "  X                             X       ",
+ "  X                               X       ",
+    "  X                            X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -2476,22 +4408,23 @@ level_with_text_C4_hole_five = [
     "X                     X            ",
     "X                     X             ",
     "X                O      X             ",
-    "XXXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                           ",
-    "                                            ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
     "                                             ",
     "                                             ",
     "                                             ",
-    "                                            ",
-    "                                           ",
-    "                                            ",
     "                                             ",
     "                                             ",
-    "                                             ",
-    "                                            ",
-    "                                      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-"                                                                           XPX                   TXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-    "                                                                            X"
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   TXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
 
 
 
@@ -2515,16 +4448,16 @@ level_with_text_C4_exit = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
-    "X                     X            ",
-    "X                     X             ",
-    "X                !      X             ",
+    "X                    XX            ",
+    "X                    XX             ",
+    "X                !  XPX                   @XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx    ",
     "XXXXXXXXXXXXX   XXX  XXXXX   XXXXXXXXXXXXX",
     "                                           ",
     "                                            ",
     "                                            ",
     "                                            ",
     "                                                        X",
-            "                                                       XPX                   @ ",
+            "                                             ",
     "         X                                              X"
 
 ]
@@ -2533,31 +4466,40 @@ level_with_text_C4_exit = [
 
 
 level_with_text_C4_exit_two = [
-    "                                          ",
-    "  X                               X       ",
-    "  X                             X       ",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
     "X                     X             ",
     "X                #      X             ",
-    "XXXXXXXXXXXXX   XXX  XXXXX   XXXXXXXXXXXXX",
-    "                                           ",
-    "                                            ",
-    "                                            ",
-    "                                            ",
-    "                                                        X",
-            "                                                       XPX                   $ ",
-    "         X                                              X"
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   $XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
 
 ]
 
 
 
 level_C4_near_hospital_bed_with_light = [
-     "XXXXEXXXX",
+    "    X     ",
+     "XXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -2591,7 +4533,7 @@ level_with_text_C4_threatening_message = [
     "                                         ",
     "                                         ",
 "XXXXXXXXXXXXXXXXXXXX                          XX",
-    "                                          XPX                   8",
+    "                                          XPX                   8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "                                           X"
 
 
@@ -2614,24 +4556,24 @@ level_C4_reenter = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
-    "X                     X            ",
+    "X                  ",
     "X                     X             ",
     "X                /      X             ",
-    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                         ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX", "                                         ",
     "                                         ",
     "                                         ",
     "                                         ",
     "                                         ",
 "XXXXXXXXXXXXXXXXXXXX                          XX",
     "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
+
+    "                                                               X",
+    "                                                              XPX                   }XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                            ",
+    "                                                               X",
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   } ",
+    "                                           ",
     "                                           X"
 
 
@@ -2642,31 +4584,33 @@ level_C4_reenter = [
 
 
 level_C3_entrance_text = [
-    "  X                               X       ",
-    "  X                            X       ",
+ "  X                               X       ",
+    "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
-    "X                     X             ",
-    "X                C      X             ",
-    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-"XXXXXXXXXXXXXXXXXXXX                          XX",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                           X",
-    "                                           X",
-    "                                          XPX                   1 ",
-    "                                           X"
+    "X                    X             ",
+    "X               C       X           ",
+    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                                                                                          X                                ",
+"                                                                                                         XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                        ",
+    "                                                                                                          X                          "
+
+
+
+
 
 
 ]
@@ -2676,31 +4620,30 @@ level_C3_entrance_text = [
 
 
 level_hallway_one_blood_message = [
-    "  X                               X       ",
-    "  X                            X       ",
+"  X                               X       ",
+    "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
-    "X                     X             ",
-    "X                D      X             ",
-    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-"XXXXXXXXXXXXXXXXXXXX                          XX",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                           X",
-    "                                           X",
-    "                                          XPX                   2 ",
-    "                                           X"
+    "X                    X             ",
+    "X               D       X           ",
+    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                                                                                          X                                ",
+"                                                                                                         XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                        ",
+    "                                                                                                          X                          "
+
 
 
 ]
@@ -2709,31 +4652,31 @@ level_hallway_one_blood_message = [
 
 
 level_hallway_two_blood_message = [
-    "  X                               X       ",
-    "  X                            X       ",
+"  X                               X       ",
+    "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
-    "X                     X             ",
-    "X                E      X             ",
-    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-"XXXXXXXXXXXXXXXXXXXX                          XX",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                           X",
-    "                                           X",
-    "                                          XPX                   3 ",
-    "                                           X"
+    "X                    X             ",
+    "X               E       X           ",
+    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                                                                                          X                                ",
+"                                                                                                         XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                        ",
+    "                                                                                                          X                          "
+
+
 
 
 ]
@@ -2745,31 +4688,31 @@ level_hallway_two_blood_message = [
 
 
 level_hallway_three_blood_message = [
-    "  X                               X       ",
-    "  X                            X       ",
+"  X                               X       ",
+    "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
-    "X                     X             ",
-    "X                F      X             ",
-    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-"XXXXXXXXXXXXXXXXXXXX                          XX",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                           X",
-    "                                           X",
-    "                                          XPX                   4 ",
-    "                                           X"
+    "X                    X             ",
+    "X               F       X           ",
+    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                                                                                          X                                ",
+"                                                                                                         XPX                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                        ",
+    "                                                                                                          X                          "
+
+
 
 
 ]
@@ -2803,7 +4746,7 @@ level_bathroom_entrance = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   6 ",
+    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -2813,34 +4756,39 @@ level_bathroom_entrance = [
 
 
 level_C3_enter_text = [
-    "  X                               X       ",
-    "  X                            X       ",
+
+ "  X                               X       ",
+    "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
-    "X                     X             ",
-    "X                J      X             ",
-    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-"XXXXXXXXXXXXXXXXXXXX                          XX",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                           X",
-    "                                           X",
-    "                                          XPX                   7 ",
-    "                                           X"
+    "X                    X             ",
+    "X               J       X           ",
+    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                                                                                          X                                ",
+"                                                                                                         XPX                   7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                        ",
+    "                                                                                                          X                          "
+
+
+
+
 
 
 ]
+
+
 
 
 
@@ -2868,7 +4816,7 @@ level_C3_game_over_one_text = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   8 ",
+    "                                          XPX                   8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -2899,7 +4847,7 @@ level_C3_game_over_two_text = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   9 ",
+    "                                          XPX                   9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -2930,7 +4878,7 @@ level_C3_game_over_three_text = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   ! ",
+    "                                          XPX                   !XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -2963,7 +4911,7 @@ level_C3_game_over_four_text = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   @ ",
+    "                                          XPX                   @XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -2995,7 +4943,7 @@ level_C3_game_over_five_text = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   # ",
+    "                                          XPX                   #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3027,7 +4975,7 @@ level_C3_game_over_six_text = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   ^ ",
+    "                                          XPX                   ^XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3059,7 +5007,7 @@ level_C3_game_over_seven_text = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   * ",
+    "                                          XPX                   *XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3092,7 +5040,7 @@ level_C3_game_over_final = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   ( ",
+    "                                          XPX                   (XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3126,18 +5074,15 @@ level_C1_entry = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   $ ",
+    "                                          XPX                   $XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
 ]
 
 
-
-
-
-level_blob_monster_warning = [
-    "  X                               X       ",
+level_C1_entry_two = [
+ "  X                               X       ",
     "  X                            X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
@@ -3145,7 +5090,7 @@ level_blob_monster_warning = [
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
     "X                     X             ",
-    "X                Q      X             ",
+    "X                G      X             ",
     "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
     "                                         ",
     "                                         ",
@@ -3160,7 +5105,72 @@ level_blob_monster_warning = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   $ ",
+    "                                          XPX                   )XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+]
+
+
+
+level_C1_entry_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                H      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_blob_monster_warning = [
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                  ",
+    "X                     X             ",
+    "X                Q      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                                              XPX                   $XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                                            ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                           ",
     "                                           X"
 
 
@@ -3193,7 +5203,7 @@ level_C2_locked_door = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   = ",
+    "                                          XPX                   =XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3226,7 +5236,7 @@ level_blob_monster_death_zero = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   1 ",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3259,7 +5269,7 @@ level_blob_monster_death_one = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   2 ",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3291,7 +5301,7 @@ level_blob_monster_death_two = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   3 ",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3324,7 +5334,7 @@ level_blob_monster_death_three = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   4 ",
+    "                                          XPX                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3357,7 +5367,7 @@ level_blob_monster_death_four = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   5 ",
+    "                                          XPX                   5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3390,7 +5400,7 @@ level_blob_monster_death_final = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   6 ",
+    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3402,31 +5412,31 @@ level_blob_monster_death_final = [
 
 
 level_blob_monster_warning_one = [
-    "  X                               X       ",
-    "  X                            X       ",
+"  X                               X       ",
+    "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
     "X                     X            ",
-    "X                     X             ",
-    "X                U      X             ",
-    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-    "                                         ",
-"XXXXXXXXXXXXXXXXXXXX                          XX",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                             ",
-    "                                           X",
-    "                                           X",
-    "                                          XPX                   $ ",
-    "                                           X"
+    "X                    X             ",
+    "X               U       X           ",
+    "XXXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                      ",
+    "                                                                                                          X                                ",
+"                                                                                                         XPX                   $XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                        ",
+    "                                                                                                          X                          "
+
+
 
 
 ]
@@ -3458,7 +5468,7 @@ level_blob_monster_warning_two = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   8 ",
+    "                                          XPX                   8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3489,7 +5499,7 @@ level_exam_entrance_one = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   1 ",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3521,7 +5531,7 @@ level_exam_entrance_two = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   2 ",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3552,7 +5562,7 @@ level_exam_entrance_three = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   3 ",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3585,7 +5595,7 @@ level_exam_entrance_four = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   4 ",
+    "                                          XPX                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3618,7 +5628,7 @@ level_exam_entrance_five = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   5 ",
+    "                                          XPX                   5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3650,7 +5660,7 @@ level_exam_entrance_six = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   6 ",
+    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
     "                                           X"
 
 
@@ -3682,7 +5692,749 @@ level_exam_hand_monster_trigger_one = [
     "                                             ",
     "                                           X",
     "                                           X",
-    "                                          XPX                   7 ",
+    "                                          XPX                   7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+    "                                           X"
+
+
+]
+
+
+level_exam_hand_monster_trigger_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                H      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_exam_hand_monster_trigger_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                I      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exam_hand_monster_trigger_four = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                J      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   !XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_exam_hand_monster_trigger_five = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                K      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   @XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exam_hand_monster_trigger_six = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                L      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_exam_hand_monster_trigger_seven = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                M      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   $XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+    "                                           X"
+
+
+]
+
+
+
+level_exam_hand_monster_trigger_eight = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                N      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   %XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+    "                                           X"
+
+
+]
+
+
+level_exam_hand_monster_trigger_nine = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                O      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ^XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+    "                                           X"
+
+
+]
+
+
+level_exam_hand_monster_trigger_ten = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                Q      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   &XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exam_hand_monster_trigger_eleven = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                R      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   *XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_exam_hand_monster_trigger_twelve = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                S      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   (XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_exam_hand_monster_trigger_thirteen = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                T      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   )XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exam_blood_message_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                U      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_exam_blood_message_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                V      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   =XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_exam_blood_message_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                W      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   +XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exam_breathing_wall_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                Y      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   :XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx ",
+    "                                           X"
+
+
+]
+
+level_exam_breathing_wall_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                Z      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+    "                                           X"
+
+
+]
+
+
+level_exam_breathing_wall_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                {      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_exam_breathing_wall_four = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                }      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ~XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_exam_failed_exit = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                <      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+
+
+level_exam_exit_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                A      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+
+
+level_exam_exit_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                B      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_exam_exit_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                C      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
     "                                           X"
 
 
@@ -3697,8 +6449,2640 @@ level_exam_hand_monster_trigger_one = [
 
 
 
+
+level_blob_monster_death__hallway_two_text_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                D      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_blob_monster_death__hallway_two_text_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                E      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+
+level_C1_text_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                F      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_C1_text_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                G      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_C1_text_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                H      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+level_C2_entrance_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                I      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_C2_entrance_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                J      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   !XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_C2_entrance_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                K      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   @XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+level_C2_entrance_four = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                L      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_C2_entrance_five = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                M      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   $XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_C2_entrance_six = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                N      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   %XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_C2_entrance_seven = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                O      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ^XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_C2_entrance_eight = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                S      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   (XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+level_C2_entrance_nine = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                T      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   )XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_C2_entrance_ten = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                U      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_C2_entrance_eleven = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                V      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   =XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_C2_entrance_twelve = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                W      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   +XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_blob_monster_death_game_over_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                Q      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   &XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_bathroom_text_hallway_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                R      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   *XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_bag_monster_horizontal_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                A      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_bag_monster_horizontal_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                B      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_bag_monster_horizontal_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                C      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_bag_monster_horizontal_four = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                D      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_bag_monster_horizontal_five = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                E      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_bag_monster_horizontal_six = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                F      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_bag_monster_vertical_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                G      X             ",
+    "XXXXXXXXXXX   XXX                        ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+level_bag_monster_vertical_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                H      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_C2_find_key_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                I      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_C2_find_key_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                J      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   !XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_C2_find_key_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                K    X             ",
+    "XXXXXXXXXXX   XXX                    ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_C2_find_key_four = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                L      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   $XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_C2_find_key_five = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                M      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   %XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+level_C2_find_key_six = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                N      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ^XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_C2_find_key_seven = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                O      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   &XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_C2_find_key_eight = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                Q      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   *XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_C2_find_key_nine = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                R      X             ",
+    "XXXXXXXXXXX   XXX                      ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   (XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+
+level_exit_C2_with_key_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                S      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   )XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_exit_C2_with_key_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                T      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   _XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_exit_C2_with_key_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                U      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+level_exit_C2_with_key_four = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                V      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   =XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_C2_failed_exit = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                Z      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ~XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_hand_hall_monster_game_over = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                A      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+level_exit_to_pool_hallway_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                B      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exit_to_pool_hallway_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                C      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_exit_to_pool_hallway_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                D      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exit_to_pool_hallway_four = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                E      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_exit_to_pool_hallway_five = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                F      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exit_to_pool_hallway_six = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                G      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_blob_monster_hallway_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                H      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exit_to_pool_area_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                A      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_exit_to_pool_area_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                B      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exit_to_pool_area_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                C      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_look_at_pool_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                D      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_look_at_pool_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                E      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_look_at_pool_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                F      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_finish_game_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                G      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_finish_game_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                H      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_finish_game_three = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                I      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   9XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+level_finish_game_four = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                J      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   !XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_title_screen = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             K      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   @XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+level_blob_monster_hallway_game_over_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             A      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_blob_monster_hallway_game_over_two =[
+
+ "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             D      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+
+
+
+]
+
+
+
+
+
+level_blob_monster_hallway_game_over_three =[
+
+ "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             E      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+
+
+
+]
+
+
+
+level_spider_monster_hallway_game_over_one = [
+
+ "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             C      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+
+
+
+]
+
+
+
+
+level_spider_monster_hallway_game_over_two = [
+
+ "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             F      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+
+
+
+]
+
+
+
+
+
+
+
+level_spider_web_hallway_game_over_one = [
+
+ "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             B      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+
+
+
+]
+
+
+
+
+level_end = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             L      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_exam_room_hand_monster_game_over_one =[
+
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             A      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+]
+
+
+level_exam_room_hand_monster_game_over_two =[
+
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             B      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+]
+
+
+
+
+
+
+
+
+
+level_exam_room_hand_monster_game_over_three =[
+
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             C      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                            ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+]
+
+
+
+level_reenter_exam_room_game_over_text_one = [
+
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             A      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                            ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+]
+
+level_reenter_exam_room_game_over_text_two = [
+
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             B      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                            ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+]
+
+level_reenter_exam_room_game_over_text_three = [
+
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             C      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                            ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   3XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+]
+
+
+
+
+
+
+
+
+#
+#
+# level_step_on_glass_one = [
+#     "  X                               X       ",
+#     "  X                            X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXX                 ",
+#     "X                     X            ",
+#     "X                                  ",
+#     "X             +      X             ",
+#     "XXXXXXXXXXX   XXX                       ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+# "XXXXXXXXXXXXXXXXXXXX                          XX",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                           X",
+#     "                                           X",
+#     "                                            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+#     "                                           X",
+# "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+# "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+# "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "XPX                   `"
+#
+#
+#
+# ]
+#
+#
+#
+#
+# level_step_on_glass_two = [
+#     "  X                               X       ",
+#     "  X                            X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+#     "X                     X            ",
+#     "X                     X             ",
+#     "X             ?      X             ",
+#     "XXXXXXXXXXX   XXX                       ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+# "XXXXXXXXXXXXXXXXXXXX                          XX",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                           X",
+#     "                                           X",
+#     "                 XPX                   ~XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+#     "                                           X"
+#
+#
+# ]
+#
+#
+# level_step_on_glass_one_second_one = [
+#     "  X                               X       ",
+#     "  X                            X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+#     "X                     X            ",
+#     "X                     X             ",
+#     "X             +      X             ",
+#     "XXXXXXXXXXX   XXX                       ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+# "XXXXXXXXXXXXXXXXXXXX                          XX",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                           X",
+#     "                                           X",
+#     "                                          XPX                   VXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+#     "                                           X"
+#
+#
+# ]
+#
+#
+#
+# level_step_on_glass_one_second_two = [
+#     "  X                               X       ",
+#     "  X                            X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+#     "X                     X            ",
+#     "X                     X             ",
+#     "X             ?      X             ",
+#     "XXXXXXXXXXX   XXX                       ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+# "XXXXXXXXXXXXXXXXXXXX                          XX",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                           X",
+#     "                                           X",
+#     "                                          XPX                   WXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+#     "                                           X"
+#
+#
+# ]
+#
+#
+# level_step_on_glass_one_third_one = [
+#     "  X                               X       ",
+#     "  X                            X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+#     "X                     X            ",
+#     "X                     X             ",
+#     "X             +      X             ",
+#     "XXXXXXXXXXX   XXX                       ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+# "XXXXXXXXXXXXXXXXXXXX                          XX",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                           X",
+#     "                                           X",
+#     "                                          XPX                   YXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+#     "                                           X"
+#
+#
+# ]
+#
+#
+# level_step_on_glass_one_third_two = [
+#     "  X                               X       ",
+#     "  X                            X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+#     "X                     X            ",
+#     "X                     X             ",
+#     "X             ?      X             ",
+#     "XXXXXXXXXXX   XXX                       ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+#     "                                         ",
+# "XXXXXXXXXXXXXXXXXXXX                          XX",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                             ",
+#     "                                           X",
+#     "                                           X",
+#     "                                          XPX                   ZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+#     "                                           X"
+#
+#
+# ]
+
+
+
+
+
+
 level_C4_near_hole = [
-           "XXXXEXXXX",
+           "    X     ",
+           "XXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
            "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
            "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
            "XX     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -3720,9 +9104,9 @@ level_0 = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "XU       C  S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X  P        S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X  P        F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -3732,15 +9116,15 @@ level_0 = [
 
 
 level_after_blob_monster_warning = [
-    "  X                               X       "
+"  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "XP       C  S        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           S        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           S        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XP        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X           F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -3748,15 +9132,15 @@ level_after_blob_monster_warning = [
 
 
 level_outside_C2 = [
-    "  X                               X       "
+"  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "X        C  S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           S P       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X           F P       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -3766,15 +9150,15 @@ level_outside_C2 = [
 
 
 level_outside_C1 = [
-    "  X                               X       "
+"  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "X        C  S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           S       P XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X           F       P XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -3782,15 +9166,15 @@ level_outside_C1 = [
 
 
 level_outside_bathroom = [
-    "  X                               X       "
+"  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "X        C  S  P      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XU        C S  P      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X           F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -3806,9 +9190,9 @@ level_exit_blood_message_hallway = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "X        C  S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X        P  S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X        P  A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X           F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -3822,13 +9206,64 @@ level_player_coming_out_of_C3 = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXX",
-    "X        C  S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "X        P  S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "X        P  F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
+
+
+
+# level_after_stepping_on_glass_one = [
+#     "  X                               X       "
+#     "  X                             X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXX",
+#     "X        C _P         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+#     "X +        _          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "X          _          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+#     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+#
+# ]
+#
+#
+#
+#
+# level_after_stepping_on_glass_two = [
+#     "  X                               X       "
+#     "  X                             X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXX",
+#     "X         C _         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+#     "X +         _P        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "X           _         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+#     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+#
+# ]
+#
+#
+# level_after_stepping_on_glass_three = [
+#     "  X                               X       "
+#     "  X                             X       ",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXX",
+#     "X         C _         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+#     "X +         _         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "X           _P        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+#     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+#
+# ]
 
 
 
@@ -3839,11 +9274,11 @@ level_hallway_version_2 = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXX  XXLLXXXXXXXXXXXXXXX",
-    "X                   P XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X       B             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXXXXXXXGGGXXXZZXXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXX",
+    "X         CX<       P XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X          X>         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X       (  X?         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XXEEXXXXXXXXXGGGXXXVVXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
@@ -3855,11 +9290,44 @@ level_player_coming_out_of_C2_without_key = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXX  XXLLXXXXXXXXXXXXXXX",
-    "X                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X       B      P      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXXXXXXXGGGXXXZZXXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXX",
+    "X         CX<         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X          X>         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X       (  X?   P     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XXEEXXXXXXXXXGGGXXXVVXXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+]
+
+
+level_hall_version_two_outside_C1 = [
+    "  X                               X       "
+    "  X                             X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXX",
+    "X         CX<         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X          X>         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X       (  X?      P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XXEEXXXXXXXXXGGGXXXVVXXXX    XXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+]
+
+
+
+level_hall_version_outside_bathroom_hall_two = [
+    "  X                               X       "
+    "  X                             X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXX",
+    "X         CX<  P      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X          X>         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X       (  X?         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XXEEXXXXXXXXXGGGXXXVVXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
@@ -3873,10 +9341,10 @@ level_hallway_version_3 = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XR                   2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "XR                   4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XR             P     5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XR          G        2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "XR          H        4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XR          I  P     5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -3895,8 +9363,8 @@ level_hallway_exit = [
     "XXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "    X                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "    X  B            PXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXOXXXXXXX",
-
+    "XXXXXXXXXXXXXXOXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXX               X"
 ]
 
 hospital_bed_with_lights = []
@@ -3982,37 +9450,173 @@ levels.append(level_C3_enter_text)#45
 levels.append(level_C1_entry)#46
 levels.append(level_outside_C1)#47
 levels.append(level_C3_game_over_one_text)#48
-levels.append(level_C3_game_over_two_text)
-levels.append(level_C3_game_over_three_text)
-levels.append(level_C3_game_over_four_text)
-levels.append(level_C3_game_over_five_text)
-levels.append(level_C3_game_over_six_text)
-levels.append(level_C3_game_over_seven_text)
-levels.append(level_C3_game_over_final)
-levels.append(level_C2_locked_door)
-levels.append(level_outside_C2)
-levels.append(level_blob_monster_death_zero)
-levels.append(level_blob_monster_death_one)
-levels.append(level_blob_monster_death_two)
-levels.append(level_blob_monster_death_three)
-levels.append(level_blob_monster_death_four)
-levels.append(level_blob_monster_death_final)
-levels.append(level_blob_monster_warning)
-levels.append(level_blob_monster_warning_one)
-levels.append(level_blob_monster_warning_two)
-levels.append(level_after_blob_monster_warning)
-levels.append(level_exam_entrance_one)
-levels.append(level_exam_entrance_two)
-levels.append(level_exam_entrance_three)
-levels.append(level_exam_entrance_four)
-levels.append(level_exam_entrance_five)
-levels.append(level_exam_entrance_six)
-levels.append(level_exam_hand_monster_trigger_one)
+levels.append(level_C3_game_over_two_text)#50
+levels.append(level_C3_game_over_three_text)#51
+levels.append(level_C3_game_over_four_text)#52
+levels.append(level_C3_game_over_five_text)#53
+levels.append(level_C3_game_over_six_text)#54
+levels.append(level_C3_game_over_seven_text)#55
+levels.append(level_C3_game_over_final)#56
+levels.append(level_C2_locked_door)#57
+levels.append(level_outside_C2)#58
+levels.append(level_blob_monster_death_zero)#59
+levels.append(level_blob_monster_death_one)#60
+levels.append(level_blob_monster_death_two)#61
+levels.append(level_blob_monster_death_three)#62
+levels.append(level_blob_monster_death_four)#63
+levels.append(level_blob_monster_death_final)#64
+levels.append(level_blob_monster_warning)#65
+levels.append(level_blob_monster_warning_one)#66
+levels.append(level_blob_monster_warning_two)#67
+levels.append(level_after_blob_monster_warning)#68
+levels.append(level_exam_entrance_one)#69
+levels.append(level_exam_entrance_two)#70
+levels.append(level_exam_entrance_three)#71
+levels.append(level_exam_entrance_four)#72
+levels.append(level_exam_entrance_five)#73
+levels.append(level_exam_entrance_six)#74
+levels.append(level_exam_hand_monster_trigger_one)#75
+levels.append(level_exam_hand_monster_trigger_two)#76
+levels.append(level_exam_hand_monster_trigger_three)#77
+levels.append(level_exam_hand_monster_trigger_four)#78
+levels.append(level_exam_hand_monster_trigger_five)#79
+levels.append(level_exam_hand_monster_trigger_six)#80
+levels.append(level_exam_hand_monster_trigger_seven)#81
+levels.append(level_exam_hand_monster_trigger_eight)#82
+levels.append(level_exam_hand_monster_trigger_nine)#83
+levels.append(level_exam_hand_monster_trigger_ten)#84
+levels.append(level_exam_hand_monster_trigger_eleven)#85
+levels.append(level_exam_hand_monster_trigger_twelve)#86
+levels.append(level_exam_hand_monster_trigger_thirteen)#87
+levels.append(level_exam_blood_message_one)#88
+levels.append(level_exam_blood_message_two)#89
+levels.append(level_exam_blood_message_three)#90
+levels.append(level_examination_room_near_message)#91
+levels.append(level_exam_breathing_wall_one)#92
+levels.append(level_exam_breathing_wall_two)#93
+levels.append(level_exam_breathing_wall_three)#94
+levels.append(level_exam_breathing_wall_four)#95
+levels.append(level_examination_room_near_closed_eye)
+levels.append(level_exam_failed_exit)
+levels.append(level_exam_exit_one)
+levels.append(level_exam_exit_two)
+levels.append(level_exam_exit_three)
+levels.append(level_blob_monster_death__hallway_two_text_one)
+levels.append(level_blob_monster_death__hallway_two_text_two)
+levels.append(level_blob_monster_death_game_over_two)
+levels.append(level_C2_entrance_one)
+levels.append(level_C2_entrance_two)
+levels.append(level_C2_entrance_three)
+levels.append(level_C2_entrance_four)
+levels.append(level_C2_entrance_five)
+levels.append(level_C2_entrance_six)
+levels.append(level_C2_entrance_seven)
+levels.append(level_C2_entrance_eight)
+levels.append(level_C2_entrance_nine)
+levels.append(level_C2_entrance_ten)
+levels.append(level_C2_entrance_eleven)
+levels.append(level_C2_entrance_twelve)
+levels.append(level_C1_text_one)
+levels.append(level_C1_text_two)
+levels.append(level_C1_text_three)
+levels.append(level_hall_version_two_outside_C1)
+levels.append(level_bathroom_text_hallway_two)
+levels.append(level_hall_version_outside_bathroom_hall_two)
+
+levels.append(level_bag_monster_horizontal_one)
+levels.append(level_bag_monster_horizontal_two)
+levels.append(level_bag_monster_horizontal_three)
+levels.append(level_bag_monster_horizontal_four)
+levels.append(level_bag_monster_horizontal_five)
+levels.append(level_bag_monster_horizontal_six)
+levels.append(level_bag_monster_vertical_one)
+levels.append(level_bag_monster_vertical_two)
+
+levels.append(level_C2_find_key_one)
+levels.append(level_C2_find_key_two)
+levels.append(level_C2_find_key_three)
+levels.append(level_C2_find_key_four)
+levels.append(level_C2_find_key_five)
+levels.append(level_C2_find_key_six)
+levels.append(level_C2_find_key_seven)
+levels.append(level_C2_find_key_eight)
+levels.append(level_C2_find_key_nine)
+levels.append(level_exit_C2_with_key_one)
+levels.append(level_exit_C2_with_key_two)
+levels.append(level_exit_C2_with_key_three)
+levels.append(level_exit_C2_with_key_four)
+levels.append(level_C2_failed_exit)
+levels.append(level_hand_hall_monster_game_over)
+levels.append(level_exit_to_pool_hallway_one)
+levels.append(level_exit_to_pool_hallway_two)
+levels.append(level_exit_to_pool_hallway_three)
+levels.append(level_exit_to_pool_hallway_four)
+levels.append(level_exit_to_pool_hallway_five)
+levels.append(level_exit_to_pool_hallway_six)
+
+
+levels.append(level_blob_monster_hallway_one)
+levels.append(level_exit_to_pool_area_one)
+levels.append(level_exit_to_pool_area_two)
+levels.append(level_exit_to_pool_area_three)
+
+levels.append(level_look_at_pool_one)
+levels.append(level_look_at_pool_two)
+levels.append(level_look_at_pool_three)
+
+
+levels.append(level_finish_game_one)
+levels.append(level_finish_game_two)
+levels.append(level_finish_game_three)
+levels.append(level_finish_game_four)
+
+levels.append(level_title_screen)
+levels.append(level_end)
+
+# levels.append(level_step_on_glass_one)#163
+# levels.append(level_step_on_glass_one_second_one)#164
+# levels.append(level_step_on_glass_one_third_one)#165
+#
+#
+# levels.append(level_step_on_glass_two)#166
+#
+#
+#
+#
+#
 
 
 
+levels.append(level_blob_monster_hallway_game_over_one)#151
+levels.append(level_blob_monster_hallway_game_over_two)#152
+levels.append(level_spider_monster_hallway_game_over_one)#153
+levels.append(level_spider_web_hallway_game_over_one)#154
+
+levels.append(level_C1_entry_two)#155
+levels.append(level_C1_entry_three)#156
+
+levels.append(level_blob_monster_hallway_game_over_three)#157
+levels.append(level_spider_monster_hallway_game_over_two)#158
+levels.append(level_exam_room_hand_monster_game_over_one)
+levels.append(level_exam_room_hand_monster_game_over_two)
+levels.append(level_exam_room_hand_monster_game_over_three)
 
 
+
+levels.append(level_reenter_exam_room_game_over_text_one)
+levels.append(level_reenter_exam_room_game_over_text_two)
+levels.append(level_reenter_exam_room_game_over_text_three)
+
+
+
+#levels.append(level_step_on_glass_one_second_two)#167
+#
+#
+# levels.append(level_step_on_glass_one_third_two)#168
+#
+# levels.append(level_after_stepping_on_glass_one)#169
+# levels.append(level_after_stepping_on_glass_two)#170
+# levels.append(level_after_stepping_on_glass_three)#171
 
 
 
@@ -4023,9 +9627,21 @@ dead_bodies = []
 blob_monster_warnings = []
 blob_monster_warning_doors = []
 broken_glasses = []
+broken_glass_twos = []
+broken_glass_threes = []
+monster_twos = []
+glass_pile_ones = []
+glass_pile_twos = []
+glass_pile_threes = []
+C1_second_doors = []
+bathroom_hall_twos = []
+bathroom_text_locked_hall_twos = []
+bathroom_door_exit_text_second_hall_texts = []
+stepped_on_glass_inactives = []
+monster_that_moves = []
 
-
-
+exam_room_reenter_door_ones = []
+exam_room_reenter_door_twos = []
 
 
 #first hallway with blob monster
@@ -4034,7 +9650,7 @@ def setup_maze_0(level):
 
 
     for y in range (len(level)):
-        for x in range (len(level[y])):
+        for x in range(len(level[y])):
             character = level[y][x]
 
             screen_x= -60 + (x*24)
@@ -4049,6 +9665,14 @@ def setup_maze_0(level):
             if character == "P":
                 player.goto(screen_x, screen_y)
 
+
+
+            if character == "W":
+                exam_room_reenter_door_ones.append(Door_2(screen_x, screen_y))
+
+
+            if character == "N":
+                exam_room_reenter_door_twos.append(Door_2(screen_x, screen_y))
 
 
             if character == "B":
@@ -4069,18 +9693,30 @@ def setup_maze_0(level):
 
                 doors.append(Door(screen_x, screen_y))
 
+            if character == "L":
+                exam_entrances.append(Door_to_enter_examination_room(screen_x, screen_y))
+
 
             if character == "E":
                 other.append(Door_2(screen_x, screen_y))
 
+            if character == "M":
+                bathroom_hall_twos.append(Door_2(screen_x, screen_y))
+
+
             if character == "T":
                 secondroomentrances.append(DoortoenterC3(screen_x, screen_y))
 
-            if character == "L":
-                exam_entrances.append(Door_to_enter_examination_room(screen_x, screen_y))
+
 
             if character == "S":
                 broken_glasses.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "A":
+                broken_glass_twos.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "F":
+                 broken_glass_threes.append(Broken_Glass(screen_x, screen_y))
 
             if character == "G":
                 C2_entrances.append(Door_to_Enter_C2(screen_x, screen_y))
@@ -4088,14 +9724,37 @@ def setup_maze_0(level):
             if character == "H":
                 bathroom_entrances.append(Door_2(screen_x, screen_y))
 
+            if character == "_":
+                stepped_on_glass_inactives.append(Broken_Glass(screen_x, screen_y))
+
             if character == "C":
                 blood_messages_triggers.append(C4_threatening_message(screen_x, screen_y))
 
             if character == "Z":
                 C1_doors.append(Door_2(screen_x, screen_y))
 
+
+            if character == "V":
+                C1_second_doors.append(Door_2(screen_x, screen_y))
+
             if character == ")":
                 C2_password_lockeds.append(Door_2(screen_x, screen_y))
+
+
+            if character == "(":
+                monster_twos.append(Blobmonster(screen_x, screen_y))
+
+            if character == "<":
+                glass_pile_ones.append(Broken_Glass(screen_x, screen_y))
+
+            if character == ">":
+                glass_pile_twos.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "?":
+                glass_pile_threes.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "+":
+                monster_that_moves.append(Blobmonster(screen_x, screen_y))
 
 
 def setup_maze_without_flashlight(level):
@@ -4159,7 +9818,7 @@ def setup_maze(level):
             character = level[y][x]
 
             screen_x= -92 + (x*24)
-            screen_y= -130 - (y*24)
+            screen_y= -110 - (y*24)
 
 
             if character == "X":
@@ -4211,6 +9870,19 @@ def setup_maze(level):
 
 
 #last maze of the game
+
+
+
+
+
+glass_pieces_final_ones = []
+glass_pieces_final_twos = []
+glass_pieces_final_threes = []
+
+
+
+
+
 def setup_maze_1(level):
 
     for y in range (len(level)):
@@ -4246,6 +9918,18 @@ def setup_maze_1(level):
             if character == "R":
                 exit_hallways.append(Door_to_Exit_Hallway(screen_x, screen_y))
 
+            if character == "Y":
+                dead_bodies.append(Dead_Body(screen_x, screen_y))
+
+            if character == "G":
+                glass_pieces_final_ones.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "H":
+                glass_pieces_final_twos.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "I":
+                glass_pieces_final_threes.append(Broken_Glass(screen_x, screen_y))
+
             if character == "Z":
                 handmonsters.append(Handmonster(screen_x, screen_y))
 
@@ -4257,6 +9941,16 @@ def setup_maze_1(level):
 
             if character == "5":
                 hand_monster_hallways3.append(Hand_Monster_Hallway(screen_x, screen_y))
+
+
+
+
+
+monsters_last_hallways = []
+spiderweb_last_hallways = []
+
+
+
 
 
 def setup_maze_exit(level):
@@ -4291,17 +9985,88 @@ def setup_maze_exit(level):
                 spider_monster_hallways3.append(Spidermonster(screen_x, screen_y))
 
             if character == "W":
-                spiderwebs.append(Spiderwebs(screen_x, screen_y))
+                spiderweb_last_hallways.append(Spiderwebs(screen_x, screen_y))
 
             if character == "B":
-                monsters.append(Blobmonster(screen_x, screen_y))
-
+                monsters_last_hallways.append(Blobmonster(screen_x, screen_y))
 
             if character == "O":
                 exit_to_pools.append(Door_to_Exit_to_Pool_Area(screen_x, screen_y))
 
 
 
+
+
+blob_monster_hallway_game_over_texts = []
+blob_monster_hallway_game_over_two_texts = []
+blob_monster_hallway_game_over_three_texts = []
+spider_web_hallway_game_over_texts = []
+spider_monster_hallway_game_over_text_ones = []
+spider_monster_hallway_game_over_text_twos = []
+
+blob_monster_hallway_game_over_text_exits = []
+spider_web_hallway_game_over_text_exits = []
+spider_monster_hallway_game_over_text_exit_ones = []
+spider_monster_hallway_game_over_text_exit_twos = []
+blob_monster_hallway_game_over_text_exit_twos = []
+blob_monster_hallway_game_over_text_exit_threes = []
+
+
+
+def pool_hallway_game_over(level):
+
+    for y in range (len(level)):
+        for x in range (len(level[y])):
+            character = level[y][x]
+
+            screen_x= -300 + (x*24)
+            screen_y= 205 - (y*24)
+
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+            if character == "A":
+                blob_monster_hallway_game_over_texts.append(Blob_Monster_Pool_Hallway_One(screen_x, screen_y))
+
+            if character == "D":
+                blob_monster_hallway_game_over_two_texts.append(Blob_Monster_Pool_Hallway_Two(screen_x, screen_y))
+
+            if character == "E":
+                blob_monster_hallway_game_over_three_texts.append(Blob_Monster_Pool_Hallway_Three(screen_x, screen_y))
+
+            if character == "B":
+                spider_web_hallway_game_over_texts.append((screen_x, screen_y))
+
+            if character == "C":
+                spider_monster_hallway_game_over_text_ones.append(Spider_Last_Hallway_Monster_Game_Over_One(screen_x, screen_y))
+
+            if character == "F":
+                spider_monster_hallway_game_over_text_twos.append(Spider_Last_Hallway_Monster_Game_Over_Two(screen_x, screen_y))
+
+            if character == "1":
+                blob_monster_hallway_game_over_text_exits.append(Door_2(screen_x, screen_y))
+
+            if character == "4":
+                blob_monster_hallway_game_over_text_exit_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "2":
+                spider_web_hallway_game_over_text_exits.append(Door_2(screen_x, screen_y))
+
+            if character == "3":
+                spider_monster_hallway_game_over_text_exit_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "6":
+                spider_monster_hallway_game_over_text_exit_twos.append(Door_2(screen_x, screen_y))
+
+
+            if character == "5":
+                blob_monster_hallway_game_over_text_exit_threes.append(Door_2(screen_x, screen_y))
 
 
 
@@ -4354,7 +10119,7 @@ def setup_maze_C3(level):
             character = level[y][x]
 
             screen_x= 36 + (x*24)
-            screen_y= -130 - (y*24)
+            screen_y= -110 - (y*24)
 
 
             if character == "X":
@@ -4384,6 +10149,12 @@ def setup_maze_C3(level):
 
 
 
+
+
+wheelchairs = []
+pill_ones = []
+
+
 def setup_maze_C2(level):
 
     for y in range (len(level)):
@@ -4391,7 +10162,7 @@ def setup_maze_C2(level):
             character = level[y][x]
 
             screen_x= 176 + (x*24)
-            screen_y= -130 - (y*24)
+            screen_y= -110 - (y*24)
 
 
             if character == "X":
@@ -4411,6 +10182,12 @@ def setup_maze_C2(level):
             if character == "K":
                 keys.append(Key(screen_x, screen_y))
 
+            if character == "L":
+                wheelchairs.append(Wheelchair(screen_x, screen_y))
+
+            if character == "M":
+                pill_ones.append(Medicines(screen_x, screen_y))
+
             if character == "U":
                 bodybagmonstermovings.append(Body_Bag_monster_moving(screen_x, screen_y))
             if character == "J":
@@ -4427,7 +10204,11 @@ def setup_maze_C2(level):
 
 
 
-
+big_eyes = []
+exam_blood_messages = []
+closed_eyes = []
+hospitalbeds3 = []
+exam_room_failed_exits = []
 
 
 
@@ -4438,7 +10219,7 @@ def setup_maze_Examination_room(level):
             character = level[y][x]
 
             screen_x= 300 + (x*24)
-            screen_y= 180 - (y*24)
+            screen_y= 200 - (y*24)
 
 
             if character == "X":
@@ -4450,12 +10231,15 @@ def setup_maze_Examination_room(level):
                 player.goto(screen_x, screen_y)
 
             if character == "C":
-                hospitalbeds2.append(Hospital_Bed(screen_x, screen_y))
+                hospitalbeds3.append(Hospital_Bed(screen_x, screen_y))
 
             if character == "Y":
                 triggerhandmonsters.append(Trigger_Hand_Monster(screen_x, screen_y))
 
-            if character == "Z":
+            if character == "B":
+                big_eyes.append(Exam_Room_Eye(screen_x, screen_y))
+
+            if character == "*":
                 handmonsters.append(Handmonster(screen_x, screen_y))
 
             if character == "8":
@@ -4487,6 +10271,15 @@ def setup_maze_Examination_room(level):
 
             if character == "A":
                 exam_exits.append(Door_to_exit_examination_room(screen_x, screen_y))
+
+            if character == "D":
+                exam_blood_messages.append(C4_threatening_message(screen_x, screen_y))
+
+            if character == "+":
+                closed_eyes.append(Exam_Room_Closed_Eye(screen_x, screen_y))
+
+            if character == "Z":
+                exam_room_failed_exits.append(Door_2(screen_x, screen_y))
 
             
 
@@ -4680,7 +10473,11 @@ hallway_exit_bathroom_entrances = []
 C3_exit_to_hallways = []
 C3_exit_text_ends = []
 C1_entry_texts = []
+C1_entry_text_twos = []
+C1_entry_text_threes = []
 C1_exit_entry_texts = []
+C1_exit_entry_text_twos = []
+C1_exit_entry_text_threes = []
 C3_game_over_ones = []
 C3_game_over_twos = []
 C3_game_over_threes = []
@@ -4700,7 +10497,16 @@ C3_final_door_game_overs = []
 C2_password_lockeds = []
 C2_door_text_exits = []
 C2_locked_texts = []
+step_on_glass_ones = []
+step_on_glass_twos = []
+step_on_glass_exit_ones = []
+step_on_glass_exit_twos = []
+step_on_glass_one_second_ones = []
+step_on_glass_one_second_twos = []
+step_on_glass_one_third_ones = []
+step_on_glass_one_third_twos = []
 
+monsters_last_hallways = []
 
 def hallway_one_text_level(level):
     for y in range(len(level)):
@@ -4764,7 +10570,20 @@ def hallway_one_text_level(level):
                 C3_final_game_overs.append(C3_Game_Over_Final(screen_x, screen_y))
 
             if character == "Q":
-                C1_entry_texts.append(C1_Entry_Text(screen_x, screen_y))
+                C1_entry_texts.append(C1_Locked_Text_One(screen_x, screen_y))
+
+            if character == "G":
+                C1_entry_text_twos.append(C1_Locked_Text_Two(screen_x, screen_y))
+
+            if character == "H":
+                C1_entry_text_threes.append(C1_Locked_Text_Three(screen_x, screen_y))
+
+            if character == "+":
+                step_on_glass_ones.append(Step_On_Glass_One(screen_x, screen_y))
+
+            if character == "?":
+                step_on_glass_twos.append(Step_On_Glass_Two(screen_x, screen_y))
+
 
             if character == "-":
                 C2_locked_texts.append(C2_Locked(screen_x, screen_y))
@@ -4793,6 +10612,12 @@ def hallway_one_text_level(level):
             if character == "$":
                 C1_exit_entry_texts.append(Door_2(screen_x, screen_y))
 
+            if character == ")":
+                C1_exit_entry_text_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "|":
+                C1_exit_entry_text_threes.append(Door_2(screen_x, screen_y))
+
             if character == "8":
                 C3_exit_door_ones.append(Door_2(screen_x, screen_y))
 
@@ -4820,6 +10645,24 @@ def hallway_one_text_level(level):
 
             if character == "=":
                 C2_door_text_exits.append(Door_2(screen_x, screen_y))
+
+            if character == "`":
+                step_on_glass_exit_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "~":
+                step_on_glass_exit_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "V":
+                step_on_glass_one_second_ones.append(Step_On_Glass_One(screen_x, screen_y))
+
+            if character == "W":
+                step_on_glass_one_second_twos.append(Step_On_Glass_Two(screen_x, screen_y))
+
+            if character == "Y":
+                step_on_glass_one_third_ones.append(Step_On_Glass_One(screen_x, screen_y))
+
+            if character == "Z":
+                step_on_glass_one_third_twos.append(Step_On_Glass_Two(screen_x, screen_y))
 
 
 
@@ -4918,6 +10761,53 @@ def blob_monster_one_text_level(level):
             if character == "$":
                 blob_monster_warning_text_exits.append(Door_2(screen_x, screen_y))
 
+            if character == "Y":
+                dead_bodies.append(Dead_Body(screen_x, screen_y))
+
+
+
+            if character == "U":
+                blob_monster_warning_doors.append(Door_2(screen_x, screen_y))
+
+
+            if character == "D":
+
+                doors.append(Door(screen_x, screen_y))
+
+
+            if character == "E":
+                other.append(Door_2(screen_x, screen_y))
+
+            if character == "T":
+                secondroomentrances.append(DoortoenterC3(screen_x, screen_y))
+
+            if character == "L":
+                exam_entrances.append(Door_to_enter_examination_room(screen_x, screen_y))
+
+            if character == "S":
+                broken_glasses.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "A":
+                broken_glass_twos.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "F":
+                 broken_glass_threes.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "G":
+                C2_entrances.append(Door_to_Enter_C2(screen_x, screen_y))
+
+            if character == "H":
+                bathroom_entrances.append(Door_2(screen_x, screen_y))
+
+            if character == "C":
+                blood_messages_triggers.append(C4_threatening_message(screen_x, screen_y))
+
+            if character == "Z":
+                C1_doors.append(Door_2(screen_x, screen_y))
+
+            if character == ")":
+                C2_password_lockeds.append(Door_2(screen_x, screen_y))
+
 
 
 
@@ -4935,6 +10825,48 @@ exam_room_exit_text_threes = []
 exam_room_exit_text_fours = []
 exam_room_exit_text_fives = []
 exam_room_exit_text_sixes = []
+exam_room_hand_trigger_ones = []
+exam_room_hand_trigger_twos = []
+exam_room_hand_trigger_threes = []
+exam_room_hand_trigger_fours = []
+exam_room_hand_trigger_fives = []
+exam_room_hand_trigger_sixes = []
+exam_room_hand_trigger_sevens = []
+exam_room_hand_trigger_eights = []
+exam_room_hand_trigger_nines = []
+exam_room_hand_trigger_tens = []
+exam_room_hand_trigger_elevens = []
+exam_room_hand_trigger_twelves = []
+exam_room_hand_trigger_thirteens = []
+exam_room_exit_hand_trigger_ones = []
+exam_room_exit_hand_trigger_twos = []
+exam_room_exit_hand_trigger_threes = []
+exam_room_exit_hand_trigger_fours = []
+exam_room_exit_hand_trigger_fives = []
+exam_room_exit_hand_trigger_sixes = []
+exam_room_exit_hand_trigger_sevens = []
+exam_room_exit_hand_trigger_eights = []
+exam_room_exit_hand_trigger_nines = []
+exam_room_exit_hand_trigger_tens = []
+exam_room_exit_hand_trigger_elevens = []
+exam_room_exit_hand_trigger_twelves = []
+exam_room_exit_hand_trigger_thirteens = []
+exam_room_blood_message_ones = []
+exam_room_blood_message_twos = []
+exam_room_blood_message_threes = []
+exam_room_blood_message_exit_ones =[]
+exam_room_blood_message_exit_twos = []
+exam_room_blood_message_exit_threes = []
+exam_room_breathing_wall_ones = []
+exam_room_breathing_wall_twos = []
+exam_room_breathing_wall_threes = []
+exam_room_breathing_wall_fours = []
+exam_room_breathing_wall_text_exit_ones = []
+exam_room_breathing_wall_text_exit_twos = []
+exam_room_breathing_wall_text_exit_threes = []
+exam_room_breathing_wall_text_exit_fours = []
+exam_room_failed_texts = []
+exam_room_failed_text_doors = []
 
 
 def exam_room_text_level(level):
@@ -4972,6 +10904,67 @@ def exam_room_text_level(level):
             if character == "F":
                 exam_room_enter_text_sixes.append(Exam_Entrance_Text_Six(screen_x, screen_y))
 
+            if character == "G":
+                exam_room_hand_trigger_ones.append(Exam_Room_Hand_Trigger_One(screen_x, screen_y))
+
+            if character == "H":
+                exam_room_hand_trigger_twos.append(Exam_Room_Hand_Trigger_Two(screen_x, screen_y))
+
+            if character == "I":
+                exam_room_hand_trigger_threes.append(Exam_Room_Hand_Trigger_Three(screen_x, screen_y))
+
+            if character == "J":
+                exam_room_hand_trigger_fours.append(Exam_Room_Hand_Trigger_Four(screen_x, screen_y))
+
+            if character == "K":
+                exam_room_hand_trigger_fives.append(Exam_Room_Hand_Trigger_Five(screen_x, screen_y))
+
+            if character == "L":
+                exam_room_hand_trigger_sixes.append(Exam_Room_Hand_Trigger_Six(screen_x, screen_y))
+
+            if character == "M":
+                exam_room_hand_trigger_sevens.append(Exam_Room_Hand_Trigger_Seven(screen_x, screen_y))
+
+            if character == "N":
+                exam_room_hand_trigger_eights.append(Exam_Room_Hand_Trigger_Eight(screen_x, screen_y))
+
+            if character == "O":
+                exam_room_hand_trigger_nines.append(Exam_Room_Hand_Trigger_Nine(screen_x, screen_y))
+
+            if character == "Q":
+                exam_room_hand_trigger_tens.append(Exam_Room_Hand_Trigger_Ten(screen_x, screen_y))
+
+            if character == "R":
+                exam_room_hand_trigger_elevens.append(Exam_Room_Hand_Trigger_Eleven(screen_x, screen_y))
+
+            if character == "S":
+                exam_room_hand_trigger_twelves.append(Exam_Room_Hand_Trigger_Twelve(screen_x, screen_y))
+
+            if character == "T":
+                exam_room_hand_trigger_thirteens.append(Exam_Room_Hand_Trigger_Thirteen(screen_x, screen_y))
+
+            if character == "U":
+                exam_room_blood_message_ones.append(Exam_Room_Blood_Message_One(screen_x, screen_y))
+
+            if character == "V":
+                exam_room_blood_message_twos.append(Exam_Room_Blood_Message_Two(screen_x, screen_y))
+
+            if character == "W":
+                exam_room_blood_message_threes.append(Exam_Room_Blood_Message_Three(screen_x, screen_y))
+
+            if character == "Y":
+                exam_room_breathing_wall_ones.append(Exam_Room_Hand_Breathing_Wall_One(screen_x, screen_y))
+
+            if character == "Z":
+                exam_room_breathing_wall_twos.append(Exam_Room_Hand_Breathing_Wall_Two(screen_x, screen_y))
+
+            if character == "{":
+                exam_room_breathing_wall_threes.append(Exam_Room_Hand_Breathing_Wall_Three(screen_x, screen_y))
+
+            if character == "}":
+                exam_room_breathing_wall_fours.append(Exam_Room_Hand_Breathing_Wall_Four(screen_x, screen_y))
+
+
 
             if character == "1":
                 exam_room_exit_text_ones.append(Door_2(screen_x, screen_y))
@@ -4995,6 +10988,121 @@ def exam_room_text_level(level):
             if character == "6":
                 exam_room_exit_text_sixes.append(Door_2(screen_x, screen_y))
 
+            if character == "7":
+                exam_room_exit_hand_trigger_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "8":
+                exam_room_exit_hand_trigger_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "9":
+                exam_room_exit_hand_trigger_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "!":
+                exam_room_exit_hand_trigger_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "@":
+                exam_room_exit_hand_trigger_fives.append(Door_2(screen_x, screen_y))
+
+            if character == "#":
+                exam_room_exit_hand_trigger_sixes.append(Door_2(screen_x, screen_y))
+
+            if character == "$":
+                exam_room_exit_hand_trigger_sevens.append(Door_2(screen_x, screen_y))
+
+            if character == "%":
+                exam_room_exit_hand_trigger_eights.append(Door_2(screen_x, screen_y))
+
+            if character == "^":
+                exam_room_exit_hand_trigger_nines.append(Door_2(screen_x, screen_y))
+
+            if character == "&":
+                exam_room_exit_hand_trigger_tens.append(Door_2(screen_x, screen_y))
+
+            if character == "*":
+                exam_room_exit_hand_trigger_elevens.append(Door_2(screen_x, screen_y))
+
+            if character == "(":
+                exam_room_exit_hand_trigger_twelves.append(Door_2(screen_x, screen_y))
+
+            if character == ")":
+                exam_room_exit_hand_trigger_thirteens.append(Door_2(screen_x, screen_y))
+
+            if character == "-":
+                exam_room_blood_message_exit_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "=":
+                exam_room_blood_message_exit_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "+":
+                exam_room_blood_message_exit_threes.append(Door_2(screen_x, screen_y))
+
+            if character == ":":
+                exam_room_breathing_wall_text_exit_ones.append(Door_2(screen_x, screen_y))
+
+            if character == ";":
+                exam_room_breathing_wall_text_exit_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "'":
+                exam_room_breathing_wall_text_exit_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "~":
+                exam_room_breathing_wall_text_exit_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "<":
+                exam_room_failed_texts.append(Exam_Room_Failed_Exit(screen_x, screen_y))
+
+            if character == ">":
+                exam_room_failed_text_doors.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+
+exam_room_hand_game_over_ones = []
+exam_room_hand_game_over_twos = []
+exam_room_hand_game_over_threes = []
+exam_room_game_over_exit_ones = []
+exam_room_game_over_exit_twos = []
+exam_room_game_over_exit_threes = []
+
+
+
+
+def exam_room_text_game_over_level(level):
+    for y in range(len(level)):
+        for x in range(len(level[y])):
+            character = level[y][x]
+
+            screen_x = -350 + (x * 24)
+            screen_y = 205 - (y * 24)
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+
+            if character == "A":
+                exam_room_hand_game_over_ones.append(Exam_Room_Hand_Game_Over_One(screen_x, screen_y))
+
+            if character == "B":
+                exam_room_hand_game_over_twos.append(Exam_Room_Hand_Game_Over_Two(screen_x, screen_y))
+
+            if character == "C":
+                exam_room_hand_game_over_threes.append(Exam_Room_Hand_Game_Over_Three(screen_x, screen_y))
+
+            if character == "1":
+                exam_room_game_over_exit_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "2":
+                exam_room_game_over_exit_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "3":
+                exam_room_game_over_exit_threes.append(Door_2(screen_x, screen_y))
 
 
 
@@ -5009,6 +11117,716 @@ def exam_room_text_level(level):
 
 
 
+exam_exit_text_ones = []
+exam_exit_text_twos = []
+exam_exit_text_threes = []
+exam_exit_door_ones = []
+exam_exit_door_twos = []
+exam_exit_door_threes = []
+blob_monster_hallway_two_death_ones = []
+blob_monster_hallway_two_death_twos = []
+blob_monster_hall_death_two_game_over_ones = []
+blob_monster_hall_death_two_game_over_twos = []
+C1_locked_text_ones = []
+C1_locked_text_twos = []
+C1_locked_text_threes = []
+C1_locked_one_door_text_ones = []
+C1_locked_one_door_text_twos = []
+C1_locked_one_door_text_threes = []
+C2_entrance_text_ones = []
+C2_entrance_text_twos = []
+C2_entrance_text_threes = []
+C2_entrance_text_fours = []
+C2_entrance_text_fives = []
+C2_entrance_text_sixes = []
+C2_entrance_text_sevens = []
+C2_entrance_text_eights = []
+C2_entrance_text_nines = []
+C2_entrance_text_tens = []
+C2_entrance_text_elevens = []
+C2_entrance_text_twelves = []
+C2_entrance_door_text_ones = []
+C2_entrance_door_text_twos = []
+C2_entrance_door_text_threes = []
+C2_entrance_door_text_fours = []
+C2_entrance_door_text_fives = []
+C2_entrance_door_text_sixes = []
+C2_entrance_door_text_sevens = []
+C2_entrance_door_text_eights = []
+C2_entrance_door_text_nines = []
+C2_entrance_door_text_tens = []
+C2_entrance_door_text_elevens = []
+C2_entrance_door_text_twelves = []
+blob_monster_second_deaths = []
+blob_monster_door_second_deaths = []
+
+exam_room_reenter_text_ones = []
+
+
+
+
+
+def hallway_version_two(level):
+    for y in range(len(level)):
+        for x in range(len(level[y])):
+            character = level[y][x]
+
+            screen_x = -350 + (x * 24)
+            screen_y = 205 - (y * 24)
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+
+            if character == "A":
+                exam_exit_text_ones.append(Exam_Room_Exit_One(screen_x, screen_y))
+
+            if character == "B":
+                exam_exit_text_twos.append(Exam_Room_Exit_Two(screen_x, screen_y))
+
+            if character == "C":
+                exam_exit_text_threes.append(Exam_Room_Exit_Three(screen_x, screen_y))
+
+            if character == "D":
+                blob_monster_hallway_two_death_ones.append(Blob_Monster_Hall_Two_Game_Over_One(screen_x, screen_y))
+
+            if character == "E":
+                blob_monster_hallway_two_death_twos.append(Blob_Monster_Hall_Two_Game_Over_Two(screen_x, screen_y))
+
+            if character == "F":
+                C1_locked_text_ones.append(C1_Locked_Text_One(screen_x, screen_y))
+
+
+            if character == "G":
+                C1_locked_text_twos.append(C1_Locked_Text_Two(screen_x, screen_y))
+
+
+            if character == "H":
+                C1_locked_text_threes.append(C1_Locked_Text_Three(screen_x, screen_y))
+
+            if character == "I":
+                C2_entrance_text_ones.append(C2_Entrance_Text_One(screen_x, screen_y))
+
+            if character == "J":
+                C2_entrance_text_twos.append(C2_Entrance_Text_Two(screen_x, screen_y))
+
+            if character == "K":
+                C2_entrance_text_threes.append(C2_Entrance_Text_Three(screen_x, screen_y))
+
+
+            if character == "L":
+                C2_entrance_text_fours.append(C2_Entrance_Text_Four(screen_x, screen_y))
+
+
+            if character == "M":
+                C2_entrance_text_fives.append(C2_Entrance_Text_Five(screen_x, screen_y))
+
+
+            if character == "N":
+                C2_entrance_text_sixes.append(C2_Entrance_Text_Six(screen_x, screen_y))
+
+
+            if character == "O":
+                C2_entrance_text_sevens.append(C2_Entrance_Text_Seven(screen_x, screen_y))
+
+            if character == "S":
+                C2_entrance_text_eights.append(C2_Entrance_Text_Eight(screen_x, screen_y))
+
+            if character == "T":
+                C2_entrance_text_nines.append(C2_Entrance_Text_Nine(screen_x, screen_y))
+
+            if character == "U":
+                C2_entrance_text_tens.append(C2_Entrance_Text_Ten(screen_x, screen_y))
+
+            if character == "V":
+                C2_entrance_text_elevens.append(C2_Entrance_Text_Eleven(screen_x, screen_y))
+
+            if character == "W":
+                C2_entrance_text_twelves.append(C2_Entrance_Text_Twelve(screen_x, screen_y))
+
+            if character == "Q":
+                blob_monster_second_deaths.append(Blob_Monster_Death_Final(screen_x, screen_y))
+
+            if character == "R":
+                bathroom_text_locked_hall_twos.append(Bathroom_Text(screen_x, screen_y))
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if character == "1":
+                exam_exit_door_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "2":
+                exam_exit_door_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "3":
+                exam_exit_door_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "4":
+                blob_monster_hall_death_two_game_over_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "5":
+                blob_monster_hall_death_two_game_over_twos.append(Door_2(screen_x, screen_y))
+
+
+            if character == "6":
+                C1_locked_one_door_text_ones.append(Door_2(screen_x, screen_y))
+
+
+            if character == "7":
+                C1_locked_one_door_text_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "8":
+                C1_locked_one_door_text_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "9":
+                C2_entrance_door_text_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "!":
+                C2_entrance_door_text_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "@":
+                C2_entrance_door_text_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "#":
+                C2_entrance_door_text_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "$":
+                C2_entrance_door_text_fives.append(Door_2(screen_x, screen_y))
+
+            if character == "%":
+                C2_entrance_door_text_sixes.append(Door_2(screen_x, screen_y))
+
+            if character == "^":
+                C2_entrance_door_text_sevens.append(Door_2(screen_x, screen_y))
+
+            if character == "(":
+                C2_entrance_door_text_eights.append(Door_2(screen_x, screen_y))
+
+            if character == ")":
+                C2_entrance_door_text_nines.append(Door_2(screen_x, screen_y))
+
+            if character == "-":
+                C2_entrance_door_text_tens.append(Door_2(screen_x, screen_y))
+
+            if character == "=":
+                C2_entrance_door_text_elevens.append(Door_2(screen_x, screen_y))
+
+            if character == "+":
+                C2_entrance_door_text_twelves.append(Door_2(screen_x, screen_y))
+
+            if character == "&":
+                blob_monster_door_second_deaths.append(Door_2(screen_x, screen_y))
+
+            if character == "*":
+                bathroom_door_exit_text_second_hall_texts.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body_bag_monster_death_horizontal_ones = []
+body_bag_monster_death_horizontal_twos = []
+body_bag_monster_death_horizontal_threes = []
+body_bag_monster_death_horizontal_fours = []
+body_bag_monster_death_horizontal_fives = []
+body_bag_monster_death_horizontal_sixes = []
+body_bag_door_exit_horizontal_ones = []
+body_bag_door_exit_horizontal_twos = []
+body_bag_door_exit_horizontal_threes = []
+body_bag_door_exit_horizontal_fours = []
+body_bag_door_exit_horizontal_fives = []
+body_bag_door_exit_horizontal_sixes = []
+body_bag_monster_death_vertical_ones = []
+body_bag_monster_death_vertical_ones = []
+body_bag_monster_death_vertical_twos = []
+body_bag_door_exit_vertical_ones = []
+body_bag_door_exit_vertical_twos = []
+find_key_C2_ones = []
+find_key_C2_twos = []
+find_key_C2_threes = []
+find_key_C2_fours = []
+find_key_C2_fives = []
+find_key_C2_sixes = []
+find_key_C2_sevens = []
+find_key_C2_eights = []
+find_key_C2_nines = []
+find_key_doors_C2_ones = []
+find_key_doors_C2_twos = []
+find_key_doors_C2_threes = []
+find_key_doors_C2_fours = []
+find_key_doors_C2_fives = []
+find_key_doors_C2_sixes = []
+find_key_doors_C2_sevens = []
+find_key_doors_C2_eights = []
+find_key_doors_C2_nines = []
+exit_to_hallway_from_C2_ones = []
+exit_to_hallway_from_C2_twos = []
+exit_to_hallway_from_C2_threes = []
+exit_to_hallway_from_C2_fours = []
+exit_door_C2_hallway_ones = []
+exit_door_C2_hallway_twos = []
+exit_door_C2_hallway_threes = []
+exit_door_C2_hallway_fours = []
+failed_C2_exits = []
+failed_exit_C2_doors = []
+
+
+
+
+def C2_room(level):
+    for y in range(len(level)):
+        for x in range(len(level[y])):
+            character = level[y][x]
+
+            screen_x = -350 + (x * 24)
+            screen_y = 205 - (y * 24)
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+
+            if character == "A":
+                body_bag_monster_death_horizontal_ones.append(Body_bag_monster_death_horizontal_one(screen_x, screen_y))
+
+            if character == "B":
+                body_bag_monster_death_horizontal_twos.append(Body_bag_monster_death_horizontal_two(screen_x, screen_y))
+
+            if character == "C":
+                body_bag_monster_death_horizontal_threes.append(Body_bag_monster_death_horizontal_three(screen_x, screen_y))
+
+            if character == "D":
+                body_bag_monster_death_horizontal_fours.append(Body_bag_monster_death_horizontal_four(screen_x, screen_y))
+
+            if character == "E":
+                body_bag_monster_death_horizontal_fives.append(Body_bag_monster_death_horizontal_five(screen_x, screen_y))
+
+            if character == "F":
+                body_bag_monster_death_horizontal_sixes.append(Body_bag_monster_death_horizontal_six(screen_x, screen_y))
+
+            if character == "G":
+                body_bag_monster_death_vertical_ones.append(Body_bag_monster_death_vertical_one(screen_x, screen_y))
+
+            if character == "H":
+                body_bag_monster_death_vertical_twos.append(Body_bag_monster_death_vertical_two(screen_x, screen_y))
+
+            if character == "I":
+                find_key_C2_ones.append(C2_find_key_one(screen_x, screen_y))
+
+            if character == "J":
+                find_key_C2_twos.append(C2_find_key_two(screen_x, screen_y))
+
+            if character == "K":
+                find_key_C2_threes.append(C2_find_key_three(screen_x, screen_y))
+
+            if character == "L":
+                find_key_C2_fours.append(C2_find_key_four(screen_x, screen_y))
+
+            if character == "M":
+                find_key_C2_fives.append(C2_find_key_five(screen_x, screen_y))
+
+            if character == "N":
+                find_key_C2_sixes.append(C2_find_key_six(screen_x, screen_y))
+
+            if character == "O":
+                find_key_C2_sevens.append(C2_find_key_seven(screen_x, screen_y))
+
+            if character == "Q":
+                find_key_C2_eights.append(C2_find_key_eight(screen_x, screen_y))
+
+            if character == "R":
+                find_key_C2_nines.append(C2_find_key_nine(screen_x, screen_y))
+
+            if character == "S":
+                exit_to_hallway_from_C2_ones.append(C2_exit_to_hallway_one(screen_x, screen_y))
+
+            if character == "T":
+                exit_to_hallway_from_C2_twos.append(C2_exit_to_hallway_two(screen_x, screen_y))
+
+            if character == "U":
+                exit_to_hallway_from_C2_threes.append(C2_exit_to_hallway_three(screen_x, screen_y))
+
+            if character == "V":
+                exit_to_hallway_from_C2_fours.append(C2_exit_to_hallway_four(screen_x, screen_y))
+
+            if character == "Z":
+                failed_C2_exits.append(C2_Failed_exit(screen_x, screen_y))
+
+            if character == "1":
+                body_bag_door_exit_horizontal_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "2":
+                body_bag_door_exit_horizontal_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "3":
+                body_bag_door_exit_horizontal_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "4":
+                body_bag_door_exit_horizontal_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "5":
+                body_bag_door_exit_horizontal_fives.append(Door_2(screen_x, screen_y))
+
+            if character == "6":
+                body_bag_door_exit_horizontal_sixes.append(Door_2(screen_x, screen_y))
+
+            if character == "7":
+                body_bag_door_exit_vertical_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "8":
+                body_bag_door_exit_vertical_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "9":
+                find_key_doors_C2_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "!":
+                find_key_doors_C2_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "@":
+                find_key_doors_C2_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "#":
+                find_key_doors_C2_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "$":
+                find_key_doors_C2_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "%":
+                find_key_doors_C2_fives.append(Door_2(screen_x, screen_y))
+
+            if character == "^":
+                find_key_doors_C2_sixes.append(Door_2(screen_x, screen_y))
+
+            if character == "&":
+                find_key_doors_C2_sevens.append(Door_2(screen_x, screen_y))
+
+            if character == "*":
+                find_key_doors_C2_eights.append(Door_2(screen_x, screen_y))
+
+            if character == "(":
+                find_key_doors_C2_nines.append(Door_2(screen_x, screen_y))
+
+            if character == ")":
+                exit_door_C2_hallway_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "_":
+                exit_door_C2_hallway_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "-":
+                exit_door_C2_hallway_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "=":
+                exit_door_C2_hallway_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "~":
+                failed_exit_C2_doors.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+
+
+hand_hallway_monsters = []
+hand_hallway_monster_door_exits = []
+exit_to_pool_hallway_ones = []
+exit_to_pool_hallway_twos = []
+exit_to_pool_hallway_threes = []
+exit_to_pool_hallway_fours = []
+exit_to_pool_hallway_fives = []
+exit_to_pool_hallway_sixes = []
+
+exit_door_pool_hallways_ones = []
+exit_door_pool_hallways_twos = []
+exit_door_pool_hallways_threes = []
+exit_door_pool_hallways_fours = []
+exit_door_pool_hallways_fives = []
+exit_door_pool_hallways_sixes = []
+
+
+pool_blob_monster_hallway_deaths = []
+blob_monster_pool_hallway_door_exits = []
+
+
+
+def hallway_last_version(level):
+    for y in range(len(level)):
+        for x in range(len(level[y])):
+            character = level[y][x]
+
+            screen_x = -350 + (x * 24)
+            screen_y = 205 - (y * 24)
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+            if character == "A":
+                hand_hallway_monsters.append(Hand_Hallway_Monster_Game_Over(screen_x, screen_y))
+
+            if character == "B":
+                exit_to_pool_hallway_ones.append(Exit_to_pool_hallway_one(screen_x, screen_y))
+
+            if character == "C":
+                exit_to_pool_hallway_twos.append(Exit_to_pool_hallway_two(screen_x, screen_y))
+
+            if character == "D":
+                exit_to_pool_hallway_threes.append(Exit_to_pool_hallway_three(screen_x, screen_y))
+
+            if character == "E":
+                exit_to_pool_hallway_fours.append(Exit_to_pool_hallway_four(screen_x, screen_y))
+
+            if character == "F":
+                exit_to_pool_hallway_fives.append(Exit_to_pool_hallway_five(screen_x, screen_y))
+
+            if character == "G":
+                exit_to_pool_hallway_sixes.append(Exit_to_pool_hallway_six(screen_x, screen_y))
+
+            if character == "H":
+                pool_blob_monster_hallway_deaths.append(Blob_Monster_Death_Final(screen_x, screen_y))
+
+
+
+
+
+
+            if character == "1":
+                hand_hallway_monster_door_exits.append(Door_2(screen_x, screen_y))
+
+            if character == "2":
+                exit_door_pool_hallways_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "3":
+                exit_door_pool_hallways_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "4":
+                exit_door_pool_hallways_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "5":
+                exit_door_pool_hallways_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "6":
+                exit_door_pool_hallways_fives.append(Door_2(screen_x, screen_y))
+
+            if character == "7":
+                exit_door_pool_hallways_sixes.append(Door_2(screen_x, screen_y))
+
+            if character == "8":
+                blob_monster_pool_hallway_door_exits.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+
+
+exit_to_pool_area_ones = []
+exit_to_pool_area_twos = []
+exit_to_pool_area_threes = []
+exit_to_pool_area_exit_door_ones = []
+exit_to_pool_area_exit_door_twos = []
+exit_to_pool_area_exit_door_threes = []
+look_at_pool_ones = []
+look_at_pool_twos = []
+look_at_pool_threes = []
+look_at_pool_exit_door_ones = []
+look_at_pool_exit_door_twos = []
+look_at_pool_exit_door_threes = []
+finish_game_ones = []
+finish_game_twos = []
+finish_game_threes = []
+finish_game_fours = []
+finish_game_exit_door_ones = []
+finish_game_exit_door_twos = []
+finish_game_exit_door_threes = []
+finish_game_exit_door_fours = []
+title_screens = []
+title_screen_doors = []
+end_screen_doors = []
+end_screens = []
+
+
+
+
+def pool_area(level):
+    for y in range(len(level)):
+        for x in range(len(level[y])):
+            character = level[y][x]
+
+            screen_x = -350 + (x * 24)
+            screen_y = 205 - (y * 24)
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+            if character == "A":
+                exit_to_pool_area_ones.append(Exit_last_hallway_one(screen_x, screen_y))
+
+            if character == "B":
+                exit_to_pool_area_twos.append(Exit_last_hallway_two(screen_x, screen_y))
+
+            if character == "C":
+                exit_to_pool_area_threes.append(Exit_last_hallway_three(screen_x, screen_y))
+
+            if character == "D":
+                look_at_pool_ones.append(Look_at_pool_one(screen_x, screen_y))
+
+            if character == "E":
+                look_at_pool_twos.append(Look_at_pool_two(screen_x, screen_y))
+
+            if character == "F":
+                look_at_pool_threes.append(Look_at_pool_three(screen_x, screen_y))
+
+            if character == "G":
+                finish_game_ones.append(Finished_game_one(screen_x, screen_y))
+
+            if character == "H":
+                finish_game_twos.append(Finished_game_two(screen_x, screen_y))
+
+            if character == "I":
+                finish_game_threes.append(Finished_game_three(screen_x, screen_y))
+
+            if character == "J":
+                finish_game_fours.append(Finished_game_four(screen_x, screen_y))
+
+            if character == "K":
+                title_screens.append(Title(screen_x, screen_y))
+
+            if character == "L":
+                end_screens.append(End(screen_x, screen_y))
+
+
+            if character == "1":
+                exit_to_pool_area_exit_door_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "2":
+                exit_to_pool_area_exit_door_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "3":
+                exit_to_pool_area_exit_door_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "4":
+                look_at_pool_exit_door_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "5":
+                look_at_pool_exit_door_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "6":
+                look_at_pool_exit_door_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "7":
+                finish_game_exit_door_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "8":
+                finish_game_exit_door_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "9":
+                finish_game_exit_door_threes.append(Door_2(screen_x, screen_y))
+
+            if character == "!":
+                finish_game_exit_door_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "@":
+                title_screen_doors.append(Door_2(screen_x, screen_y))
+
+            if character == "#":
+                end_screen_doors.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+
+
+
+reenter_exam_room_game_over_ones = []
+reenter_exam_room_game_over_twos = []
+reenter_exam_room_game_over_threes = []
+reenter_exam_room_exit_text_ones = []
+reenter_exam_room_exit_text_twos = []
+reenter_exam_room_exit_text_threes = []
+
+
+
+
+
+def reenter_exam_room_game_over(level):
+    for y in range(len(level)):
+        for x in range(len(level[y])):
+            character = level[y][x]
+
+            screen_x = -350 + (x * 24)
+            screen_y = 205 - (y * 24)
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+
+            if character == "A":
+                reenter_exam_room_game_over_ones.append(Exam_Room_Reenter_One(screen_x, screen_y))
+
+            if character == "B":
+                reenter_exam_room_game_over_twos.append(Exam_Room_Reenter_Two(screen_x, screen_y))
+
+            if character == "C":
+                reenter_exam_room_game_over_threes.append(Exam_Room_Reenter_Three(screen_x, screen_y))
+
+            if character == "1":
+                reenter_exam_room_exit_text_ones.append(Door_2(screen_x, screen_y))
+
+            if character == "2":
+                reenter_exam_room_exit_text_twos.append(Door_2(screen_x, screen_y))
+
+            if character == "3":
+                reenter_exam_room_exit_text_threes.append(Door_2(screen_x, screen_y))
 
 
 
@@ -5055,8 +11873,8 @@ length = len(handmonsters)
 #setupthelevel
 
 
-text_level(levels[16])
 
+pool_area(levels[161])
 
 
 #Keyboard binding
@@ -5070,20 +11888,9 @@ turtle.onkey(player.close_text, "i")
 turtle.onkey(player.go_down, "s")
 turtle.onkey(player.toggle_pause, "p")
 
-for monster in monsters:
-    wn.ontimer(monster.move, t=250)
 
-for spider in spiders:
-    wn.ontimer(spider.move, t=250)
 
-for handmonster in handmonsters:
-    wn.ontimer(handmonster.move, t=250)
 
-for hand_monster_hallway in hand_monster_hallways:
-    wn.ontimer(hand_monster_hallway.move, t=250)
-
-print(handmonsters)
-print(hospitalbeds)
 
 
 
@@ -5092,14 +11899,90 @@ print(hospitalbeds)
 is_paused = True
 
 
+def run_game():
+
+
+  while True:
 
 
 
+      # for monster in monsters:
+    #     wn.ontimer(monster.move, t=250)
 
-while True:
+    for spider in spiders:
+        wn.ontimer(spider.move, t=1000)
+
+    for spider_monster_hallway2 in spider_monster_hallways2:
+        wn.ontimer(spider_monster_hallway2.move, t=1000)
+
+
+    for spider_monster_hallway3 in spider_monster_hallways3:
+        wn.ontimer(spider_monster_hallway3.move, t=1000)
+
+    for handmonster in handmonsters:
+        wn.ontimer(handmonster.move, t=1005)
+
+    for handmonster2 in handmonsters2:
+        wn.ontimer(handmonster2.move, t=1005)
+
+    for handmonster3 in handmonsters3:
+        wn.ontimer(handmonster3.move, t=1005)
+
+    for handmonster4 in handmonsters4:
+        wn.ontimer(handmonster4.move, t=1005)
+
+    for handmonster5 in handmonsters5:
+        wn.ontimer(handmonster5.move, t=1200)
+
+    for handmonster6 in handmonsters6:
+        wn.ontimer(handmonster6.move, t=1200)
+
+    for handmonster7 in handmonsters7:
+        wn.ontimer(handmonster7.move, t=1200)
+
+    for handmonster8 in handmonsters8:
+        wn.ontimer(handmonster8.move, t=1200)
+
+    for handmonster9 in handmonsters9:
+        wn.ontimer(handmonster9.move, t=1000)
+
+    for handmonster10 in handmonsters10:
+        wn.ontimer(handmonster10.move, t=1005)
+
+    for bodybagmonstermoving in bodybagmonstermovings:
+        wn.ontimer(bodybagmonstermoving.move, t=1000)
+
+    for hand_monster_hallway in hand_monster_hallways:
+        wn.ontimer(hand_monster_hallway.move, t=750)
+
+    for hand_monster_hallway2 in hand_monster_hallways2:
+        wn.ontimer(hand_monster_hallway2.move, t=750)
+
+    for hand_monster_hallway3 in hand_monster_hallways3:
+        wn.ontimer(hand_monster_hallway3.move, t=750)
+
+    for monsters_last_hallway in monsters_last_hallways:
+        wn.ontimer(monsters_last_hallway.move, t=1000)
+
+
+
 
 
     #iterate through enemy list to see if player collided
+
+
+
+
+    for title_screen, title_screen_door in zip(title_screens, title_screen_doors):
+        if player.is_collision(title_screen_door):
+            title_screen.destroy()
+            title_screens.remove(title_screen)
+            pen.clear()
+            walls.clear()
+            wn.bgpic("brookhavenmap.gif")
+            text_level(levels[16])
+
+
 
 
 
@@ -5112,6 +11995,7 @@ while True:
             C4_texts.remove(C4_text)
 
             pen.clear()
+            walls.clear()
             text_level(levels[17])
 
     wn.update()
@@ -5127,6 +12011,7 @@ while True:
 
 
             pen.clear()
+            walls.clear()
             text_level(levels[18])
 
     wn.update()
@@ -5139,23 +12024,39 @@ while True:
 
             pen.clear()
 
+            walls.clear()
+
 
 
             setup_maze(levels[2])
+
 
     wn.update()
 
 
 
-    for hospitalbed in hospitalbeds:
+    for hospitalbed, item, blocked_exit in zip(hospitalbeds, items, C4_blocked_exits):
         if player.is_collision(hospitalbed):
+            hospitalbed.destroy()
+            hospitalbeds.remove(hospitalbed)
+            item.destroy()
+            items.remove(item)
+            blocked_exit.destroy()
+            C4_blocked_exits.remove(blocked_exit)
             pen.clear()
+            walls.clear()
             text_level(levels[22])
 
-    for blocked_exit in C4_blocked_exits:
+    for blocked_exit, hospitalbed, item in zip(C4_blocked_exits, hospitalbeds, items):
         if player.is_collision(blocked_exit):
-
+            blocked_exit.destroy()
+            C4_blocked_exits.remove(blocked_exit)
+            hospitalbed.destroy()
+            hospitalbeds.remove(hospitalbed)
+            item.destroy()
+            items.remove(item)
             pen.clear()
+            walls.clear()
             text_level(levels[19])
 
     wn.update()
@@ -5164,7 +12065,7 @@ while True:
         if player.is_collision(blocked_second_exit):
             C4_text_no_flashlight_one.destroy()
             C4_text_no_flashlight_ones.remove(C4_text_no_flashlight_one)
-
+            walls.clear()
             pen.clear()
             text_level(levels[20])
 
@@ -5175,15 +12076,20 @@ while True:
         if player.is_collision(C4_blocked_exit_return_to_game):
             C4_text_no_flashlight_two.destroy()
             C4_text_no_flashlight_twos.remove(C4_text_no_flashlight_two)
-
+            walls.clear()
             pen.clear()
             setup_maze(levels[21])
 
     wn.update()
 
 
-    for door_bed_no_flashlight in door_bed_no_flashlights:
+    for door_bed_no_flashlight, item in zip(door_bed_no_flashlights, items):
         if player.is_collision(door_bed_no_flashlight):
+            item.destroy()
+            items.remove(item)
+            door_bed_no_flashlight.destroy()
+            door_bed_no_flashlights.remove(door_bed_no_flashlight)
+            walls.clear()
             pen.clear()
             text_level(levels[22])
 
@@ -5194,10 +12100,11 @@ while True:
             C4_exit_bed_without_flashlight.destroy()
             C4_bed_without_flashlights.remove(C4_exit_bed_without_flashlight)
             pen.clear()
+            walls.clear()
             setup_maze(levels[2])
 
 
-    for item, door, C4_blocked_exit in zip(items, hospitalbeds, C4_blocked_exits):
+    for item, hospitalbed, C4_blocked_exit in zip(items, hospitalbeds, C4_blocked_exits):
         if player.is_collision(item):
             item.destroy()
             items.remove(item)
@@ -5205,7 +12112,7 @@ while True:
             hospitalbeds.remove(hospitalbed)
             C4_blocked_exit.destroy()
             C4_blocked_exits.remove(C4_blocked_exit)
-
+            walls.clear()
             pen.clear()
             text_level(levels[23])
     wn.update()
@@ -5220,12 +12127,20 @@ while True:
             C4_find_flashlight_text.destroy()
             C4_find_flashlight_texts.remove(C4_find_flashlight_text)
             pen.clear()
+            walls.clear()
             setup_maze(levels[3])
 
 
-    for blood_message in blood_messages:
+    for blood_message, C4_hole_trigger, hospitalbeds2 in zip(blood_messages, C4_hole_triggers, second_hospital_beds):
         if player.is_collision(blood_message):
+            blood_message.destroy()
+            blood_messages.remove(blood_message)
+            C4_hole_trigger.destroy()
+            C4_hole_triggers.remove(C4_hole_trigger)
+            hospitalbeds2.destroy()
+            second_hospital_beds.remove(hospitalbeds2)
             pen.clear()
+            walls.clear()
             text_level(levels[25])
 
     for C4_exit_blood_message, C4_text_threatening_message in zip(C4_exit_blood_messages, C4_text_threatening_messages):
@@ -5233,13 +12148,23 @@ while True:
             C4_text_threatening_message.destroy()
             C4_text_threatening_messages.remove(C4_text_threatening_message)
             pen.clear()
+            walls.clear()
             setup_maze(levels[34])
 
 
 
-    for C4_hole_trigger in C4_hole_triggers:
+    for C4_hole_trigger, blood_message, hospitalbeds2 in zip(C4_hole_triggers, blood_messages, second_hospital_beds):
         if player.is_collision(C4_hole_trigger):
+            blood_message.destroy()
+            blood_messages.remove(blood_message)
+            C4_hole_trigger.destroy()
+            C4_hole_triggers.remove(C4_hole_trigger)
+            hospitalbeds2.destroy()
+            second_hospital_beds.remove(hospitalbeds2)
+            # C4_bed_with_flashlight.destroy()
+            # C4_bed_with_flashlights.remove(C4_bed_with_flashlight)
             pen.clear()
+            walls.clear()
             text_level(levels[26])
 
     for C4_hole_two, C4_text in zip(C4_exit_to_hole_twos, C4_texts):
@@ -5247,6 +12172,7 @@ while True:
             C4_text.destroy()
             C4_texts.remove(C4_text)
             pen.clear()
+            walls.clear()
             text_level(levels[27])
 
     for C4_hole_three, C4_text_two in zip(C4_exit_to_hole_threes, C4_text_twos):
@@ -5254,6 +12180,7 @@ while True:
             C4_text_two.destroy()
             C4_text_twos.remove(C4_text_two)
             pen.clear()
+            walls.clear()
             text_level(levels[28])
 
 
@@ -5262,6 +12189,7 @@ while True:
             C4_text_three.destroy()
             C4_text_threes.remove(C4_text_three)
             pen.clear()
+            walls.clear()
             text_level(levels[29])
 
 
@@ -5270,6 +12198,7 @@ while True:
             C4_text_four.destroy()
             C4_text_fours.remove(C4_text_four)
             pen.clear()
+            walls.clear()
             text_level(levels[30])
 
 
@@ -5278,6 +12207,7 @@ while True:
             C4_text_five.destroy()
             C4_text_fives.remove(C4_text_five)
             pen.clear()
+            walls.clear()
             setup_maze(levels[32])
 
 
@@ -5286,14 +12216,20 @@ while True:
             C4_bed_with_flashlight.destroy()
             hospital_bed_with_lights.remove(C4_bed_with_flashlight)
             pen.clear()
+            walls.clear()
             setup_maze(levels[33])
 
 
-    for hospital_bed_two in second_hospital_beds:
+    for hospital_bed_two, C4_hole_trigger, blood_message in zip(second_hospital_beds, C4_hole_triggers, blood_messages):
         if player.is_collision(hospital_bed_two):
+            C4_hole_trigger.destroy()
+            C4_hole_triggers.remove(C4_hole_trigger)
+            blood_message.destroy()
+            blood_messages.remove(blood_message)
             hospital_bed_two.destroy()
             second_hospital_beds.remove(hospital_bed_two)
             pen.clear()
+            walls.clear()
             text_level(levels[24])
 
     for C4_exit_second_bed,  C4_bed_with_flashlight in zip(C4_exit_second_bed_texts, C4_bed_with_flashlights):
@@ -5301,6 +12237,7 @@ while True:
             C4_bed_with_flashlight.destroy()
             C4_bed_with_flashlights.remove(C4_bed_with_flashlight)
             pen.clear()
+            walls.clear()
             setup_maze(levels[33])
 
 
@@ -5315,20 +12252,18 @@ while True:
             blood_message.destroy()
             blood_messages.remove(blood_message)
             pen.clear()
-            text_level(levels[35])
+            walls.clear()
+            text_level(levels[36])
 
 
-    for C4_end_exit, C4_exit, hospital_bed_two, blood_message, C4_hole_trigger in zip(C4_exit_door_end_texts, C4_exits,  second_hospital_beds, blood_messages, C4_hole_triggers):
+    for C4_end_exit, C4_exit in zip(C4_exit_door_end_texts, C4_exits):
         if player.is_collision(C4_end_exit):
              C4_exit.destroy()
              C4_exits.remove(C4_exit)
-             hospital_bed_two.destroy()
-             second_hospital_beds.remove(hospital_bed_two)
-             blood_message.destroy()
-             blood_messages.remove(blood_message)
-             C4_hole_trigger.destroy()
-             C4_hole_triggers.remove(C4_hole_trigger)
+             C4_end_exit.destroy()
+             C4_exit_door_end_texts.remove(C4_end_exit)
              pen.clear()
+             walls.clear()
              text_level(levels[37])
 
 
@@ -5337,30 +12272,124 @@ while True:
             C4_exit_text_two.destroy()
             C4_exit_text_twos.remove(C4_exit_text_two)
             pen.clear()
+            walls.clear()
             setup_maze_0(levels[1])
 
 
-    for C4_return in C4_returns:
+    # for C4_return, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger, monster, dead_body in zip(C4_returns, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers, monsters, dead_bodies):
+
+
+    for C4_return, blood_message, C4_hole_trigger, hospital_bed_two in zip(C4_returns, blood_messages, C4_hole_triggers, second_hospital_beds):
+
         if player.is_collision(C4_return):
+            hospital_bed_two.destroy()
+            second_hospital_beds.remove(hospital_bed_two)
+            blood_message.destroy()
+            blood_messages.remove(blood_message)
+            C4_hole_trigger.destroy()
+            C4_hole_triggers.remove(C4_hole_trigger)
             C4_return.destroy()
             C4_returns.remove(C4_return)
             pen.clear()
+            walls.clear()
             text_level(levels[35])
 
-    for C4_reenter_text, C4_reenter_door in zip(C4_reenter_texts, C4_reenter_exit_texts):
+    for C4_reenter_text, C4_reenter_door, blood_messages_trigger in zip(C4_reenter_texts, C4_reenter_exit_texts, blood_messages_triggers):
         if player.is_collision(C4_reenter_door):
-
             C4_reenter_text.destroy()
             C4_reenter_texts.remove(C4_reenter_text)
             pen.clear()
+            walls.clear()
             setup_maze(levels[3])
 
 
-    for bathroom_entrance in bathroom_entrances:
+    # for blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, broken_glass_three in zip(blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes):
+    #      if player.is_collision(broken_glass):
+    #          broken_glass.destroy()
+    #          broken_glasses.remove(broken_glass)
+    #          broken_glass_two.destroy()
+    #          broken_glass_twos.remove(broken_glass_two)
+    #          broken_glass_three.destroy()
+    #          broken_glass_threes.remove(broken_glass_three)
+    #          dead_body.destroy()
+    #          dead_bodies.remove(dead_body)
+    #          monster.destroy()
+    #          monsters.remove(monster)
+    #          blob_monster_warning_door.destroy()
+    #          blob_monster_warning_doors.remove(blob_monster_warning_door)
+    #          bathroom_entrance.destroy()
+    #          bathroom_entrances.remove(bathroom_entrance)
+    #          blood_messages_trigger.destroy()
+    #          blood_messages_triggers.remove(blood_messages_trigger)
+    #          pen.clear()
+    #          hallway_one_text_level(levels[163])
+    #
+    # for blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, broken_glass_three, exam_entrance in zip(blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes, exam_entrances):
+    #     if player.is_collision(broken_glass_two):
+    #         broken_glass.destroy()
+    #         broken_glasses.remove(broken_glass)
+    #         broken_glass_two.destroy()
+    #         broken_glass_twos.remove(broken_glass_two)
+    #         broken_glass_three.destroy()
+    #         broken_glass_threes.remove(broken_glass_three)
+    #         dead_body.destroy()
+    #         dead_bodies.remove(dead_body)
+    #         monster.destroy()
+    #         monsters.remove(monster)
+    #         blob_monster_warning_door.destroy()
+    #         blob_monster_warning_doors.remove(blob_monster_warning_door)
+    #         bathroom_entrance.destroy()
+    #         bathroom_entrances.remove(bathroom_entrance)
+    #         blood_messages_trigger.destroy()
+    #         blood_messages_triggers.remove(blood_messages_trigger)
+    #         exam_entrance.destroy()
+    #         exam_entrances.remove(exam_entrance)
+    #         pen.clear()
+    #         hallway_one_text_level(levels[164])
+    #
+    # for blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, broken_glass_three, exam_entrance in zip(blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes, exam_entrances):
+    #     if player.is_collision(broken_glass_three):
+    #         broken_glass.destroy()
+    #         broken_glasses.remove(broken_glass)
+    #         broken_glass_two.destroy()
+    #         broken_glass_twos.remove(broken_glass_two)
+    #         broken_glass_three.destroy()
+    #         broken_glass_threes.remove(broken_glass_three)
+    #         dead_body.destroy()
+    #         dead_bodies.remove(dead_body)
+    #         monster.destroy()
+    #         monsters.remove(monster)
+    #         blob_monster_warning_door.destroy()
+    #         blob_monster_warning_doors.remove(blob_monster_warning_door)
+    #         bathroom_entrance.destroy()
+    #         bathroom_entrances.remove(bathroom_entrance)
+    #         blood_messages_trigger.destroy()
+    #         blood_messages_triggers.remove(blood_messages_trigger)
+    #         exam_entrance.destroy()
+    #         exam_entrances.remove(exam_entrance)
+    #         pen.clear()
+    #         hallway_one_text_level(levels[165])
+
+    for bathroom_entrance, blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, broken_glass_three in zip(bathroom_entrances, blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes):
         if player.is_collision(bathroom_entrance):
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monster.destroy()
+            monsters.remove(monster)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
             bathroom_entrance.destroy()
             bathroom_entrances.remove(bathroom_entrance)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[43])
 
 
@@ -5369,21 +12398,37 @@ while True:
             bathroom_locked_text.destroy()
             bathroom_locked_texts.remove(bathroom_locked_text)
             pen.clear()
+            walls.clear()
             setup_maze_0(levels[44])
 
 
-    for   blob_monster_warning_door in blob_monster_warning_doors:
+    for blob_monster_warning_door, broken_glass, broken_glass_two, broken_glass_three, dead_body, monster, blood_messages_trigger in zip(blob_monster_warning_doors, broken_glasses, broken_glass_twos, broken_glass_threes, dead_bodies, monsters, blood_messages_triggers):
         if player.is_collision(blob_monster_warning_door):
             blob_monster_warning_door.destroy()
             blob_monster_warning_doors.remove(blob_monster_warning_door)
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monster.destroy()
+            monsters.remove(monster)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
             pen.clear()
+            walls.clear()
             blob_monster_one_text_level(levels[65])
+
 
     for blob_monster_warning, blob_monster_warning_text_exit in zip(blob_monster_warnings, blob_monster_warning_text_exits):
         if player.is_collision(blob_monster_warning_text_exit):
             blob_monster_warning.destroy()
             blob_monster_warnings.remove(blob_monster_warning)
             pen.clear()
+            walls.clear()
             blob_monster_one_text_level(levels[66])
 
 
@@ -5393,6 +12438,7 @@ while True:
             blob_monster_two_warning.destroy()
             blob_monster_two_warnings.remove(blob_monster_two_warning)
             pen.clear()
+            walls.clear()
             setup_maze_0(levels[67])
 
 
@@ -5407,13 +12453,24 @@ while True:
 
 
 
-    for monster, blood_messages_trigger in zip(monsters, blood_messages_triggers):
+    for monster, blood_messages_trigger, dead_body, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door in zip(monsters, blood_messages_triggers, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors):
         if player.is_collision(monster):
             monster.destroy()
             monsters.remove(monster)
             blood_messages_trigger.destroy()
             blood_messages_triggers.remove(blood_messages_trigger)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
             pen.clear()
+            walls.clear()
             blob_monster_one_text_level(levels[58])
     wn.update()
 
@@ -5423,6 +12480,7 @@ while True:
             blob_monster_death_zero.destroy()
             blob_monster_death_zeros.remove(blob_monster_death_zero)
             pen.clear()
+            walls.clear()
             blob_monster_one_text_level(levels[59])
 
 
@@ -5431,6 +12489,7 @@ while True:
             blob_monster_death_one.destroy()
             blob_monster_death_ones.remove(blob_monster_death_one)
             pen.clear()
+            walls.clear()
             blob_monster_one_text_level(levels[60])
 
     for blob_monster_death_two, blob_monster_text_exit_two in zip(blob_monster_death_twos, blob_monster_text_exit_twos):
@@ -5438,6 +12497,7 @@ while True:
             blob_monster_death_two.destroy()
             blob_monster_death_twos.remove(blob_monster_death_two)
             pen.clear()
+            walls.clear()
             blob_monster_one_text_level(levels[61])
 
 
@@ -5446,6 +12506,7 @@ while True:
             blob_monster_death_three.destroy()
             blob_monster_death_threes.remove(blob_monster_death_three)
             pen.clear()
+            walls.clear()
             blob_monster_one_text_level(levels[62])
 
 
@@ -5454,15 +12515,23 @@ while True:
             blob_monster_death_four.destroy()
             blob_monster_death_fours.remove(blob_monster_death_four)
             pen.clear()
+            walls.clear()
             blob_monster_one_text_level(levels[63])
 
 
 
-    for blob_monster_death_final, blob_monster_text_exit_final in zip(blob_monster_death_finals, blob_monster_text_exit_finals):
+    for blob_monster_death_final, blob_monster_text_exit_final, broken_glass_two, broken_glass_three, blood_messages_trigger in zip(blob_monster_death_finals, blob_monster_text_exit_finals, broken_glass_twos, broken_glass_threes, blood_messages_triggers):
         if player.is_collision(blob_monster_text_exit_final):
             blob_monster_death_final.destroy()
             blob_monster_death_finals.remove(blob_monster_death_final)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
             pen.clear()
+            walls.clear()
             setup_maze_0(levels[1])
 
 
@@ -5472,49 +12541,101 @@ while True:
 
 
     for others in other:
-        for monster in monsters:
+        for monster, dead_body, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger in zip(monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers):
          if player.is_collision(others):
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
             monster.destroy()
             monsters.remove(monster)
             pen.clear()
+            walls.clear()
             text_level(levels[36])
 
 
-
-
-
-
-
-    for key in keys:
-        for bodybagmonster in bodybagmonsters:
-
-         if player.is_collision(key):
-            key.destroy()
-            keys.remove(key)
-            bodybagmonster.destroy()
-            bodybagmonsters.remove(bodybagmonster)
+    for C4_reenter_exit_text, C4_reenter_text in zip(C4_reenter_exit_texts, C4_reenter_texts):
+        if player.is_collision(C4_reenter_exit_text):
+            C4_reenter_text.destroy()
+            C4_reenter_texts.remove(C4_reenter_text)
             pen.clear()
-            setup_maze_C2(levels[10])
-    wn.update()
+            walls.clear()
+            setup_maze(levels[3])
+
+
+
+
+
+
+
+
+
+
+
+    # for key in keys:
+    #     for bodybagmonster in bodybagmonsters:
+    #
+    #      if player.is_collision(key):
+    #         key.destroy()
+    #         keys.remove(key)
+    #         bodybagmonster.destroy()
+    #         bodybagmonsters.remove(bodybagmonster)
+    #         pen.clear()
+    #         setup_maze_C2(levels[10])
+    # wn.update()
 
 
 
     for secondroomentrance in secondroomentrances:
 
-        for monster in monsters:
+        for monster, blood_messages_trigger, dead_body, blob_monster_warning_door, broken_glass, broken_glass_two, broken_glass_three in zip(monsters, blood_messages_triggers, dead_bodies, blob_monster_warning_doors, broken_glasses, broken_glass_twos, broken_glass_threes):
           if player.is_collision(secondroomentrance):
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
             monster.destroy()
             monsters.remove(monster)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[38])
 
 
 
-    for blood_messages_trigger, monster in zip(blood_messages_triggers, monsters):
+    for blood_messages_trigger, monster, broken_glass, broken_glass_two, broken_glass_three, dead_body, blob_monster_warning_door in zip(blood_messages_triggers, monsters, broken_glasses, broken_glass_twos, broken_glass_threes, dead_bodies, blob_monster_warning_doors):
         if player.is_collision(blood_messages_trigger):
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
             monster.destroy()
             monsters.remove(monster)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[39])
 
 
@@ -5523,6 +12644,7 @@ while True:
             hallway_blood_messages_trigger.destroy()
             hallway_blood_messages_triggers.remove(hallway_blood_messages_trigger)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[40])
 
     for hallway_blood_messages_one,  hallway_exit_blood_message_texts_one in zip(hallway_blood_messages_ones,  hallway_exit_blood_message_texts_ones):
@@ -5530,15 +12652,61 @@ while True:
             hallway_blood_messages_one.destroy()
             hallway_blood_messages_ones.remove(hallway_blood_messages_one)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[41])
 
     for hallway_blood_messages_two,  hallway_exit_blood_message_texts_two in zip(hallway_blood_messages_twos,  hallway_exit_blood_message_texts_twos):
 
-        if player.is_collision( hallway_exit_blood_message_texts_two):
+        if player.is_collision(hallway_exit_blood_message_texts_two):
             hallway_blood_messages_two.destroy()
             hallway_blood_messages_twos.remove(hallway_blood_messages_two)
             pen.clear()
+            walls.clear()
             setup_maze_0(levels[42])
+
+
+    # for step_on_glass_one, step_on_glass_exit_one in zip(step_on_glass_ones, step_on_glass_exit_ones):
+    #     if player.is_collision(step_on_glass_exit_one):
+    #         step_on_glass_one.destroy()
+    #         step_on_glass_ones.remove(step_on_glass_one)
+    #         pen.clear()
+    #         hallway_one_text_level(levels[166])
+    #
+    # for step_on_glass_two, step_on_glass_exit_two in zip(step_on_glass_twos, step_on_glass_exit_twos):
+    #     if player.is_collision(step_on_glass_exit_two):
+    #         step_on_glass_two.destroy()
+    #         step_on_glass_twos.remove(step_on_glass_two)
+    #         pen.clear()
+    #         setup_maze_0(levels[169])
+    #
+    # for step_on_glass_one, step_on_glass_one_second_one in zip(step_on_glass_ones, step_on_glass_one_second_ones):
+    #     if player.is_collision(step_on_glass_one_second_one):
+    #         step_on_glass_one.destroy()
+    #         step_on_glass_ones.remove(step_on_glass_one)
+    #         pen.clear()
+    #         hallway_one_text_level(levels[167])
+    #
+    # for step_on_glass_two, step_on_glass_one_second_two in zip(step_on_glass_twos, step_on_glass_one_second_twos):
+    #     if player.is_collision(step_on_glass_one_second_two):
+    #         step_on_glass_two.destroy()
+    #         step_on_glass_twos.remove(step_on_glass_two)
+    #         pen.clear()
+    #         setup_maze_0(levels[170])
+    #
+    #
+    # for step_on_glass_one, step_on_glass_one_third_one in zip(step_on_glass_ones, step_on_glass_one_third_ones):
+    #     if player.is_collision(step_on_glass_one_third_one):
+    #         step_on_glass_one.destroy()
+    #         step_on_glass_ones.remove(step_on_glass_one)
+    #         pen.clear()
+    #         hallway_one_text_level(levels[168])
+    #
+    # for step_on_glass_two, step_on_glass_one_third_two in zip(step_on_glass_twos, step_on_glass_one_third_twos):
+    #     if player.is_collision(step_on_glass_one_third_two):
+    #         step_on_glass_two.destroy()
+    #         step_on_glass_twos.remove(step_on_glass_two)
+    #         pen.clear()
+    #         setup_maze_0(levels[171])
 
 
 
@@ -5557,6 +12725,7 @@ while True:
           C3_entrance_text.destroy()
           C3_entrance_texts.remove(C3_entrance_text)
           pen.clear()
+          walls.clear()
           setup_maze_C3(levels[4])
 
 
@@ -5569,6 +12738,7 @@ while True:
             spiderweb2.destroy()
             spiderwebs2.remove(spiderweb2)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[48])
 
 
@@ -5581,6 +12751,7 @@ while True:
             spiderweb2.destroy()
             spiderwebs2.remove(spiderweb2)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[48])
 
 
@@ -5593,6 +12764,7 @@ while True:
             spiderweb2.destroy()
             spiderwebs2.remove(spiderweb2)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[48])
 
     for secondroomexit in secondroomexits:
@@ -5608,6 +12780,7 @@ while True:
             spiderweb2.destroy()
             spiderwebs2.remove(spiderweb2)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[45])
 
 
@@ -5616,6 +12789,7 @@ while True:
             C3_game_over_one.destroy()
             C3_game_over_ones.remove(C3_game_over_one)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[49])
 
 
@@ -5624,6 +12798,7 @@ while True:
             C3_game_over_two.destroy()
             C3_game_over_twos.remove(C3_game_over_two)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[50])
 
     for C3_exit_door_three, C3_game_over_three in zip(C3_exit_door_threes, C3_game_over_threes):
@@ -5631,6 +12806,7 @@ while True:
             C3_game_over_three.destroy()
             C3_game_over_threes.remove(C3_game_over_three)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[51])
 
     for C3_exit_door_four, C3_game_over_four in zip(C3_exit_door_fours, C3_game_over_fours):
@@ -5638,6 +12814,7 @@ while True:
             C3_game_over_four.destroy()
             C3_game_over_fours.remove(C3_game_over_four)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[52])
 
     for C3_exit_door_five, C3_game_over_five in zip(C3_exit_door_fives, C3_game_over_fives):
@@ -5645,6 +12822,7 @@ while True:
             C3_game_over_five.destroy()
             C3_game_over_fives.remove(C3_game_over_five)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[53])
 
 
@@ -5653,6 +12831,7 @@ while True:
             C3_game_over_six.destroy()
             C3_game_over_sixes.remove(C3_game_over_six)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[54])
 
     for C3_exit_door_seven, C3_game_over_seven in zip(C3_exit_door_sevens, C3_game_over_sevens):
@@ -5660,6 +12839,7 @@ while True:
             C3_game_over_seven.destroy()
             C3_game_over_sevens.remove(C3_game_over_seven)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[55])
 
     for C3_final_door_game_over,  C3_final_game_over in  zip(C3_final_door_game_overs,  C3_final_game_overs):
@@ -5667,6 +12847,7 @@ while True:
             C3_final_game_over.destroy()
             C3_final_game_overs.remove( C3_final_game_over)
             pen.clear()
+            walls.clear()
             setup_maze_0(levels[5])
 
     for C3_exit_text_end, C3_exit_to_hallway in zip(C3_exit_text_ends, C3_exit_to_hallways):
@@ -5676,40 +12857,118 @@ while True:
             C3_exit_text_end.destroy()
             C3_exit_text_ends.remove(C3_exit_text_end)
             pen.clear()
+            walls.clear()
             setup_maze_0(levels[5])
 
-    for C1_door in C1_doors:
+    for C1_door, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger, monster, dead_body in zip(C1_doors, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers, monsters, dead_bodies):
         if player.is_collision(C1_door):
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            monster.destroy()
+            monsters.remove(monster)
+            dead_body.destroy()
+            # dead_bodies.remove(dead_body)
+            # C1_door.destroy()
+            # C1_doors.remove(C1_door)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[46])
 
-    for C1_entry_text, C1_exit_entry_text in zip(C1_entry_texts, C1_exit_entry_texts):
+    for C1_entry_text, C1_exit_entry_text, dead_body in zip(C1_entry_texts, C1_exit_entry_texts, dead_bodies):
         if player.is_collision(C1_exit_entry_text):
             C1_entry_text.destroy()
             C1_entry_texts.remove(C1_entry_text)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
             pen.clear()
+            walls.clear()
+            hallway_one_text_level(levels[167])
+
+    for C1_entry_text_two, C1_exit_entry_text_two in zip(C1_entry_text_twos, C1_exit_entry_text_twos):
+        if player.is_collision(C1_exit_entry_text_two):
+            C1_entry_text_two.destroy()
+            C1_entry_text_twos.remove(C1_entry_text_two)
+            pen.clear()
+            walls.clear()
+            hallway_one_text_level(levels[168])
+
+    for C1_entry_text_three, C1_exit_entry_text_three in zip(C1_entry_text_threes, C1_exit_entry_text_threes):
+        if player.is_collision(C1_exit_entry_text_three):
+            C1_entry_text_three.destroy()
+            C1_entry_text_threes.remove(C1_entry_text_three)
+            pen.clear()
+            walls.clear()
             setup_maze_0(levels[47])
 
-    for C2_password_locked, hallway_blood_messages_trigger in zip(C2_password_lockeds, hallway_blood_messages_triggers):
-        if player.is_collision(C2_password_locked):
-            hallway_blood_messages_trigger.destroy()
-            hallway_blood_messages_triggers.remove(hallway_blood_messages_trigger)
-            pen.clear()
-            hallway_one_text_level(levels[56])
 
+    # for C2_password_locked, monster  hallway_blood_messages_trigger, C1_door, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, dead_body in zip(C2_password_lockeds, monsters, hallway_blood_messages_triggers, C1_doors, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, dead_bodies):
 
-    for C2_password_locked, monster in zip(C2_password_lockeds, monsters):
+    for C2_password_locked, monster, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger, C1_door, dead_body in zip(C2_password_lockeds, monsters, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers, C1_doors, dead_bodies):
         if player.is_collision(C2_password_locked):
             monster.destroy()
             monsters.remove(monster)
+            # hallway_blood_messages_trigger.destroy()
+            # hallway_blood_messages_triggers.remove(hallway_blood_messages_trigger)
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            broken_glass_three.destroy()
+            broken_glass_threes.remove(broken_glass_three)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            C1_door.destroy()
+            C1_doors.remove(C1_door)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            C2_password_locked.destroy()
+            C2_password_lockeds.remove(C2_password_locked)
             pen.clear()
+            walls.clear()
             hallway_one_text_level(levels[56])
+    #
+    # for C2_password_locked, hallway_blood_messages_trigger, C1_door, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger, monster, dead_body in zip(C2_password_lockeds, hallway_blood_messages_triggers, C1_doors, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers, monsters, dead_bodies):
+    #     if player.is_collision(C2_password_locked):
+    #         hallway_blood_messages_trigger.destroy()
+    #         hallway_blood_messages_triggers.remove(hallway_blood_messages_trigger)
+    #         broken_glass.destroy()
+    #         broken_glasses.remove(broken_glass)
+    #         broken_glass_two.destroy()
+    #         broken_glass_twos.remove(broken_glass_two)
+    #         broken_glass_three.destroy()
+    #         broken_glass_threes.remove(broken_glass_three)
+    #         blob_monster_warning_door.destroy()
+    #         blob_monster_warning_doors.remove(blob_monster_warning_door)
+    #         blood_messages_trigger.destroy()
+    #         blood_messages_triggers.remove(blood_messages_trigger)
+    #         monster.destroy()
+    #         monsters.remove(monster)
+    #         dead_body.destroy()
+    #         # dead_bodies.remove(dead_body)
+    #         C1_door.destroy()
+    #         C1_doors.remove(C1_door)
+    #         pen.clear()
+    #         hallway_one_text_level(levels[56])
+
+
+
 
     for C2_locked_text, C2_door_text_exit in zip(C2_locked_texts, C2_door_text_exits):
         if player.is_collision(C2_door_text_exit):
             C2_locked_text.destroy()
             C2_locked_texts.remove(C2_locked_text)
             pen.clear()
+            walls.clear()
             setup_maze_0(levels[57])
 
 
@@ -5731,16 +12990,25 @@ while True:
     #         blob_monster_one_text_level(levels[66])
 
     for exam_entrance in exam_entrances:
-        for monster, blood_messages_trigger, blob_monster_warning_door in zip(monsters, blood_messages_triggers, blob_monster_warning_doors):
+        for monster, blood_messages_trigger, blob_monster_warning_door, broken_glass, broken_glass_two, broken_glass_three, dead_body in zip(monsters, blood_messages_triggers, blob_monster_warning_doors, broken_glasses, broken_glass_twos, broken_glass_threes, dead_bodies):
          if player.is_collision(exam_entrance):
-            blood_messages_trigger.destroy()
-            blood_messages_triggers.remove(blood_messages_trigger)
-            monster.destroy()
-            monsters.remove(monster)
-            blob_monster_warning_door.destroy()
-            blob_monster_warning_doors.remove(blob_monster_warning_door)
-            pen.clear()
-            exam_room_text_level(levels[68])
+             broken_glass.destroy()
+             broken_glasses.remove(broken_glass)
+             broken_glass_two.destroy()
+             broken_glass_twos.remove(broken_glass_two)
+             broken_glass_three.destroy()
+             broken_glass_threes.remove(broken_glass_three)
+             dead_body.destroy()
+             dead_bodies.remove(dead_body)
+             blood_messages_trigger.destroy()
+             blood_messages_triggers.remove(blood_messages_trigger)
+             monster.destroy()
+             monsters.remove(monster)
+             blob_monster_warning_door.destroy()
+             blob_monster_warning_doors.remove(blob_monster_warning_door)
+             pen.clear()
+             walls.clear()
+             exam_room_text_level(levels[68])
 
 
     for exam_room_exit_text_one, exam_room_enter_text_one in zip(exam_room_exit_text_ones, exam_room_enter_text_ones):
@@ -5748,6 +13016,7 @@ while True:
             exam_room_enter_text_one.destroy()
             exam_room_enter_text_ones.remove(exam_room_enter_text_one)
             pen.clear()
+            walls.clear()
             exam_room_text_level(levels[69])
 
     for exam_room_exit_text_two, exam_room_enter_text_two in zip(exam_room_exit_text_twos, exam_room_enter_text_twos):
@@ -5755,6 +13024,7 @@ while True:
             exam_room_enter_text_two.destroy()
             exam_room_enter_text_twos.remove(exam_room_enter_text_two)
             pen.clear()
+            walls.clear()
             exam_room_text_level(levels[70])
 
     for exam_room_exit_text_three, exam_room_enter_text_three in zip(exam_room_exit_text_threes, exam_room_enter_text_threes):
@@ -5762,6 +13032,7 @@ while True:
             exam_room_enter_text_three.destroy()
             exam_room_enter_text_threes.remove(exam_room_enter_text_three)
             pen.clear()
+            walls.clear()
             exam_room_text_level(levels[71])
 
     for exam_room_exit_text_four, exam_room_enter_text_four in zip(exam_room_exit_text_fours, exam_room_enter_text_fours):
@@ -5769,6 +13040,7 @@ while True:
             exam_room_enter_text_four.destroy()
             exam_room_enter_text_fours.remove(exam_room_enter_text_four)
             pen.clear()
+            walls.clear()
             exam_room_text_level(levels[72])
 
     for exam_room_exit_text_five, exam_room_enter_text_five in zip(exam_room_exit_text_fives, exam_room_enter_text_fives):
@@ -5776,6 +13048,7 @@ while True:
             exam_room_enter_text_five.destroy()
             exam_room_enter_text_fives.remove(exam_room_enter_text_five)
             pen.clear()
+            walls.clear()
             exam_room_text_level(levels[73])
 
     for exam_room_exit_text_six, exam_room_enter_text_six in zip(exam_room_exit_text_sixes, exam_room_enter_text_sixes):
@@ -5783,24 +13056,759 @@ while True:
             exam_room_enter_text_six.destroy()
             exam_room_enter_text_sixes.remove(exam_room_enter_text_six)
             pen.clear()
+            walls.clear()
             setup_maze_Examination_room(levels[6])
 
-    for triggerhandmonster in triggerhandmonsters:
-        if player.is_collision(triggerhandmonster):
+
+    for exam_room_failed_exit, hospitalbed3, exam_blood_message, closed_eye in zip(exam_room_failed_exits, hospitalbeds3, exam_blood_messages,closed_eyes):
+        if player.is_collision(exam_room_failed_exit):
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+            closed_eye.destroy()
+            closed_eyes.remove(closed_eye)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[96])
+
+
+    for exam_room_failed_text_door, exam_room_failed_text in zip(exam_room_failed_text_doors, exam_room_failed_texts):
+        if player.is_collision(exam_room_failed_text_door):
+            exam_room_failed_text.destroy()
+            exam_room_failed_texts.remove(exam_room_failed_text)
+            pen.clear()
+            walls.clear()
+            setup_maze_Examination_room(levels[6])
+
+
+    for exam_blood_message, exam_room_closed_eye, triggerhandmonster, hospitalbed3 in zip(exam_blood_messages, closed_eyes, triggerhandmonsters, hospitalbeds3):
+        if player.is_collision(exam_blood_message):
             triggerhandmonster.destroy()
             triggerhandmonsters.remove(triggerhandmonster)
+            exam_room_closed_eye.destroy()
+            closed_eyes.remove(exam_room_closed_eye)
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
             pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[87])
+
+
+    for exam_room_blood_message_exit_one, exam_room_blood_message_one in zip(exam_room_blood_message_exit_ones, exam_room_blood_message_ones):
+        if player.is_collision(exam_room_blood_message_exit_one):
+            exam_room_blood_message_one.destroy()
+            exam_room_blood_message_ones.remove(exam_room_blood_message_one)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[88])
+
+    for exam_room_blood_message_exit_two, exam_room_blood_message_two in zip(exam_room_blood_message_exit_twos, exam_room_blood_message_twos):
+        if player.is_collision(exam_room_blood_message_exit_two):
+            exam_room_blood_message_two.destroy()
+            exam_room_blood_message_twos.remove(exam_room_blood_message_two)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[89])
+
+    for exam_room_blood_message_exit_three, exam_room_blood_message_three in zip(exam_room_blood_message_exit_threes, exam_room_blood_message_threes):
+        if player.is_collision(exam_room_blood_message_exit_three):
+            exam_room_blood_message_three.destroy()
+            exam_room_blood_message_threes.remove(exam_room_blood_message_three)
+            pen.clear()
+            walls.clear()
+            setup_maze_Examination_room(levels[90])
+
+    for triggerhandmonster, closed_eye, hospitalbed3, exam_blood_message in zip(triggerhandmonsters, closed_eyes, hospitalbeds3, exam_blood_messages):
+        if player.is_collision(triggerhandmonster):
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+            closed_eye.destroy()
+            closed_eyes.remove(closed_eye)
+            triggerhandmonster.destroy()
+            triggerhandmonsters.remove(triggerhandmonster)
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+            pen.clear()
+            walls.clear()
             exam_room_text_level(levels[74])
 
 
+    for exam_room_exit_hand_trigger_one, exam_room_hand_trigger_one in zip(exam_room_exit_hand_trigger_ones, exam_room_hand_trigger_ones):
+        if player.is_collision(exam_room_exit_hand_trigger_one):
+            exam_room_hand_trigger_one.destroy()
+            exam_room_hand_trigger_ones.remove(exam_room_hand_trigger_one)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[75])
+
+    for exam_room_exit_hand_trigger_two, exam_room_hand_trigger_two in zip(exam_room_exit_hand_trigger_twos, exam_room_hand_trigger_twos):
+        if player.is_collision(exam_room_exit_hand_trigger_two):
+            exam_room_hand_trigger_two.destroy()
+            exam_room_hand_trigger_twos.remove(exam_room_hand_trigger_two)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[76])
+
+    for exam_room_exit_hand_trigger_three, exam_room_hand_trigger_three in zip(exam_room_exit_hand_trigger_threes, exam_room_hand_trigger_threes):
+        if player.is_collision(exam_room_exit_hand_trigger_three):
+            exam_room_hand_trigger_three.destroy()
+            exam_room_hand_trigger_threes.remove(exam_room_hand_trigger_three)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[77])
+
+    for exam_room_exit_hand_trigger_four, exam_room_hand_trigger_four in zip(exam_room_exit_hand_trigger_fours, exam_room_hand_trigger_fours):
+        if player.is_collision(exam_room_exit_hand_trigger_four):
+            exam_room_hand_trigger_four.destroy()
+            exam_room_hand_trigger_fours.remove(exam_room_hand_trigger_four)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[78])
+
+    for exam_room_exit_hand_trigger_five, exam_room_hand_trigger_five in zip(exam_room_exit_hand_trigger_fives, exam_room_hand_trigger_fives):
+        if player.is_collision(exam_room_exit_hand_trigger_five):
+            exam_room_hand_trigger_five.destroy()
+            exam_room_hand_trigger_fives.remove(exam_room_hand_trigger_five)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[79])
+
+    for exam_room_exit_hand_trigger_six, exam_room_hand_trigger_six in zip(exam_room_exit_hand_trigger_sixes, exam_room_hand_trigger_sixes):
+        if player.is_collision(exam_room_exit_hand_trigger_six):
+            exam_room_hand_trigger_six.destroy()
+            exam_room_hand_trigger_sixes.remove(exam_room_hand_trigger_six)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[80])
+
+    for exam_room_exit_hand_trigger_seven, exam_room_hand_trigger_seven in zip(exam_room_exit_hand_trigger_sevens, exam_room_hand_trigger_sevens):
+        if player.is_collision(exam_room_exit_hand_trigger_seven):
+            exam_room_hand_trigger_seven.destroy()
+            exam_room_hand_trigger_sevens.remove(exam_room_hand_trigger_seven)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[81])
+
+    for exam_room_exit_hand_trigger_eight, exam_room_hand_trigger_eight in zip(exam_room_exit_hand_trigger_eights, exam_room_hand_trigger_eights):
+        if player.is_collision(exam_room_exit_hand_trigger_eight):
+            exam_room_hand_trigger_eight.destroy()
+            exam_room_hand_trigger_eights.remove(exam_room_hand_trigger_eight)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[82])
+
+    for exam_room_exit_hand_trigger_nine, exam_room_hand_trigger_nine in zip(exam_room_exit_hand_trigger_nines, exam_room_hand_trigger_nines):
+        if player.is_collision(exam_room_exit_hand_trigger_nine):
+            exam_room_hand_trigger_nine.destroy()
+            exam_room_hand_trigger_nines.remove(exam_room_hand_trigger_nine)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[83])
+
+    for exam_room_exit_hand_trigger_ten, exam_room_hand_trigger_ten in zip(exam_room_exit_hand_trigger_tens, exam_room_hand_trigger_tens):
+        if player.is_collision(exam_room_exit_hand_trigger_ten):
+            exam_room_hand_trigger_ten.destroy()
+            exam_room_hand_trigger_tens.remove(exam_room_hand_trigger_ten)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[84])
+
+    for exam_room_exit_hand_trigger_eleven, exam_room_hand_trigger_eleven in zip(exam_room_exit_hand_trigger_elevens, exam_room_hand_trigger_elevens):
+        if player.is_collision(exam_room_exit_hand_trigger_eleven):
+            exam_room_hand_trigger_eleven.destroy()
+            exam_room_hand_trigger_elevens.remove(exam_room_hand_trigger_eleven)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[85])
+
+    for exam_room_exit_hand_trigger_twelve, exam_room_hand_trigger_twelve in zip(exam_room_exit_hand_trigger_twelves, exam_room_hand_trigger_twelves):
+        if player.is_collision(exam_room_exit_hand_trigger_twelve):
+            exam_room_hand_trigger_twelve.destroy()
+            exam_room_hand_trigger_twelves.remove(exam_room_hand_trigger_twelve)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[86])
+
+    for exam_room_exit_hand_trigger_thirteen, exam_room_hand_trigger_thirteen in zip(exam_room_exit_hand_trigger_thirteens, exam_room_hand_trigger_thirteens):
+        if player.is_collision(exam_room_exit_hand_trigger_thirteen):
+            exam_room_hand_trigger_thirteen.destroy()
+            exam_room_hand_trigger_thirteens.remove(exam_room_hand_trigger_thirteen)
+            pen.clear()
+            walls.clear()
+            setup_maze_Examination_room(levels[7])
+
+    for closed_eye, hospitalbed3, exam_blood_message in zip(closed_eyes, hospitalbeds3, exam_blood_messages):
+        if player.is_collision(closed_eye):
+            closed_eye.destroy()
+            closed_eyes.remove(closed_eye)
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[91])
+
+    for exam_room_breathing_wall_text_exit_one, exam_room_breathing_wall_one in zip(exam_room_breathing_wall_text_exit_ones, exam_room_breathing_wall_ones):
+        if player.is_collision(exam_room_breathing_wall_text_exit_one):
+            exam_room_breathing_wall_one.destroy()
+            exam_room_breathing_wall_ones.remove(exam_room_breathing_wall_one)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[92])
+
+    for exam_room_breathing_wall_text_exit_two, exam_room_breathing_wall_two in zip(exam_room_breathing_wall_text_exit_twos, exam_room_breathing_wall_twos):
+        if player.is_collision(exam_room_breathing_wall_text_exit_two):
+            exam_room_breathing_wall_two.destroy()
+            exam_room_breathing_wall_twos.remove(exam_room_breathing_wall_two)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[93])
+
+    for exam_room_breathing_wall_text_exit_three, exam_room_breathing_wall_three in zip(exam_room_breathing_wall_text_exit_threes, exam_room_breathing_wall_threes):
+        if player.is_collision(exam_room_breathing_wall_text_exit_three):
+            exam_room_breathing_wall_three.destroy()
+            exam_room_breathing_wall_threes.remove(exam_room_breathing_wall_three)
+            pen.clear()
+            walls.clear()
+            exam_room_text_level(levels[94])
+
+    for exam_room_breathing_wall_text_exit_four, exam_room_breathing_wall_four in zip(exam_room_breathing_wall_text_exit_fours, exam_room_breathing_wall_fours):
+        if player.is_collision(exam_room_breathing_wall_text_exit_four):
+            exam_room_breathing_wall_four.destroy()
+            exam_room_breathing_wall_fours.remove(exam_room_breathing_wall_four)
+            pen.clear()
+            walls.clear()
+            setup_maze_Examination_room(levels[95])
+
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster2):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster3):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster4):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster5):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster6):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster7):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster8):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster9):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
 
 
 
-            #setup_maze_Examination_room(levels[7])
+    for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
+        if player.is_collision(handmonster10):
+            handmonster.destroy()
+            handmonsters.remove(handmonster)
+
+            handmonster2.destroy()
+            handmonsters2.remove(handmonster2)
+
+            handmonster3.destroy()
+            handmonsters3.remove(handmonster3)
+
+            handmonster4.destroy()
+            handmonsters4.remove(handmonster4)
+
+            handmonster5.destroy()
+            handmonsters5.remove(handmonster5)
+
+            handmonster6.destroy()
+            handmonsters6.remove(handmonster6)
+
+            handmonster7.destroy()
+            handmonsters7.remove(handmonster7)
+
+            handmonster8.destroy()
+            handmonsters8.remove(handmonster8)
+
+            handmonster9.destroy()
+            handmonsters9.remove(handmonster9)
+
+            handmonster10.destroy()
+            handmonsters10.remove(handmonster10)
+
+            hospitalbed3.destroy()
+            hospitalbeds3.remove(hospitalbed3)
+
+            big_eye.destroy()
+            big_eyes.remove(big_eye)
+
+            exam_blood_message.destroy()
+            exam_blood_messages.remove(exam_blood_message)
+
+            pen.clear()
+
+            walls.clear()
+
+            exam_room_text_game_over_level(levels[171])
+
+
+
+    for exam_room_hand_game_over_one, exam_room_game_over_exit_one in zip(exam_room_hand_game_over_ones, exam_room_game_over_exit_ones):
+        if player.is_collision(exam_room_game_over_exit_one):
+            exam_room_hand_game_over_one.destroy()
+            exam_room_hand_game_over_ones.remove(exam_room_hand_game_over_one)
+            pen.clear()
+            walls.clear()
+            exam_room_text_game_over_level(levels[175])
+
+    for exam_room_hand_game_over_two, exam_room_game_over_exit_two in zip(exam_room_hand_game_over_twos, exam_room_game_over_exit_twos):
+        if player.is_collision(exam_room_game_over_exit_two):
+            exam_room_hand_game_over_two.destroy()
+            exam_room_hand_game_over_twos.remove(exam_room_hand_game_over_two)
+            pen.clear()
+            walls.clear()
+            exam_room_text_game_over_level(levels[176])
+
+
+    for exam_room_hand_game_over_three, exam_room_game_over_exit_three in zip(exam_room_hand_game_over_threes, exam_room_game_over_exit_threes):
+        if player.is_collision(exam_room_game_over_exit_three):
+            exam_room_hand_game_over_three.destroy()
+            exam_room_hand_game_over_threes.remove(exam_room_hand_game_over_three)
+            pen.clear()
+            walls.clear()
+            setup_maze_Examination_room(levels[6])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     for exam_exit in exam_exits:
 
-        for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed2 in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds2):
+        for handmonster, handmonster2, handmonster3, handmonster4, handmonster5, handmonster6, handmonster7, handmonster8, handmonster9, handmonster10, hospitalbed3, big_eye, exam_blood_message in zip(handmonsters, handmonsters2, handmonsters3, handmonsters4, handmonsters5, handmonsters6, handmonsters7, handmonsters8, handmonsters9, handmonsters10, hospitalbeds3, big_eyes, exam_blood_messages):
           if player.is_collision(exam_exit):
 
              handmonster.destroy()
@@ -5833,39 +13841,748 @@ while True:
              handmonster10.destroy()
              handmonsters10.remove(handmonster10)
 
-             hospitalbed2.destroy()
-             hospitalbeds2.remove(hospitalbed2)
+             hospitalbed3.destroy()
+             hospitalbeds3.remove(hospitalbed3)
+
+             big_eye.destroy()
+             big_eyes.remove(big_eye)
+
+             exam_blood_message.destroy()
+             exam_blood_messages.remove(exam_blood_message)
 
              pen.clear()
-             setup_maze_0(levels[8])
+
+             walls.clear()
+             #hallway_version_two(levels[])
+
+
+             hallway_version_two(levels[97])
+
+
+    for exam_exit_door_one, exam_exit_text_one in zip(exam_exit_door_ones, exam_exit_text_ones):
+        if player.is_collision(exam_exit_door_one):
+            exam_exit_text_one.destroy()
+            exam_exit_text_ones.remove(exam_exit_text_one)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[98])
+
+
+    for exam_exit_door_two, exam_exit_text_two in zip(exam_exit_door_twos, exam_exit_text_twos):
+        if player.is_collision(exam_exit_door_two):
+            exam_exit_text_two.destroy()
+            exam_exit_text_twos.remove(exam_exit_text_two)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[99])
+
+    for exam_exit_door_three, exam_exit_text_three in zip(exam_exit_door_threes, exam_exit_text_threes):
+        if player.is_collision(exam_exit_door_three):
+            exam_exit_text_three.destroy()
+            exam_exit_text_threes.remove(exam_exit_text_three)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[8])
+
+
+    for reenter_exam_room_game_over_one, reenter_exam_room_exit_text_one in zip(reenter_exam_room_game_over_ones, reenter_exam_room_exit_text_ones):
+        if player.is_collision(reenter_exam_room_exit_text_one):
+            reenter_exam_room_game_over_one.destroy()
+            reenter_exam_room_game_over_ones.remove(reenter_exam_room_game_over_one)
+            pen.clear()
+            walls.clear()
+            reenter_exam_room_game_over(levels[175])
+
+    for reenter_exam_room_game_over_two, reenter_exam_room_exit_text_two in zip(reenter_exam_room_game_over_twos, reenter_exam_room_exit_text_twos):
+        if player.is_collision(reenter_exam_room_exit_text_two):
+            reenter_exam_room_game_over_two.destroy()
+            reenter_exam_room_game_over_twos.remove(reenter_exam_room_game_over_two)
+            pen.clear()
+            walls.clear()
+            reenter_exam_room_game_over(levels[176])
+
+
+    for reenter_exam_room_game_over_three, reenter_exam_room_exit_text_three in zip(reenter_exam_room_game_over_threes, reenter_exam_room_exit_text_threes):
+        if player.is_collision(reenter_exam_room_exit_text_three):
+            reenter_exam_room_game_over_three.destroy()
+            reenter_exam_room_game_over_threes.remove(reenter_exam_room_game_over_three)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[8])
+
+
+
+    for monstertwo in monster_twos:
+        if player.is_collision(monstertwo):
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[100])
+
+    for glass_shard_one, monstertwo, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(glass_pile_ones, monster_twos, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
+        if player.is_collision(glass_shard_one):
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[100])
+
+
+    for glass_shard_two, monstertwo, glass_shard_one, glass_shard_three, dead_body, blood_messages_trigger in zip(glass_pile_twos, monster_twos, glass_pile_ones, glass_pile_threes, dead_bodies, blood_messages_triggers):
+        if player.is_collision(glass_shard_two):
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[100])
+
+
+    for glass_shard_three, monstertwo, glass_shard_one, glass_shard_two, dead_body, blood_messages_trigger in zip(glass_pile_threes, monster_twos, glass_pile_ones, glass_pile_twos, dead_bodies, blood_messages_triggers):
+        if player.is_collision(glass_shard_three):
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[100])
+
+    for blob_monster_hallway_two_death_one, blob_monster_hall_death_two_game_over_one in zip(blob_monster_hallway_two_death_ones, blob_monster_hall_death_two_game_over_ones):
+        if player.is_collision(blob_monster_hall_death_two_game_over_one):
+            blob_monster_hallway_two_death_one.destroy()
+            blob_monster_hallway_two_death_ones.remove(blob_monster_hallway_two_death_one)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[101])
+
+
+    for blob_monster_hallway_two_death_two, blob_monster_hall_death_two_game_over_two  in zip(blob_monster_hallway_two_death_twos, blob_monster_hall_death_two_game_over_twos):
+        if player.is_collision(blob_monster_hall_death_two_game_over_two):
+            blob_monster_hallway_two_death_two.destroy()
+            blob_monster_hallway_two_death_twos.remove(blob_monster_hallway_two_death_two)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[102])
+
+
+    for blob_monster_door_second_death, blob_monster_second_death in zip(blob_monster_door_second_deaths, blob_monster_second_deaths):
+        if player.is_collision(blob_monster_door_second_death):
+            blob_monster_second_death.destroy()
+            blob_monster_second_deaths.remove(blob_monster_second_death)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[8])
+
+
+    for bathroom_hall_two, monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(bathroom_hall_twos, monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
+        if player.is_collision(bathroom_hall_two):
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[119])
+
+
+
+    for bathroom_door_exit_text_second_hall_text, bathroom_text_locked_hall_two in zip(bathroom_door_exit_text_second_hall_texts, bathroom_text_locked_hall_twos):
+        if player.is_collision(bathroom_door_exit_text_second_hall_text):
+            bathroom_text_locked_hall_two.destroy()
+            bathroom_text_locked_hall_twos.remove(bathroom_text_locked_hall_two)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[120])
+
+
+    for C1_second_door, monstertwo, dead_body, glass_shard_one, glass_shard_two, glass_shard_three, blood_messages_trigger in zip(C1_second_doors, monster_twos, dead_bodies, glass_pile_ones, glass_pile_twos, glass_pile_threes, blood_messages_triggers):
+        if player.is_collision(C1_second_door):
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[115])
+
+    for C1_locked_text_one, C1_locked_one_door_text_one in zip(C1_locked_text_ones, C1_locked_one_door_text_ones):
+        if player.is_collision(C1_locked_one_door_text_one):
+            C1_locked_text_one.destroy()
+            C1_locked_text_ones.remove(C1_locked_text_one)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[116])
+
+
+    for C1_locked_text_two, C1_locked_one_door_text_two in zip(C1_locked_text_twos, C1_locked_one_door_text_twos):
+        if player.is_collision(C1_locked_one_door_text_two):
+            C1_locked_text_two.destroy()
+            C1_locked_text_twos.remove(C1_locked_text_two)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[117])
+
+
+    for C1_locked_text_three, C1_locked_one_door_text_three in zip(C1_locked_text_threes, C1_locked_one_door_text_threes):
+        if player.is_collision(C1_locked_one_door_text_three):
+            C1_locked_text_three.destroy()
+            C1_locked_text_threes.remove(C1_locked_text_three)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[118])
+
+    for bathroom_hall_two in bathroom_hall_twos:
+        if player.is_collision(bathroom_hall_two):
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[119])
+
+    for bathroom_door_exit_text_second_hall_text, bathroom_text_locked_hall_two in zip(bathroom_door_exit_text_second_hall_texts,  bathroom_text_locked_hall_twos):
+        if player.is_collision(bathroom_door_exit_text_second_hall_text):
+            bathroom_text_locked_hall_two.destroy()
+            bathroom_text_locked_hall_twos.remove(bathroom_text_locked_hall_two)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[119])
+
+
 
     for C2_entrance in C2_entrances:
 
+      for monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
+
         if player.is_collision(C2_entrance):
-            monster.destroy()
-            monsters.remove(monster)
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
             pen.clear()
+            walls.clear()
+            hallway_version_two(levels[103])
+
+
+    for C2_entrance_door_text_one, C2_entrance_text_one in zip(C2_entrance_door_text_ones, C2_entrance_text_ones):
+        if player.is_collision(C2_entrance_door_text_one):
+            C2_entrance_text_one.destroy()
+            C2_entrance_text_ones.remove(C2_entrance_text_one)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[104])
+
+    for C2_entrance_door_text_two, C2_entrance_text_two in zip(C2_entrance_door_text_twos, C2_entrance_text_twos):
+        if player.is_collision(C2_entrance_door_text_two):
+            C2_entrance_text_two.destroy()
+            C2_entrance_text_twos.remove(C2_entrance_text_two)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[105])
+
+    for C2_entrance_door_text_three, C2_entrance_text_three in zip(C2_entrance_door_text_threes, C2_entrance_text_threes):
+        if player.is_collision(C2_entrance_door_text_three):
+            C2_entrance_text_three.destroy()
+            C2_entrance_text_threes.remove(C2_entrance_text_three)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[106])
+
+    for C2_entrance_door_text_four, C2_entrance_text_four in zip(C2_entrance_door_text_fours, C2_entrance_text_fours):
+        if player.is_collision(C2_entrance_door_text_four):
+            C2_entrance_text_four.destroy()
+            C2_entrance_text_fours.remove(C2_entrance_text_four)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[107])
+
+    for C2_entrance_door_text_five, C2_entrance_text_five in zip(C2_entrance_door_text_fives, C2_entrance_text_fives):
+        if player.is_collision(C2_entrance_door_text_five):
+            C2_entrance_text_five.destroy()
+            C2_entrance_text_fives.remove(C2_entrance_text_five)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[108])
+
+    for C2_entrance_door_text_six, C2_entrance_text_six in zip(C2_entrance_door_text_sixes, C2_entrance_text_sixes):
+        if player.is_collision(C2_entrance_door_text_six):
+            C2_entrance_text_six.destroy()
+            C2_entrance_text_sixes.remove(C2_entrance_text_six)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[109])
+
+    for C2_entrance_door_text_seven, C2_entrance_text_seven in zip(C2_entrance_door_text_sevens, C2_entrance_text_sevens):
+        if player.is_collision(C2_entrance_door_text_seven):
+            C2_entrance_text_seven.destroy()
+            C2_entrance_text_sevens.remove(C2_entrance_text_seven)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[110])
+
+    for C2_entrance_door_text_eight, C2_entrance_text_eight in zip(C2_entrance_door_text_eights, C2_entrance_text_eights):
+        if player.is_collision(C2_entrance_door_text_eight):
+            C2_entrance_text_eight.destroy()
+            C2_entrance_text_eights.remove(C2_entrance_text_eight)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[111])
+
+    for C2_entrance_door_text_nine, C2_entrance_text_nine in zip(C2_entrance_door_text_nines, C2_entrance_text_nines):
+        if player.is_collision(C2_entrance_door_text_nine):
+            C2_entrance_text_nine.destroy()
+            C2_entrance_text_nines.remove(C2_entrance_text_nine)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[112])
+
+    for C2_entrance_door_text_ten, C2_entrance_text_ten in zip(C2_entrance_door_text_tens, C2_entrance_text_tens):
+        if player.is_collision(C2_entrance_door_text_ten):
+            C2_entrance_text_ten.destroy()
+            C2_entrance_text_tens.remove(C2_entrance_text_ten)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[113])
+
+    for C2_entrance_door_text_eleven, C2_entrance_text_eleven in zip(C2_entrance_door_text_elevens, C2_entrance_text_elevens):
+        if player.is_collision(C2_entrance_door_text_eleven):
+            C2_entrance_text_eleven.destroy()
+            C2_entrance_text_elevens.remove(C2_entrance_text_eleven)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[114])
+
+    for C2_entrance_door_text_twelve, C2_entrance_text_twelve in zip(C2_entrance_door_text_twelves, C2_entrance_text_twelves):
+        if player.is_collision(C2_entrance_door_text_twelve):
+            C2_entrance_text_twelve.destroy()
+            C2_entrance_text_twelves.remove(C2_entrance_text_twelve)
+            pen.clear()
+            walls.clear()
             setup_maze_C2(levels[9])
+
+
+
+    for C2_key, bodybagmonster, pill_one, wheelchair in zip(keys, bodybagmonsters, pill_ones, wheelchairs):
+        if player.is_collision(C2_key):
+            bodybagmonster.destroy()
+            bodybagmonsters.remove(bodybagmonster)
+            pill_one.destroy()
+            pill_ones.remove(pill_one)
+            wheelchair.destroy()
+            wheelchairs.remove(wheelchair)
+            C2_key.destroy()
+            keys.remove(C2_key)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[129])
+
+
+    for find_key_C2_one, find_key_doors_C2_one in zip(find_key_C2_ones, find_key_doors_C2_ones):
+        if player.is_collision(find_key_doors_C2_one):
+            find_key_C2_one.destroy()
+            find_key_C2_ones.remove(find_key_C2_one)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[130])
+
+    for find_key_C2_two, find_key_doors_C2_two  in zip(find_key_C2_twos, find_key_doors_C2_twos):
+        if player.is_collision(find_key_doors_C2_two):
+            find_key_C2_two.destroy()
+            find_key_C2_twos.remove(find_key_C2_two)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[131])
+
+    for find_key_C2_three, find_key_doors_C2_three in zip(find_key_C2_threes, find_key_doors_C2_threes):
+        if player.is_collision(find_key_doors_C2_three):
+            find_key_C2_three.destroy()
+            find_key_C2_threes.remove(find_key_C2_three)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[132])
+
+    for find_key_C2_four, find_key_doors_C2_four in zip(find_key_C2_fours, find_key_doors_C2_fours):
+        if player.is_collision(find_key_doors_C2_four):
+            find_key_C2_four.destroy()
+            find_key_C2_fours.remove(find_key_C2_four)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[133])
+
+    for find_key_C2_five, find_key_doors_C2_five in zip(find_key_C2_fives, find_key_doors_C2_fives):
+        if player.is_collision(find_key_doors_C2_five):
+            find_key_C2_five.destroy()
+            find_key_C2_fives.remove(find_key_C2_five)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[134])
+
+    for find_key_C2_six, find_key_doors_C2_six in zip(find_key_C2_sixes, find_key_doors_C2_sixes):
+        if player.is_collision(find_key_doors_C2_six):
+            find_key_C2_six.destroy()
+            find_key_C2_sixes.remove(find_key_C2_six)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[135])
+
+    for find_key_C2_seven, find_key_doors_C2_seven  in zip(find_key_C2_sevens, find_key_doors_C2_sevens):
+        if player.is_collision(find_key_doors_C2_seven):
+            find_key_C2_seven.destroy()
+            find_key_C2_sevens.remove(find_key_C2_seven)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[136])
+
+    for find_key_C2_eight, find_key_doors_C2_eight in zip(find_key_C2_eights, find_key_doors_C2_eights):
+        if player.is_collision(find_key_doors_C2_eight):
+            find_key_C2_eight.destroy()
+            find_key_C2_eights.remove(find_key_C2_eight)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[137])
+
+    for find_key_C2_nine, find_key_doors_C2_nine in zip(find_key_C2_nines, find_key_doors_C2_nines):
+        if player.is_collision(find_key_doors_C2_nine):
+            find_key_C2_nine.destroy()
+            find_key_C2_nines.remove(find_key_C2_nine)
+            pen.clear()
+            walls.clear()
+            setup_maze_C2(levels[10])
+
+    for bodybagmonster, C2_key, pill_one, wheelchair in zip(bodybagmonsters, keys, pill_ones, wheelchairs):
+        if player.is_collision(bodybagmonster):
+            bodybagmonster.destroy()
+            bodybagmonsters.remove(bodybagmonster)
+            pill_one.destroy()
+            pill_ones.remove(pill_one)
+            wheelchair.destroy()
+            wheelchairs.remove(wheelchair)
+            C2_key.destroy()
+            keys.remove(C2_key)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[121])
+
+    for body_bag_monster_death_horizontal_one, body_bag_door_exit_horizontal_one in zip(body_bag_monster_death_horizontal_ones, body_bag_door_exit_horizontal_ones):
+        if player.is_collision(body_bag_door_exit_horizontal_one):
+            body_bag_monster_death_horizontal_one.destroy()
+            body_bag_monster_death_horizontal_ones.remove(body_bag_monster_death_horizontal_one)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[122])
+
+    for body_bag_monster_death_horizontal_two, body_bag_door_exit_horizontal_two in zip(body_bag_monster_death_horizontal_twos, body_bag_door_exit_horizontal_twos):
+        if player.is_collision(body_bag_door_exit_horizontal_two):
+            body_bag_monster_death_horizontal_two.destroy()
+            body_bag_monster_death_horizontal_twos.remove(body_bag_monster_death_horizontal_two)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[123])
+
+    for body_bag_monster_death_horizontal_three, body_bag_door_exit_horizontal_three in zip(body_bag_monster_death_horizontal_threes, body_bag_door_exit_horizontal_threes):
+        if player.is_collision(body_bag_door_exit_horizontal_three):
+            body_bag_monster_death_horizontal_three.destroy()
+            body_bag_monster_death_horizontal_threes.remove(body_bag_monster_death_horizontal_three)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[124])
+
+    for body_bag_monster_death_horizontal_four, body_bag_door_exit_horizontal_four in zip(body_bag_monster_death_horizontal_fours, body_bag_door_exit_horizontal_fours):
+        if player.is_collision(body_bag_door_exit_horizontal_four):
+            body_bag_monster_death_horizontal_four.destroy()
+            body_bag_monster_death_horizontal_fours.remove(body_bag_monster_death_horizontal_four)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[125])
+
+    for body_bag_monster_death_horizontal_five, body_bag_door_exit_horizontal_five in zip(body_bag_monster_death_horizontal_fives, body_bag_door_exit_horizontal_fives):
+        if player.is_collision(body_bag_door_exit_horizontal_five):
+            body_bag_monster_death_horizontal_five.destroy()
+            body_bag_monster_death_horizontal_fives.remove(body_bag_monster_death_horizontal_five)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[126])
+
+    for body_bag_monster_death_horizontal_six, body_bag_door_exit_horizontal_six in zip(body_bag_monster_death_horizontal_sixes, body_bag_door_exit_horizontal_sixes):
+        if player.is_collision(body_bag_door_exit_horizontal_six):
+            body_bag_monster_death_horizontal_six.destroy()
+            body_bag_monster_death_horizontal_sixes.remove(body_bag_monster_death_horizontal_six)
+            pen.clear()
+            walls.clear()
+            setup_maze_C2(levels[9])
+
+    for bodybagmonstermoving, pill_one, wheelchair in zip(bodybagmonstermovings, pill_ones, wheelchairs):
+        if player.is_collision(bodybagmonstermoving):
+            bodybagmonstermoving.destroy()
+            bodybagmonstermovings.remove(bodybagmonstermoving)
+            pill_one.destroy()
+            pill_ones.remove(pill_one)
+            wheelchair.destroy()
+            wheelchairs.remove(wheelchair)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[127])
+
+
+    for body_bag_monster_death_vertical_one, body_bag_door_exit_vertical_one in zip(body_bag_monster_death_vertical_ones, body_bag_door_exit_vertical_ones):
+        if player.is_collision(body_bag_door_exit_vertical_one):
+            body_bag_monster_death_vertical_one.destroy()
+            body_bag_monster_death_vertical_ones.remove(body_bag_monster_death_vertical_one)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[128])
+
+    for body_bag_monster_death_vertical_two, body_bag_door_exit_vertical_two in zip(body_bag_monster_death_vertical_twos, body_bag_door_exit_vertical_twos):
+        if player.is_collision(body_bag_door_exit_vertical_two):
+            body_bag_monster_death_vertical_two.destroy()
+            body_bag_monster_death_vertical_twos.remove(body_bag_monster_death_vertical_two)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[126])
+
+
+
+    for C1_second_door, dead_body, monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, blood_messages_trigger in zip(C1_second_doors, dead_bodies, monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, blood_messages_triggers ):
+        if player.is_collision(C1_second_door):
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[110])
+
+
+    for C1_locked_one_door_text_one, C1_locked_text_one in zip(C1_locked_one_door_text_ones, C1_locked_text_ones):
+        if player.is_collision(C1_locked_one_door_text_one):
+            C1_locked_text_one.destroy()
+            C1_locked_text_ones.remove(C1_locked_text_one)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[111])
+
+    for C1_locked_one_door_text_two, C1_locked_text_two in zip(C1_locked_one_door_text_twos, C1_locked_text_twos):
+        if player.is_collision(C1_locked_one_door_text_two):
+            C1_locked_text_two.destroy()
+            C1_locked_text_twos.remove(C1_locked_text_two)
+            pen.clear()
+            walls.clear()
+            hallway_version_two(levels[112])
+
+    for C1_locked_one_door_text_three, C1_locked_text_three in zip(C1_locked_one_door_text_threes, C1_locked_text_threes):
+        if player.is_collision(C1_locked_one_door_text_three):
+            C1_locked_text_three.destroy()
+            C1_locked_text_threes.remove(C1_locked_text_three)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[113])
 
     for C2_exit in C2_exits:
         if player.is_collision(C2_exit):
             pen.clear()
-            setup_maze_0(levels[11])
+            walls.clear()
+            C2_room(levels[142])
 
-    for bodybagmonstermoving in bodybagmonstermovings:
-        if player.is_collision(bodybagmonstermoving):
-            print("You died!")
+    for failed_C2_exit, failed_exit_C2_door, bodybagmonster, C2_key, pill_one, wheelchair in zip(failed_C2_exits, failed_exit_C2_doors, bodybagmonsters, keys, pill_ones, wheelchairs):
+        if player.is_collision(failed_exit_C2_door):
+            bodybagmonster.destroy()
+            bodybagmonsters.remove(bodybagmonster)
+            C2_key.destroy()
+            keys.remove(C2_key)
+            pill_one.destroy()
+            pill_ones.remove(pill_one)
+            wheelchair.destroy()
+            wheelchairs.remove(wheelchair)
+            failed_C2_exit.destroy()
+            failed_C2_exits.remove(failed_C2_exit)
+            pen.clear()
+            walls.clear()
+            setup_maze_C2(levels[9])
+
+
 
     for C2_exit_with_key in C2_exit_with_keys:
-      for bodybagmonstermoving in bodybagmonstermovings:
+      for bodybagmonstermoving, pill_one, wheelchair in zip(bodybagmonstermovings, pill_ones, wheelchairs):
         if player.is_collision(C2_exit_with_key):
             bodybagmonstermoving.destroy()
             bodybagmonstermovings.remove(bodybagmonstermoving)
+            pill_one.destroy()
+            pill_ones.remove(pill_one)
+            wheelchair.destroy()
+            wheelchairs.remove(wheelchair)
             pen.clear()
+            walls.clear()
+            C2_room(levels[138])
+
+
+    for exit_door_C2_hallway_one, exit_to_hallway_from_C2_one in zip(exit_door_C2_hallway_ones, exit_to_hallway_from_C2_ones):
+        if player.is_collision(exit_door_C2_hallway_one):
+            exit_to_hallway_from_C2_one.destroy()
+            exit_to_hallway_from_C2_ones.remove(exit_to_hallway_from_C2_one)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[139])
+
+    for exit_door_C2_hallway_two, exit_to_hallway_from_C2_two in zip(exit_door_C2_hallway_twos, exit_to_hallway_from_C2_twos):
+        if player.is_collision(exit_door_C2_hallway_two):
+            exit_to_hallway_from_C2_two.destroy()
+            exit_to_hallway_from_C2_twos.remove(exit_to_hallway_from_C2_two)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[140])
+
+    for exit_door_C2_hallway_three, exit_to_hallway_from_C2_three in zip(exit_door_C2_hallway_threes, exit_to_hallway_from_C2_threes):
+        if player.is_collision(exit_door_C2_hallway_three):
+            exit_to_hallway_from_C2_three.destroy()
+            exit_to_hallway_from_C2_threes.remove(exit_to_hallway_from_C2_three)
+            pen.clear()
+            walls.clear()
+            C2_room(levels[141])
+
+    for exit_door_C2_hallway_four, exit_to_hallway_from_C2_four in zip(exit_door_C2_hallway_fours, exit_to_hallway_from_C2_fours):
+        if player.is_collision(exit_door_C2_hallway_four):
+            exit_to_hallway_from_C2_four.destroy()
+            exit_to_hallway_from_C2_fours.remove(exit_to_hallway_from_C2_four)
+            pen.clear()
+            walls.clear()
             setup_maze_1(levels[12])
 
+
+    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two, glass_pieces_final_three in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos, glass_pieces_final_threes):
+        if player.is_collision(hand_monster_hallway):
+            hand_monster_hallway.destroy()
+            hand_monster_hallways.remove(hand_monster_hallway)
+            hand_monster_hallway2.destroy()
+            hand_monster_hallways2.remove(hand_monster_hallway2)
+            hand_monster_hallway3.destroy()
+            hand_monster_hallways3.remove(hand_monster_hallway3)
+            glass_pieces_final_one.destroy()
+            glass_pieces_final_ones.remove(glass_pieces_final_one)
+            glass_pieces_final_two.destroy()
+            glass_pieces_final_twos.remove(glass_pieces_final_two)
+            glass_pieces_final_three.destroy()
+            glass_pieces_final_threes.remove(glass_pieces_final_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[143])
+
+
+    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two, glass_pieces_final_three in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos, glass_pieces_final_threes):
+        if player.is_collision(hand_monster_hallway2):
+            hand_monster_hallway.destroy()
+            hand_monster_hallways.remove(hand_monster_hallway)
+            hand_monster_hallway2.destroy()
+            hand_monster_hallways2.remove(hand_monster_hallway2)
+            hand_monster_hallway3.destroy()
+            hand_monster_hallways3.remove(hand_monster_hallway3)
+            glass_pieces_final_one.destroy()
+            glass_pieces_final_ones.remove(glass_pieces_final_one)
+            glass_pieces_final_two.destroy()
+            glass_pieces_final_twos.remove(glass_pieces_final_two)
+            glass_pieces_final_three.destroy()
+            glass_pieces_final_threes.remove(glass_pieces_final_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[143])
+
+
+    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two, glass_pieces_final_three in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos, glass_pieces_final_threes):
+        if player.is_collision(hand_monster_hallway3):
+            hand_monster_hallway.destroy()
+            hand_monster_hallways.remove(hand_monster_hallway)
+            hand_monster_hallway2.destroy()
+            hand_monster_hallways2.remove(hand_monster_hallway2)
+            hand_monster_hallway3.destroy()
+            hand_monster_hallways3.remove(hand_monster_hallway3)
+            glass_pieces_final_one.destroy()
+            glass_pieces_final_ones.remove(glass_pieces_final_one)
+            glass_pieces_final_two.destroy()
+            glass_pieces_final_twos.remove(glass_pieces_final_two)
+            glass_pieces_final_three.destroy()
+            glass_pieces_final_threes.remove(glass_pieces_final_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[143])
+
+
+
+
+
+    for hand_hallway_monster_door_exit, hand_hallway_monster in zip(hand_hallway_monster_door_exits, hand_hallway_monsters):
+        if player.is_collision(hand_hallway_monster_door_exit):
+            hand_hallway_monster.destroy()
+            hand_hallway_monsters.remove(hand_hallway_monster)
+            pen.clear()
+            walls.clear()
+            setup_maze_1(levels[12])
+
+
     for exit_hallway in exit_hallways:
-      for hand_monster_hallway, hand_monster_hallway2, hand_monster_hallway3 in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3):
+      for hand_monster_hallway, hand_monster_hallway2, hand_monster_hallway3, dead_body, glass_pieces_final_one, glass_pieces_final_two, glass_pieces_final_three in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones, glass_pieces_final_twos, glass_pieces_final_threes):
         if player.is_collision(exit_hallway):
               hand_monster_hallway.destroy()
               hand_monster_hallways.remove(hand_monster_hallway)
@@ -5873,16 +14590,84 @@ while True:
               hand_monster_hallways2.remove(hand_monster_hallway2)
               hand_monster_hallway3.destroy()
               hand_monster_hallways3.remove(hand_monster_hallway3)
+              glass_pieces_final_one.destroy()
+              glass_pieces_final_ones.remove(glass_pieces_final_one)
+              glass_pieces_final_two.destroy()
+              glass_pieces_final_twos.remove(glass_pieces_final_two)
+              glass_pieces_final_three.destroy()
+              glass_pieces_final_threes.remove(glass_pieces_final_three)
+              dead_body.destroy()
+              dead_bodies.remove(dead_body)
               pen.clear()
-              setup_maze_exit(levels[13])
+              walls.clear()
+              hallway_last_version(levels[144])
 
-    for exit_to_pool in exit_to_pools:
-      for spiderweb, monster, spider, spider_monster_hallway2, spider_monster_hallway3 in zip(spiderwebs, monsters, spiders, spider_monster_hallways2, spider_monster_hallways3):
-        if player.is_collision(exit_to_pool):
-            spiderweb.destroy()
-            spiderwebs.remove(spiderweb)
-            monster.destroy()
-            monsters.remove(monster)
+
+      for  exit_to_pool_hallway_one, exit_door_pool_hallways_one in zip(exit_to_pool_hallway_ones, exit_door_pool_hallways_ones):
+        if player.is_collision(exit_door_pool_hallways_one):
+            exit_to_pool_hallway_one.destroy()
+            exit_to_pool_hallway_ones.remove(exit_to_pool_hallway_one)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[145])
+
+      for exit_to_pool_hallway_two, exit_door_pool_hallways_two in zip(exit_to_pool_hallway_twos, exit_door_pool_hallways_twos):
+        if player.is_collision(exit_door_pool_hallways_two):
+            exit_to_pool_hallway_two.destroy()
+            exit_to_pool_hallway_twos.remove(exit_to_pool_hallway_two)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[146])
+
+      for exit_to_pool_hallway_three, exit_door_pool_hallways_three in zip(exit_to_pool_hallway_threes, exit_door_pool_hallways_threes):
+        if player.is_collision(exit_door_pool_hallways_three):
+            exit_to_pool_hallway_three.destroy()
+            exit_to_pool_hallway_threes.remove(exit_to_pool_hallway_three)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[147])
+
+      for exit_to_pool_hallway_four, exit_door_pool_hallways_four in zip(exit_to_pool_hallway_fours, exit_door_pool_hallways_fours):
+        if player.is_collision(exit_door_pool_hallways_four):
+            exit_to_pool_hallway_four.destroy()
+            exit_to_pool_hallway_fours.remove(exit_to_pool_hallway_four)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[148])
+
+      for exit_to_pool_hallway_five, exit_door_pool_hallways_five in zip(exit_to_pool_hallway_fives, exit_door_pool_hallways_fives):
+        if player.is_collision(exit_door_pool_hallways_five):
+            exit_to_pool_hallway_five.destroy()
+            exit_to_pool_hallway_fives.remove(exit_to_pool_hallway_five)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[149])
+
+      for exit_to_pool_hallway_six, exit_door_pool_hallways_six in zip(exit_to_pool_hallway_sixes, exit_door_pool_hallways_sixes):
+        if player.is_collision(exit_door_pool_hallways_six):
+            exit_to_pool_hallway_six.destroy()
+            exit_to_pool_hallway_sixes.remove(exit_to_pool_hallway_six)
+            pen.clear()
+            walls.clear()
+            setup_maze_exit(levels[13])
+
+
+    # for blob_monster_pool_hallway_door_exit, pool_blob_monster_hallway_death in zip(blob_monster_pool_hallway_door_exits,  pool_blob_monster_hallway_deaths):
+    #     if player.is_collision(blob_monster_pool_hallway_door_exit):
+    #         pool_blob_monster_hallway_death.destroy()
+    #         pool_blob_monster_hallway_deaths.remove(pool_blob_monster_hallway_death)
+    #         pen.clear()
+    #         setup_maze_exit(levels[13])
+
+
+
+
+    for spider, spider_monster_hallway2, spider_monster_hallway3, spiderweb_last_hallway, monsters_last_hallway in zip(spiders, spider_monster_hallways2, spider_monster_hallways3, spiderweb_last_hallways, monsters_last_hallways):
+        if player.is_collision(spider):
+            spiderweb_last_hallway.destroy()
+            spiderweb_last_hallways.remove(spiderweb_last_hallway)
+            monsters_last_hallway.destroy()
+            monsters_last_hallways.remove(monsters_last_hallway)
             spider.destroy()
             spiders.remove(spider)
             spider_monster_hallway2.destroy()
@@ -5890,15 +14675,294 @@ while True:
             spider_monster_hallway3.destroy()
             spider_monster_hallways3.remove(spider_monster_hallway3)
             pen.clear()
+            walls.clear()
+            pool_hallway_game_over(levels[153])
+
+
+
+
+
+    for spider, spider_monster_hallway2, spider_monster_hallway3, spiderweb_last_hallway, monsters_last_hallway in zip(spiders, spider_monster_hallways2, spider_monster_hallways3, spiderweb_last_hallways, monsters_last_hallways):
+        if player.is_collision(spider_monster_hallway2):
+            spiderweb_last_hallway.destroy()
+            spiderweb_last_hallways.remove(spiderweb_last_hallway)
+            monsters_last_hallway.destroy()
+            monsters_last_hallways.remove(monsters_last_hallway)
+            spider.destroy()
+            spiders.remove(spider)
+            spider_monster_hallway2.destroy()
+            spider_monster_hallways2.remove(spider_monster_hallway2)
+            spider_monster_hallway3.destroy()
+            spider_monster_hallways3.remove(spider_monster_hallway3)
+            pen.clear()
+            walls.clear()
+            pool_hallway_game_over(levels[153])
+
+
+    for spider, spider_monster_hallway2, spider_monster_hallway3, spiderweb_last_hallway, monsters_last_hallway in zip(spiders, spider_monster_hallways2, spider_monster_hallways3, spiderweb_last_hallways, monsters_last_hallways):
+        if player.is_collision(spider_monster_hallway3):
+            spiderweb_last_hallway.destroy()
+            spiderweb_last_hallways.remove(spiderweb_last_hallway)
+            monsters_last_hallway.destroy()
+            monsters_last_hallways.remove(monsters_last_hallway)
+            spider.destroy()
+            spiders.remove(spider)
+            spider_monster_hallway2.destroy()
+            spider_monster_hallways2.remove(spider_monster_hallway2)
+            spider_monster_hallway3.destroy()
+            spider_monster_hallways3.remove(spider_monster_hallway3)
+            pen.clear()
+            walls.clear()
+            pool_hallway_game_over(levels[153])
+
+
+    for spider_monster_hallway_game_over_text_one, spider_monster_hallway_game_over_text_exit_one in zip(spider_monster_hallway_game_over_text_ones, spider_monster_hallway_game_over_text_exit_ones):
+        if player.is_collision(spider_monster_hallway_game_over_text_exit_one):
+            spider_monster_hallway_game_over_text_one.destroy()
+            spider_monster_hallway_game_over_text_ones.remove(spider_monster_hallway_game_over_text_one)
+            pen.clear()
+            walls.clear()
+            pool_hallway_game_over(levels[170])
+
+    for spider_monster_hallway_game_over_text_two, spider_monster_hallway_game_over_text_exit_two in zip(spider_monster_hallway_game_over_text_twos, spider_monster_hallway_game_over_text_exit_twos):
+        if player.is_collision(spider_monster_hallway_game_over_text_exit_two):
+            spider_monster_hallway_game_over_text_two.destroy()
+            spider_monster_hallway_game_over_text_twos.remove(spider_monster_hallway_game_over_text_two)
+            pen.clear()
+            walls.clear()
+            setup_maze_exit(levels[13])
+
+
+
+
+    for exit_to_pool, spider, spider_monster_hallway2, spider_monster_hallway3, spiderweb_last_hallway, monsters_last_hallway in zip(exit_to_pools, spiders, spider_monster_hallways2, spider_monster_hallways3, spiderweb_last_hallways, monsters_last_hallways):
+        if player.is_collision(exit_to_pool):
+              spiderweb_last_hallway.destroy()
+              spiderweb_last_hallways.remove(spiderweb_last_hallway)
+              monsters_last_hallway.destroy()
+              monsters_last_hallways.remove(monsters_last_hallway)
+              spider.destroy()
+              spiders.remove(spider)
+              spider_monster_hallway2.destroy()
+              spider_monster_hallways2.remove(spider_monster_hallway2)
+              spider_monster_hallway3.destroy()
+              spider_monster_hallways3.remove(spider_monster_hallway3)
+              pen.clear()
+              walls.clear()
+              pool_area(levels[151])
+
+
+
+
+
+
+
+    for exit_to_pool_area_one, exit_to_pool_area_exit_door_one in zip(exit_to_pool_area_ones, exit_to_pool_area_exit_door_ones):
+        if player.is_collision(exit_to_pool_area_exit_door_one):
+            exit_to_pool_area_one.destroy()
+            exit_to_pool_area_ones.remove(exit_to_pool_area_one)
+            pen.clear()
+            walls.clear()
+            pool_area(levels[152])
+
+    for exit_to_pool_area_two, exit_to_pool_area_exit_door_two in zip(exit_to_pool_area_twos, exit_to_pool_area_exit_door_twos):
+        if player.is_collision(exit_to_pool_area_exit_door_two):
+            exit_to_pool_area_two.destroy()
+            exit_to_pool_area_twos.remove(exit_to_pool_area_two)
+            pen.clear()
+            walls.clear()
+            pool_area(levels[153])
+
+
+
+    for exit_to_pool_area_three, exit_to_pool_area_exit_door_three in zip(exit_to_pool_area_threes, exit_to_pool_area_exit_door_threes):
+        if player.is_collision(exit_to_pool_area_exit_door_three):
+            exit_to_pool_area_three.destroy()
+            exit_to_pool_area_threes.remove(exit_to_pool_area_three)
+            pen.clear()
+            walls.clear()
+            pool_area(levels[154])
+
+    for look_at_pool_exit_door_one, look_at_pool_one in zip(look_at_pool_exit_door_ones, look_at_pool_ones):
+        if player.is_collision(look_at_pool_exit_door_one):
+            look_at_pool_one.destroy()
+            look_at_pool_ones.remove(look_at_pool_one)
+            pen.clear()
+            walls.clear()
+            pool_area(levels[155])
+
+    for look_at_pool_exit_door_two, look_at_pool_two in zip(look_at_pool_exit_door_twos, look_at_pool_twos):
+        if player.is_collision(look_at_pool_exit_door_two):
+            look_at_pool_two.destroy()
+            look_at_pool_twos.remove(look_at_pool_two)
+            pen.clear()
+            walls.clear()
+            pool_area(levels[156])
+
+    for look_at_pool_exit_door_three, look_at_pool_three in zip(look_at_pool_exit_door_threes, look_at_pool_threes):
+        if player.is_collision(look_at_pool_exit_door_three):
+            look_at_pool_three.destroy()
+            look_at_pool_threes.remove(look_at_pool_three)
+            pen.clear()
+            walls.clear()
             setup_maze_pool_area(levels[14])
 
-    for door_to_exit_game in door_to_exit_games:
-      for pool in pools:
+    for door_to_exit_game, pool in zip(door_to_exit_games, pools):
         if player.is_collision(door_to_exit_game):
             pool.destroy()
             pools.remove(pool)
+            door_to_exit_game.destroy()
+            door_to_exit_games.remove(door_to_exit_game)
             pen.clear()
-            print("You win!")
+            walls.clear()
+            pool_area(levels[157])
+
+
+    for finish_game_exit_door_one, finish_game_one in zip(finish_game_exit_door_ones, finish_game_ones):
+        if player.is_collision(finish_game_exit_door_one):
+          finish_game_one.destroy()
+          finish_game_ones.remove(finish_game_one)
+          pen.clear()
+          walls.clear()
+          pool_area(levels[158])
+
+    for finish_game_exit_door_two, finish_game_two in zip(finish_game_exit_door_twos, finish_game_twos):
+        if player.is_collision(finish_game_exit_door_two):
+          finish_game_two.destroy()
+          finish_game_twos.remove(finish_game_two)
+          pen.clear()
+          walls.clear()
+          pool_area(levels[159])
+
+    for finish_game_exit_door_three, finish_game_three in zip(finish_game_exit_door_threes, finish_game_threes):
+      if player.is_collision(finish_game_exit_door_two):
+        finish_game_three.destroy()
+        finish_game_threes.remove(finish_game_three)
+        pen.clear()
+        walls.clear()
+        pool_area(levels[160])
+
+    for finish_game_exit_door_four, finish_game_four in zip(finish_game_exit_door_fours, finish_game_fours):
+
+      if player.is_collision(finish_game_exit_door_four):
+        finish_game_four.destroy()
+        finish_game_fours.remove(finish_game_four)
+        pen.clear()
+        walls.clear()
+        wn.bgpic("")
+        wn.bgcolor("black")
+        wn.update()
+        pool_area(levels[162])
+
+    for end_screen, end_screen_door in zip(end_screens, end_screen_doors):
+      if player.is_collision(end_screen_door):
+            end_screen.destroy()
+            end_screens.remove(end_screen)
+            pen.clear()
+            walls.clear()
+            pool_area(levels[161])
+
+
+
+
+
+    for  monsters_last_hallway, spiderweb_last_hallway, spider, spider_monster_hallway2, spider_monster_hallway3 in zip(monsters_last_hallways, spiderweb_last_hallways, spiders, spider_monster_hallways2, spider_monster_hallways3):
+        if player.is_collision(monsters_last_hallway):
+            spiderweb_last_hallway.destroy()
+            spiderweb_last_hallways.remove(spiderweb_last_hallway)
+            monsters_last_hallway.destroy()
+            monsters_last_hallways.remove(monsters_last_hallway)
+            spider.destroy()
+            spiders.remove(spider)
+            spider_monster_hallway2.destroy()
+            spider_monster_hallways2.remove(spider_monster_hallway2)
+            spider_monster_hallway3.destroy()
+            spider_monster_hallways3.remove(spider_monster_hallway3)
+            pen.clear()
+            walls.clear()
+            pool_hallway_game_over(levels[163])
+
+
+    for blob_monster_hallway_game_over_text, blob_monster_hallway_game_over_text_exit in zip(blob_monster_hallway_game_over_texts, blob_monster_hallway_game_over_text_exits):
+        if player.is_collision(blob_monster_hallway_game_over_text_exit):
+            blob_monster_hallway_game_over_text.destroy()
+            blob_monster_hallway_game_over_texts.remove(blob_monster_hallway_game_over_text)
+            pen.clear()
+            walls.clear()
+            pool_hallway_game_over(levels[164])
+
+
+    for blob_monster_hallway_game_over_two_text, blob_monster_hallway_game_over_text_exit_two in zip(blob_monster_hallway_game_over_two_texts, blob_monster_hallway_game_over_text_exit_twos):
+        if player.is_collision(blob_monster_hallway_game_over_text_exit_two):
+            blob_monster_hallway_game_over_two_text.destroy()
+            blob_monster_hallway_game_over_two_texts.remove(blob_monster_hallway_game_over_two_text)
+            pen.clear()
+            walls.clear()
+            pool_hallway_game_over(levels[169])
+
+    for blob_monster_hallway_game_over_three_text, blob_monster_hallway_game_over_text_exit_three in zip(blob_monster_hallway_game_over_three_texts, blob_monster_hallway_game_over_text_exit_threes):
+        if player.is_collision(blob_monster_hallway_game_over_text_exit_three):
+            blob_monster_hallway_game_over_three_text.destroy()
+            blob_monster_hallway_game_over_three_texts.remove(blob_monster_hallway_game_over_three_text)
+            pen.clear()
+            walls.clear()
+            setup_maze_exit(levels[13])
+
+    for exam_room_reenter_door_one, monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(exam_room_reenter_door_ones, monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
+        if player.is_collision(exam_room_reenter_door_one):
+            exam_room_reenter_door_one.destroy()
+            exam_room_reenter_door_ones.remove(exam_room_reenter_door_one)
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            reenter_exam_room_game_over(levels[174])
+
+    for exam_room_reenter_door_two, monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(exam_room_reenter_door_twos, monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
+        if player.is_collision(exam_room_reenter_door_two):
+            exam_room_reenter_door_two.destroy()
+            exam_room_reenter_door_twos.remove(exam_room_reenter_door_two)
+            monstertwo.destroy()
+            monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
+            glass_shard_three.destroy()
+            glass_pile_threes.remove(glass_shard_three)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            reenter_exam_room_game_over(levels[174])
+
+
+    #
+    # for spider_monster_hallway_game_over_text, spider_monster_hallway_game_over_text_exit in zip(spider_monster_hallway_game_over_texts, spider_monster_hallway_game_over_text_exit):
+    #     if player.is_collision(spider_monster_hallway_game_over_text_exit):
+    #         spider_monster_hallway_game_over_text.destroy()
+    #         spider_monster_hallway_game_over_texts.remove(spider_monster_hallway_game_over_text)
+    #         pen.clear()
+
+
+
+
+
+
+
+
 
 
 
@@ -5910,6 +14974,9 @@ while True:
 
 
 
+
+
+run_game()
 
 
 
