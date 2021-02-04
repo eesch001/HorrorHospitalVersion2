@@ -5,10 +5,10 @@
 import sys
 import random
 import math
-#import keyboard
+# import keyboard
 import turtle
 
-# import winsound
+#import winsound
 # Blood message: Icons made by <a href="https://www.flaticon.com/free-icon/blood_2068417" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 
@@ -85,7 +85,7 @@ wn.listen()
 wn.onkeypress(toggle_pause, "p")
 
 
-# winsound.PlaySound("Dreaming.wav", winsound.SND_LOOP|winsound.SND_ASYNC)
+#winsound.PlaySound("Dreaming.wav", winsound.SND_LOOP|winsound.SND_ASYNC)
 
 
 
@@ -252,6 +252,11 @@ turtle.register_shape("finished_game_one.gif")
 turtle.register_shape("finished_game_two.gif")
 turtle.register_shape("finished_game_three.gif")
 turtle.register_shape("finished_game_four.gif")
+turtle.register_shape("finished_game_five.gif")
+turtle.register_shape("finished_game_six.gif")
+turtle.register_shape("finished_game_seven.gif")
+turtle.register_shape("finished_game_eight.gif")
+
 turtle.register_shape("C2_failed_exit.gif")
 turtle.register_shape("hand_monster_hallway_game_over.gif")
 
@@ -273,13 +278,14 @@ turtle.register_shape("exam_room_hand_monster_game_over_three_text.gif")
 turtle.register_shape("exam_room_reenter_game_over_one.gif")
 turtle.register_shape("exam_room_reenter_game_over_two.gif")
 turtle.register_shape("exam_room_reenter_game_over_three.gif")
+turtle.register_shape("door_to_pool_hallway.gif")
 
 
 class Pen(turtle.Turtle):
     def __init__(self):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("")
+        self.color("white")
         self.penup()
         self.speed(0)
 
@@ -1482,6 +1488,66 @@ class Finished_game_four(turtle.Turtle):
 
 
 
+class Finished_game_five(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("finished_game_five.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Finished_game_six(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("finished_game_six.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Finished_game_seven(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("finished_game_seven.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Finished_game_eight(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("finished_game_eight.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
 class Blob_Monster_Hall_Two_Game_Over_One(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
@@ -2502,9 +2568,6 @@ class C3_Entrance_Text(Door_to_Exit_Text_Box):
         self.speed(0)
         self.goto(x, y)
 
-    def destroy(self):
-        self.goto(2000, 2000)
-        self.hideturtle()
 
 
 
@@ -2537,9 +2600,7 @@ class C1_Entry_Text(Door_to_Exit_Text_Box):
         self.speed(0)
         self.goto(x, y)
 
-    def destroy(self):
-        self.goto(2000, 2000)
-        self.hideturtle()
+
 
 
 
@@ -3187,7 +3248,7 @@ class Blobmonster(turtle.Turtle):
 
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(100000, 300000))
+        wn.ontimer(self.move, t=random.randint(1000000000, 3000000000))
 
     def is_close(self, other):
 
@@ -3208,6 +3269,115 @@ class Blobmonster(turtle.Turtle):
 
 
 
+
+
+
+class Blobmonster_Two(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("monster-with-big-mouth-1.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+        self.direction = random.choice(["up", "down", "left", "right"])
+
+    def move(self):
+
+
+        if self.direction == "up":
+
+            dx = 0
+
+            dy = 12
+
+
+
+        elif self.direction == "down":
+
+            dx = 0
+
+            dy = -12
+
+
+
+        elif self.direction == "left":
+
+            dx = -12
+
+            dy = 0
+
+
+
+        elif self.direction == "right":
+
+            dx = 12
+
+            dy = 0
+
+        else:
+
+          self.goto(0, 0)
+
+        # check if player is close
+        # If so, go that direction
+
+        if self.is_close(player):
+            if player.xcor() < self.xcor():
+                self.direction = "left"
+            elif player.xcor() > self.xcor():
+                self.direction = "right"
+            elif player.ycor() < self.ycor():
+                self.direction = "down"
+            elif player.ycor() > self.ycor():
+                self.direction = "up"
+
+
+
+        #calculate the spot to move to
+        move_to_x = self.xcor() + dx
+        move_to_y = self.ycor() + dy
+        #check if a space has a wall
+        if (move_to_x, move_to_y) not in walls:
+            self.goto(move_to_x, move_to_y)
+        else:
+            #choose a different direction
+            self.direction = random.choice(["up", "down", "left", "right"])
+
+        if (move_to_x, move_to_y) not in walls:
+            self.goto(move_to_x, move_to_y)
+        else:
+            #choose a different direction
+            self.direction = random.choice(["up", "down", "left", "right"])
+
+
+        #set timer to move next time
+        wn.ontimer(self.move, t=random.randint(1000000000, 3000000000))
+
+    def is_close(self, other):
+
+        a= self.xcor()-other.xcor()
+        b= self.ycor()-other.ycor()
+        distance = math.sqrt((a**2) + (b**2))
+
+        if distance < 75:
+            return True
+        else:
+            return False
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+
+
+
+
+
+
+
 class Spidermonster(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
@@ -3221,15 +3391,15 @@ class Spidermonster(turtle.Turtle):
     def move(self):
         if self.direction == "up":
             dx = 0
-            dy = 24
+            dy = 12
         elif self.direction == "down":
             dx = 0
-            dy = -24
+            dy = -12
         elif self.direction == "left":
-            dx = -24
+            dx = -12
             dy = 0
         elif self.direction == "right":
-            dx = 24
+            dx = 12
             dy = 0
         else:
             dx = 0
@@ -3261,7 +3431,7 @@ class Spidermonster(turtle.Turtle):
             self.direction = random.choice(["up", "down", "left", "right"])
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(10000, 30000))
+        wn.ontimer(self.move, t=random.randint(1000000000, 3000000000))
 
     def is_close(self, other):
 
@@ -3296,10 +3466,10 @@ class Hand_Monster_Hallway(turtle.Turtle):
 
     def move(self):
         if self.direction == "left":
-            dx = -24
+            dx = -12
             dy = 0
         elif self.direction == "right":
-            dx = 24
+            dx = 12
             dy = 0
         # elif self.direction == "up":
         #     dx = 0
@@ -3337,7 +3507,7 @@ class Hand_Monster_Hallway(turtle.Turtle):
             self.direction = random.choice(["left", "right"])
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(10000, 30000))
+        wn.ontimer(self.move, t=random.randint(100000000000, 300000000000))
 
     def is_close(self, other):
 
@@ -3382,10 +3552,10 @@ class Handmonster(turtle.Turtle):
         #     dy = 0
         if self.direction == "down":
             dx = 0
-            dy = -24
+            dy = -12
         elif self.direction == "up":
             dx = 0
-            dy = 24
+            dy = 12
         else:
             dx = 0
             dy = 0
@@ -3416,7 +3586,7 @@ class Handmonster(turtle.Turtle):
             self.direction = random.choice([ "down", "up"])
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(100000, 300000))
+        wn.ontimer(self.move, t=random.randint(1000000000, 3000000000))
 
     def is_close(self, other):
 
@@ -3463,17 +3633,17 @@ class Body_Bag_monster_moving(turtle.Turtle):
 
     def move(self):
         if self.direction == "left":
-            dx = -24
+            dx = -12
             dy = 0
         elif self.direction == "right":
-            dx = 24
+            dx = 12
             dy = 0
         elif self.direction == "up":
             dx = 0
-            dy = 24
+            dy = 12
         elif self.direction == "down":
             dx = 0
-            dy = -24
+            dy = -12
         else:
             dx = 0
             dy = 0
@@ -3506,7 +3676,7 @@ class Body_Bag_monster_moving(turtle.Turtle):
             self.direction = random.choice(["left", "right", "up", "down"])
 
         #set timer to move next time
-        wn.ontimer(self.move, t=random.randint(10000, 30000))
+        wn.ontimer(self.move, t=random.randint(1000000000, 3000000000))
 
     def is_close(self, other):
 
@@ -3532,6 +3702,21 @@ class Hospital_Bed_Two(turtle.Turtle):
     def __init__(self, x, y):
         turtle.Turtle.__init__(self)
         self.shape("hospital-bed-32.gif")
+        self.color("black")
+        self.penup()
+        self.speed(0)
+        self.goto(x, y)
+
+    def destroy(self):
+        self.goto(2000, 2000)
+        self.hideturtle()
+
+
+
+class Locked_Door_To_Pool_Hallway(turtle.Turtle):
+    def __init__(self, x, y):
+        turtle.Turtle.__init__(self)
+        self.shape("door_to_pool_hallway.gif")
         self.color("black")
         self.penup()
         self.speed(0)
@@ -4727,9 +4912,10 @@ level_bathroom_entrance = [
     "  X                            X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
-    "X                     X            ",
+
+    "XXXXXXXX                                                    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "                                                           XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                                            X",
     "X                     X             ",
     "X                I      X             ",
     "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
@@ -4745,9 +4931,9 @@ level_bathroom_entrance = [
     "                                             ",
     "                                             ",
     "                                           X",
-    "                                           X",
-    "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
-    "                                           X"
+    # "                                           X",
+    # "                                          XPX                   6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    # "                                           X"
 
 
 ]
@@ -8864,154 +9050,154 @@ level_reenter_exam_room_game_over_text_three = [
 
 
 
-#
-#
-# level_step_on_glass_one = [
-#     "  X                               X       ",
-#     "  X                            X       ",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXX                 ",
-#     "X                     X            ",
-#     "X                                  ",
-#     "X             +      X             ",
-#     "XXXXXXXXXXX   XXX                       ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-# "XXXXXXXXXXXXXXXXXXXX                          XX",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                           X",
-#     "                                           X",
-#     "                                            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
-#     "                                           X",
-# "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-# "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-# "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "XPX                   `"
-#
-#
-#
-# ]
-#
-#
-#
-#
-# level_step_on_glass_two = [
-#     "  X                               X       ",
-#     "  X                            X       ",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
-#     "X                     X            ",
-#     "X                     X             ",
-#     "X             ?      X             ",
-#     "XXXXXXXXXXX   XXX                       ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-# "XXXXXXXXXXXXXXXXXXXX                          XX",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                           X",
-#     "                                           X",
-#     "                 XPX                   ~XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
-#     "                                           X"
-#
-#
-# ]
-#
-#
-# level_step_on_glass_one_second_one = [
-#     "  X                               X       ",
-#     "  X                            X       ",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
-#     "X                     X            ",
-#     "X                     X             ",
-#     "X             +      X             ",
-#     "XXXXXXXXXXX   XXX                       ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-# "XXXXXXXXXXXXXXXXXXXX                          XX",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                           X",
-#     "                                           X",
-#     "                                          XPX                   VXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
-#     "                                           X"
-#
-#
-# ]
-#
-#
-#
-# level_step_on_glass_one_second_two = [
-#     "  X                               X       ",
-#     "  X                            X       ",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
-#     "X                     X            ",
-#     "X                     X             ",
-#     "X             ?      X             ",
-#     "XXXXXXXXXXX   XXX                       ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-#     "                                         ",
-# "XXXXXXXXXXXXXXXXXXXX                          XX",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                             ",
-#     "                                           X",
-#     "                                           X",
-#     "                                          XPX                   WXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
-#     "                                           X"
-#
-#
-# ]
+
+
+level_step_on_glass_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXX                 ",
+    "X                     X            ",
+    "X                                  ",
+    "X             +      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X",
+"                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+"                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+"                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "XPX                   `"
+
+
+
+]
+
+
+
+
+level_step_on_glass_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             ?      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                 XPX                   ~XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+level_step_on_glass_one_second_one = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             +      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   VXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_step_on_glass_one_second_two = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             ?      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   WXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
 #
 #
 # level_step_on_glass_one_third_one = [
@@ -9074,6 +9260,255 @@ level_reenter_exam_room_game_over_text_three = [
 #
 #
 # ]
+#
+#
+
+
+
+
+level_finish_game_five = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             M      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   $XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_finish_game_six = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             N      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   %XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+level_finish_game_seven = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             O      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ^XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+level_finish_game_eight = [
+    "  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X             Q      X             ",
+    "XXXXXXXXXXX   XXX                       ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   &XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+]
+
+
+
+
+
+
+level_step_on_glass_final_death = [
+
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                Y      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+
+]
+
+
+
+level_actual_last_step_on_glass_death = [
+
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                B      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   MXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+
+]
+
+
+
+
+level_locked_door_to_pool_hallway = [
+
+"  X                               X       ",
+    "  X                            X       ",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXX",
+    "X                     X            ",
+    "X                     X             ",
+    "X                Y      X             ",
+    "XXXXXXXXXXX   XXX  XXXX    XXXXXXXXXXXXX",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+    "                                         ",
+"XXXXXXXXXXXXXXXXXXXX                          XX",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                             ",
+    "                                           X",
+    "                                           X",
+    "                                          XPX                   ZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx ",
+    "                                           X"
+
+
+
+
+]
+
+
+
+
+
+
+
 
 
 
@@ -9098,16 +9533,32 @@ level_C4_near_hole = [
 #First Version of hallway
 
 level_0 = [
+                "  X                               X       "
+                "  X                             X       ",
+                "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                "  XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                " XXBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                "XF U    C S            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+                "XI        A            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+                "XJ   P                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+                "  XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+                "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+]
+
+
+level_outside_of_locked_pool_door = [
     "  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X  P        F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+    "  XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    " XXBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XF U    C S            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "XIP       A            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XJ                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "  XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
@@ -9116,32 +9567,31 @@ level_0 = [
 
 
 level_after_blob_monster_warning = [
-"  X                               X       "
+    "  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "XP        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+    "  XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    " XXBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XF P    C S            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "XI        A            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XJ                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "  XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-
 ]
 
 
 level_outside_C2 = [
-"  X                               X       "
+    "  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           F P       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+    "  XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    " XXBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XF U    C S            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "XI        A            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XJ              P      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "  XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
@@ -9154,12 +9604,12 @@ level_outside_C1 = [
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           F       P XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+    "  XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    " XXBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XF U    C S            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "XI        A            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XJ                   P XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "  XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
@@ -9170,12 +9620,12 @@ level_outside_bathroom = [
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "XU        C S  P      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+    "  XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    " XXBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XF U    C S      P     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "XI        A            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XJ                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "  XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
@@ -9184,84 +9634,70 @@ level_outside_bathroom = [
 
 
 level_exit_blood_message_hallway = [
-    "  X                               X       "
+"  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXX",
-    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X        P  A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X           F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+    "  XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    " XXBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XF U    C S            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "XI      P A            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XJ                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "  XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
 
 
 level_player_coming_out_of_C3 = [
-    "  X                               X       "
+"  X                               X       "
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXX",
-    "XU        C S         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X           A         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "X        P  F         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+    "  XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    " XXBXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XF U    C S            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "XI        A            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XJ        P            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "  XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ]
 
 
 
-# level_after_stepping_on_glass_one = [
-#     "  X                               X       "
-#     "  X                             X       ",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXX",
-#     "X        C _P         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-#     "X +        _          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "X          _          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-#     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-#
-# ]
-#
-#
-#
-#
+
 # level_after_stepping_on_glass_two = [
 #     "  X                               X       "
 #     "  X                             X       ",
 #     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 #     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 #     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXX",
-#     "X         C _         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-#     "X +         _P        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "X           _         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+#     "XXXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "X     C _             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+#     "X +     _P            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "X                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
 #     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
 #     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 #
 # ]
-#
-#
+
+
 # level_after_stepping_on_glass_three = [
 #     "  X                               X       "
 #     "  X                             X       ",
 #     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 #     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 #     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "XXXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXX",
-#     "X         C _         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-#     "X +         _         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-#     "X           _P        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-#     "XXEEXXXTTTXXXX)XXXXZZXXXX    XXXXXXXXXXXXX",
+#     "XXXXXXXXXXXXXXXHHXXLLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "X     C _             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+#     "X +     _             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+#     "X                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+#     "XXEEXXXTTTXXXX)XXXX::XXXX    XXXXXXXXXXXXX",
 #     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+#
+#
+#
 #
 # ]
 
@@ -9274,10 +9710,10 @@ level_hallway_version_2 = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXX",
-    "X         CX<       P XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X          X>         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X       (  X?         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "X     CX<           P XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X      X>             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X      X(             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXXXXXXXGGGXXXVVXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -9290,10 +9726,10 @@ level_player_coming_out_of_C2_without_key = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXX",
-    "X         CX<         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X          X>         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X       (  X?   P     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "X      CX<            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X       X>            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X       X(      P     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXXXXXXXGGGXXXVVXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -9306,10 +9742,10 @@ level_hall_version_two_outside_C1 = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXX",
-    "X         CX<         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X          X>         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X       (  X?      P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "X     CX<             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X      X>             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X      X(          P  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXXXXXXXGGGXXXVVXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -9323,10 +9759,10 @@ level_hall_version_outside_bathroom_hall_two = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXX",
-    "X         CX<  P      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "X          X>         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "X       (  X?         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "XXXXXXXXXXXXXXXMXXXWNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "X     CX<      P      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+    "X      X>             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    "X      X(             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXEEXXXXXXXXXGGGXXXVVXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
@@ -9340,11 +9776,11 @@ level_hallway_version_3 = [
     "  X                             X       ",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "X XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XR          G        2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
-    "XR          H        4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
-    "XR          I  P     5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+    " XYXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    " XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "XR        G           2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            ",
+  "XR        H           4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
+  "XR              P     5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             ",
     "XXXXXXXXXXXXXXXXXXXXXXXXX    XXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
      "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -9361,8 +9797,8 @@ level_hallway_exit = [
     "XXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXX  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "    X                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "    X  B            PXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "    X                4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "    X  B            P5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXOXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXX               X"
 ]
@@ -9573,17 +10009,8 @@ levels.append(level_finish_game_four)
 levels.append(level_title_screen)
 levels.append(level_end)
 
-# levels.append(level_step_on_glass_one)#163
-# levels.append(level_step_on_glass_one_second_one)#164
-# levels.append(level_step_on_glass_one_third_one)#165
-#
-#
-# levels.append(level_step_on_glass_two)#166
-#
-#
-#
-#
-#
+
+
 
 
 
@@ -9609,11 +10036,36 @@ levels.append(level_reenter_exam_room_game_over_text_three)
 
 
 
-#levels.append(level_step_on_glass_one_second_two)#167
-#
-#
+
+levels.append(level_finish_game_eight)
+levels.append(level_finish_game_seven)
+levels.append(level_finish_game_six)
+levels.append(level_finish_game_five)
+
+
+
+levels.append(level_step_on_glass_one)#181
+levels.append(level_step_on_glass_one_second_one)#182
+# levels.append(level_step_on_glass_one_third_one)#183
+
+
+levels.append(level_step_on_glass_two)#184
+
+
+
+levels.append(level_step_on_glass_one_second_two)#167
+
+levels.append(level_step_on_glass_final_death)
+
+levels.append(level_actual_last_step_on_glass_death)
+
+
+levels.append(level_locked_door_to_pool_hallway)
+
+levels.append(level_outside_of_locked_pool_door)
+
 # levels.append(level_step_on_glass_one_third_two)#168
-#
+
 # levels.append(level_after_stepping_on_glass_one)#169
 # levels.append(level_after_stepping_on_glass_two)#170
 # levels.append(level_after_stepping_on_glass_three)#171
@@ -9643,9 +10095,148 @@ monster_that_moves = []
 exam_room_reenter_door_ones = []
 exam_room_reenter_door_twos = []
 
+C1_second_doors = []
+
+locked_pool_doors = []
+locked_pool_door_twos = []
+locked_pool_door_threes = []
+
 
 #first hallway with blob monster
 def setup_maze_0(level):
+
+
+
+    for y in range (len(level)):
+        for x in range(len(level[y])):
+            character = level[y][x]
+
+            screen_x= -102 + (x*24)
+            screen_y= 45 - (y*24)
+
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+
+
+            if character == "W":
+                exam_room_reenter_door_ones.append(Door_2(screen_x, screen_y))
+
+
+            if character == "N":
+                exam_room_reenter_door_twos.append(Door_2(screen_x, screen_y))
+
+
+            if character == "B":
+                monsters.append(Blobmonster(screen_x, screen_y))
+                # walls.append((screen_x, screen_y))
+
+
+            if character == "Y":
+                dead_bodies.append(Dead_Body(screen_x, screen_y))
+
+
+            if character == "F":
+                locked_pool_doors.append(Door_2(screen_x, screen_y))
+
+
+            if character == "I":
+                locked_pool_door_twos.append(Door_2(screen_x, screen_y))
+
+
+            if character == "J":
+                locked_pool_door_threes.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+            if character == "U":
+                blob_monster_warning_doors.append(Door_2(screen_x, screen_y))
+
+
+            if character == "D":
+
+                doors.append(Door(screen_x, screen_y))
+
+            if character == "L":
+                exam_entrances.append(Door_to_enter_examination_room(screen_x, screen_y))
+
+
+            if character == "E":
+                other.append(Door_2(screen_x, screen_y))
+
+            if character == "M":
+                bathroom_hall_twos.append(Door_2(screen_x, screen_y))
+
+
+            if character == "T":
+                secondroomentrances.append(DoortoenterC3(screen_x, screen_y))
+
+
+
+            if character == "S":
+                broken_glasses.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "A":
+                broken_glass_twos.append(Broken_Glass(screen_x, screen_y))
+
+
+
+            if character == "G":
+                C2_entrances.append(Door_to_Enter_C2(screen_x, screen_y))
+
+            if character == "H":
+                bathroom_entrances.append(Door_2(screen_x, screen_y))
+
+            if character == "_":
+                stepped_on_glass_inactives.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "C":
+                blood_messages_triggers.append(C4_threatening_message(screen_x, screen_y))
+
+            if character == "Z":
+                C1_doors.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+            if character == "V":
+                C1_second_doors.append(Door_2(screen_x, screen_y))
+
+            if character == ")":
+                C2_password_lockeds.append(Door_2(screen_x, screen_y))
+
+
+            if character == "(":
+                monster_twos.append(Blobmonster(screen_x, screen_y))
+
+            if character == "<":
+                glass_pile_ones.append(Broken_Glass(screen_x, screen_y))
+
+            if character == ">":
+                glass_pile_twos.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "?":
+                glass_pile_threes.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "+":
+                monster_that_moves.append(Blobmonster_Two(screen_x, screen_y))
+
+
+
+
+
+
+
+def setup_maze_after_glass(level):
 
 
 
@@ -9715,8 +10306,6 @@ def setup_maze_0(level):
             if character == "A":
                 broken_glass_twos.append(Broken_Glass(screen_x, screen_y))
 
-            if character == "F":
-                 broken_glass_threes.append(Broken_Glass(screen_x, screen_y))
 
             if character == "G":
                 C2_entrances.append(Door_to_Enter_C2(screen_x, screen_y))
@@ -9732,6 +10321,9 @@ def setup_maze_0(level):
 
             if character == "Z":
                 C1_doors.append(Door_2(screen_x, screen_y))
+
+
+
 
 
             if character == "V":
@@ -9754,7 +10346,15 @@ def setup_maze_0(level):
                 glass_pile_threes.append(Broken_Glass(screen_x, screen_y))
 
             if character == "+":
-                monster_that_moves.append(Blobmonster(screen_x, screen_y))
+                monster_that_moves.append(Blobmonster_Two(screen_x, screen_y))
+
+
+
+
+
+
+
+
 
 
 def setup_maze_without_flashlight(level):
@@ -9799,7 +10399,132 @@ def setup_maze_without_flashlight(level):
 
 
 
+def setup_maze_next_version(level):
 
+
+
+    for y in range (len(level)):
+        for x in range(len(level[y])):
+            character = level[y][x]
+
+            screen_x= -60 + (x*24)
+            screen_y= 45 - (y*24)
+
+
+            if character == "X":
+                pen.goto(screen_x, screen_y)
+                pen.stamp()
+                walls.append((screen_x, screen_y))
+
+            if character == "P":
+                player.goto(screen_x, screen_y)
+
+
+
+            if character == "W":
+                exam_room_reenter_door_ones.append(Door_2(screen_x, screen_y))
+
+
+            if character == "N":
+                exam_room_reenter_door_twos.append(Door_2(screen_x, screen_y))
+
+
+            if character == "B":
+                monsters.append(Blobmonster(screen_x, screen_y))
+                # walls.append((screen_x, screen_y))
+
+
+            if character == "Y":
+                dead_bodies.append(Dead_Body(screen_x, screen_y))
+
+
+            if character == "F":
+                locked_pool_doors.append(Door_2(screen_x, screen_y))
+
+
+            if character == "I":
+                locked_pool_door_twos.append(Door_2(screen_x, screen_y))
+
+
+            if character == "J":
+                locked_pool_door_threes.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+            if character == "U":
+                blob_monster_warning_doors.append(Door_2(screen_x, screen_y))
+
+
+            if character == "D":
+
+                doors.append(Door(screen_x, screen_y))
+
+            if character == "L":
+                exam_entrances.append(Door_to_enter_examination_room(screen_x, screen_y))
+
+
+            if character == "E":
+                other.append(Door_2(screen_x, screen_y))
+
+            if character == "M":
+                bathroom_hall_twos.append(Door_2(screen_x, screen_y))
+
+
+            if character == "T":
+                secondroomentrances.append(DoortoenterC3(screen_x, screen_y))
+
+
+
+            if character == "S":
+                broken_glasses.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "A":
+                broken_glass_twos.append(Broken_Glass(screen_x, screen_y))
+
+
+
+            if character == "G":
+                C2_entrances.append(Door_to_Enter_C2(screen_x, screen_y))
+
+            if character == "H":
+                bathroom_entrances.append(Door_2(screen_x, screen_y))
+
+            if character == "_":
+                stepped_on_glass_inactives.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "C":
+                blood_messages_triggers.append(C4_threatening_message(screen_x, screen_y))
+
+            if character == "Z":
+                C1_doors.append(Door_2(screen_x, screen_y))
+
+
+
+
+
+            if character == "V":
+                C1_second_doors.append(Door_2(screen_x, screen_y))
+
+            if character == ")":
+                C2_password_lockeds.append(Door_2(screen_x, screen_y))
+
+
+            if character == "(":
+                monster_twos.append(Blobmonster(screen_x, screen_y))
+
+            if character == "<":
+                glass_pile_ones.append(Broken_Glass(screen_x, screen_y))
+
+            if character == ">":
+                glass_pile_twos.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "?":
+                glass_pile_threes.append(Broken_Glass(screen_x, screen_y))
+
+            if character == "+":
+                monster_that_moves.append(Blobmonster_Two(screen_x, screen_y))
 
 
 
@@ -9889,7 +10614,7 @@ def setup_maze_1(level):
         for x in range (len(level[y])):
             character = level[y][x]
 
-            screen_x= -62 + (x*24)
+            screen_x= -82 + (x*24)
             screen_y= 70 - (y*24)
 
 
@@ -9927,8 +10652,7 @@ def setup_maze_1(level):
             if character == "H":
                 glass_pieces_final_twos.append(Broken_Glass(screen_x, screen_y))
 
-            if character == "I":
-                glass_pieces_final_threes.append(Broken_Glass(screen_x, screen_y))
+
 
             if character == "Z":
                 handmonsters.append(Handmonster(screen_x, screen_y))
@@ -9949,7 +10673,8 @@ def setup_maze_1(level):
 monsters_last_hallways = []
 spiderweb_last_hallways = []
 
-
+hand_monster_last_hallways2 = []
+hand_monster_last_hallways3 = []
 
 
 
@@ -9977,6 +10702,12 @@ def setup_maze_exit(level):
 
             if character == "S":
                 spiders.append(Spidermonster(screen_x, screen_y))
+
+            if character == "4":
+                hand_monster_last_hallways2.append(Hand_Monster_Hallway(screen_x, screen_y))
+
+            if character == "5":
+                hand_monster_last_hallways3.append(Hand_Monster_Hallway(screen_x, screen_y))
 
             if character == "6":
                 spider_monster_hallways2.append(Spidermonster(screen_x, screen_y))
@@ -10321,6 +11052,9 @@ C4_reenter_exit_texts = []
 C4_exit_text_twos = []
 C4_door_to_exit_text_twos = []
 
+locked_door_to_pool_hallways = []
+door_to_exit_locked_pool_hallway_texts = []
+
 def text_level(level):
     for y in range(len(level)):
         for x in range(len(level[y])):
@@ -10371,6 +11105,13 @@ def text_level(level):
 
             if character == "O":
                 C4_text_fives.append(C4_Text_hole_Five(screen_x, screen_y))
+
+
+            if character == "Y":
+                locked_door_to_pool_hallways.append(Locked_Door_To_Pool_Hallway(screen_x, screen_y))
+
+            if character == "Z":
+                door_to_exit_locked_pool_hallway_texts.append(Door_2(screen_x, screen_y))
 
 
 
@@ -10505,6 +11246,11 @@ step_on_glass_one_second_ones = []
 step_on_glass_one_second_twos = []
 step_on_glass_one_third_ones = []
 step_on_glass_one_third_twos = []
+
+glass_final_deaths = []
+glass_final_death_twos = []
+glass_final_death_exit_doors = []
+glass_final_death_exit_death_twos = []
 
 monsters_last_hallways = []
 
@@ -10659,10 +11405,17 @@ def hallway_one_text_level(level):
                 step_on_glass_one_second_twos.append(Step_On_Glass_Two(screen_x, screen_y))
 
             if character == "Y":
-                step_on_glass_one_third_ones.append(Step_On_Glass_One(screen_x, screen_y))
+                glass_final_deaths.append(Blob_Monster_Death_Four(screen_x, screen_y))
 
             if character == "Z":
-                step_on_glass_one_third_twos.append(Step_On_Glass_Two(screen_x, screen_y))
+                glass_final_death_exit_doors.append(Door_2(screen_x, screen_y))
+
+            if character == "B":
+                glass_final_death_twos.append(Blob_Monster_Death_Final(screen_x, screen_y))
+
+            if character == "M":
+                glass_final_death_exit_death_twos.append((screen_x, screen_y))
+
 
 
 
@@ -10790,8 +11543,6 @@ def blob_monster_one_text_level(level):
             if character == "A":
                 broken_glass_twos.append(Broken_Glass(screen_x, screen_y))
 
-            if character == "F":
-                 broken_glass_threes.append(Broken_Glass(screen_x, screen_y))
 
             if character == "G":
                 C2_entrances.append(Door_to_Enter_C2(screen_x, screen_y))
@@ -11674,10 +12425,18 @@ finish_game_ones = []
 finish_game_twos = []
 finish_game_threes = []
 finish_game_fours = []
+finish_game_fives = []
+finish_game_sixes = []
+finish_game_sevens = []
+finish_game_eights = []
 finish_game_exit_door_ones = []
 finish_game_exit_door_twos = []
 finish_game_exit_door_threes = []
 finish_game_exit_door_fours = []
+finish_game_exit_door_fives = []
+finish_game_exit_door_sixes = []
+finish_game_exit_door_sevens = []
+finish_game_exit_door_eights = []
 title_screens = []
 title_screen_doors = []
 end_screen_doors = []
@@ -11732,6 +12491,18 @@ def pool_area(level):
             if character == "J":
                 finish_game_fours.append(Finished_game_four(screen_x, screen_y))
 
+            if character == "M":
+                finish_game_fives.append(Finished_game_five(screen_x, screen_y))
+
+            if character == "N":
+                finish_game_sixes.append(Finished_game_six(screen_x, screen_y))
+
+            if character == "O":
+                finish_game_sevens.append(Finished_game_seven(screen_x, screen_y))
+
+            if character == "Q":
+                finish_game_eights.append(Finished_game_eight(screen_x, screen_y))
+
             if character == "K":
                 title_screens.append(Title(screen_x, screen_y))
 
@@ -11768,6 +12539,18 @@ def pool_area(level):
 
             if character == "!":
                 finish_game_exit_door_fours.append(Door_2(screen_x, screen_y))
+
+            if character == "$":
+                finish_game_exit_door_fives.append(Door_2(screen_x, screen_y))
+
+            if character == "%":
+                finish_game_exit_door_sixes.append(Door_2(screen_x, screen_y))
+
+            if character == "^":
+                finish_game_exit_door_sevens.append(Door_2(screen_x, screen_y))
+
+            if character == "&":
+                finish_game_exit_door_eights.append(Door_2(screen_x, screen_y))
 
             if character == "@":
                 title_screen_doors.append(Door_2(screen_x, screen_y))
@@ -11906,8 +12689,8 @@ def run_game():
 
 
 
-      # for monster in monsters:
-    #     wn.ontimer(monster.move, t=250)
+    # for monster_that_move in monster_that_moves:
+    #     wn.ontimer(monster_that_move.move, t=250)
 
     for spider in spiders:
         wn.ontimer(spider.move, t=1000)
@@ -11950,19 +12733,25 @@ def run_game():
         wn.ontimer(handmonster10.move, t=1005)
 
     for bodybagmonstermoving in bodybagmonstermovings:
-        wn.ontimer(bodybagmonstermoving.move, t=1000)
+        wn.ontimer(bodybagmonstermoving.move, t=300)
 
     for hand_monster_hallway in hand_monster_hallways:
-        wn.ontimer(hand_monster_hallway.move, t=750)
+        wn.ontimer(hand_monster_hallway.move, t=900)
 
     for hand_monster_hallway2 in hand_monster_hallways2:
-        wn.ontimer(hand_monster_hallway2.move, t=750)
+        wn.ontimer(hand_monster_hallway2.move, t=900)
 
     for hand_monster_hallway3 in hand_monster_hallways3:
-        wn.ontimer(hand_monster_hallway3.move, t=750)
+        wn.ontimer(hand_monster_hallway3.move, t=900)
 
     for monsters_last_hallway in monsters_last_hallways:
-        wn.ontimer(monsters_last_hallway.move, t=1000)
+        wn.ontimer(monsters_last_hallway.move, t=1200)
+
+    for hand_monster_last_hallway2 in hand_monster_last_hallways2:
+        wn.ontimer(hand_monster_last_hallway2.move, t=1100)
+
+    for hand_monster_last_hallway3 in hand_monster_last_hallways3:
+        wn.ontimer(hand_monster_last_hallway3.move, t=1100)
 
 
 
@@ -11981,6 +12770,149 @@ def run_game():
             walls.clear()
             wn.bgpic("brookhavenmap.gif")
             text_level(levels[16])
+
+
+
+    for monster_that_move in monster_that_moves:
+        if player.is_collision(monster_that_move):
+            monster_that_move.destroy()
+            monster_that_moves.remove(monster_that_move)
+            pen.clear()
+            walls.clear()
+            text_level(levels[18])
+
+
+    for hand_monster_last_hallway2, hand_monster_last_hallway3, spiderweb_last_hallway, monsters_last_hallway, spider,  spider_monster_hallway2,  spider_monster_hallway3  in zip(hand_monster_last_hallways2, hand_monster_last_hallways3, spiderweb_last_hallways, monsters_last_hallways, spiders,  spider_monster_hallways2,  spider_monster_hallways3):
+        if player.is_collision(hand_monster_last_hallway2):
+            hand_monster_last_hallway2.destroy()
+            hand_monster_last_hallways2.remove(hand_monster_last_hallway2)
+            hand_monster_last_hallway3.destroy()
+            hand_monster_last_hallways3.remove(hand_monster_last_hallway3)
+            spiderweb_last_hallway.destroy()
+            spiderweb_last_hallways.remove(spiderweb_last_hallway)
+            monsters_last_hallway.destroy()
+            monsters_last_hallways.remove(monsters_last_hallway)
+            spider.destroy()
+            spiders.remove(spider)
+            spider_monster_hallway2.destroy()
+            spider_monster_hallways2.remove(spider_monster_hallway2)
+            spider_monster_hallway3.destroy()
+            spider_monster_hallways3.remove(spider_monster_hallway3)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[143])
+
+    for hand_monster_last_hallway2, hand_monster_last_hallway3, spiderweb_last_hallway, monsters_last_hallway, spider,  spider_monster_hallway2,  spider_monster_hallway3  in zip(hand_monster_last_hallways2, hand_monster_last_hallways3, spiderweb_last_hallways, monsters_last_hallways, spiders,  spider_monster_hallways2,  spider_monster_hallways3):
+        if player.is_collision(hand_monster_last_hallway3):
+            hand_monster_last_hallway2.destroy()
+            hand_monster_last_hallways2.remove(hand_monster_last_hallway2)
+            hand_monster_last_hallway3.destroy()
+            hand_monster_last_hallways3.remove(hand_monster_last_hallway3)
+            spiderweb_last_hallway.destroy()
+            spiderweb_last_hallways.remove(spiderweb_last_hallway)
+            monsters_last_hallway.destroy()
+            monsters_last_hallways.remove(monsters_last_hallway)
+            spider.destroy()
+            spiders.remove(spider)
+            spider_monster_hallway2.destroy()
+            spider_monster_hallways2.remove(spider_monster_hallway2)
+            spider_monster_hallway3.destroy()
+            spider_monster_hallways3.remove(spider_monster_hallway3)
+            pen.clear()
+            walls.clear()
+            hallway_last_version(levels[143])
+
+
+    for locked_pool_door, broken_glass, broken_glass_two, dead_body, monster, blob_monster_warning_door, bathroom_entrance, blood_messages_trigger in zip(locked_pool_doors, broken_glasses, broken_glass_twos, dead_bodies, monsters, blob_monster_warning_doors, bathroom_entrances, blood_messages_triggers):
+        if player.is_collision(locked_pool_door):
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monster.destroy()
+            monsters.remove(monster)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
+            bathroom_entrance.destroy()
+            bathroom_entrances.remove(bathroom_entrance)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            text_level(levels[187])
+
+    for locked_pool_door_two, broken_glass, broken_glass_two, dead_body, monster, blob_monster_warning_door, bathroom_entrance, blood_messages_trigger in zip(
+            locked_pool_door_twos, broken_glasses, broken_glass_twos, dead_bodies, monsters, blob_monster_warning_doors,
+            bathroom_entrances, blood_messages_triggers):
+        if player.is_collision(locked_pool_door_two):
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monster.destroy()
+            monsters.remove(monster)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
+            bathroom_entrance.destroy()
+            bathroom_entrances.remove(bathroom_entrance)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            text_level(levels[187])
+
+    for locked_pool_door_three, broken_glass, broken_glass_two, dead_body, monster, blob_monster_warning_door, bathroom_entrance, blood_messages_trigger in zip(
+            locked_pool_door_threes, broken_glasses, broken_glass_twos, dead_bodies, monsters, blob_monster_warning_doors,
+            bathroom_entrances, blood_messages_triggers):
+        if player.is_collision(locked_pool_door_three):
+            broken_glass.destroy()
+            broken_glasses.remove(broken_glass)
+            broken_glass_two.destroy()
+            broken_glass_twos.remove(broken_glass_two)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
+            monster.destroy()
+            monsters.remove(monster)
+            blob_monster_warning_door.destroy()
+            blob_monster_warning_doors.remove(blob_monster_warning_door)
+            bathroom_entrance.destroy()
+            bathroom_entrances.remove(bathroom_entrance)
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            pen.clear()
+            walls.clear()
+            text_level(levels[187])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    for locked_door_to_pool_hallway, door_to_exit_locked_pool_hallway_text in zip(locked_door_to_pool_hallways, door_to_exit_locked_pool_hallway_texts):
+        if player.is_collision(door_to_exit_locked_pool_hallway_text):
+            locked_door_to_pool_hallway.destroy()
+            locked_door_to_pool_hallways.remove(locked_door_to_pool_hallway)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[188])
+
+
+
 
 
 
@@ -12302,59 +13234,52 @@ def run_game():
             walls.clear()
             setup_maze(levels[3])
 
+    #
+    for blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two in zip(blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos):
+         if player.is_collision(broken_glass):
+             broken_glass.destroy()
+             broken_glasses.remove(broken_glass)
+             broken_glass_two.destroy()
+             broken_glass_twos.remove(broken_glass_two)
+             dead_body.destroy()
+             dead_bodies.remove(dead_body)
+             monster.destroy()
+             monsters.remove(monster)
+             blob_monster_warning_door.destroy()
+             blob_monster_warning_doors.remove(blob_monster_warning_door)
 
-    # for blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, broken_glass_three in zip(blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes):
-    #      if player.is_collision(broken_glass):
-    #          broken_glass.destroy()
-    #          broken_glasses.remove(broken_glass)
-    #          broken_glass_two.destroy()
-    #          broken_glass_twos.remove(broken_glass_two)
-    #          broken_glass_three.destroy()
-    #          broken_glass_threes.remove(broken_glass_three)
-    #          dead_body.destroy()
-    #          dead_bodies.remove(dead_body)
-    #          monster.destroy()
-    #          monsters.remove(monster)
-    #          blob_monster_warning_door.destroy()
-    #          blob_monster_warning_doors.remove(blob_monster_warning_door)
-    #          bathroom_entrance.destroy()
-    #          bathroom_entrances.remove(bathroom_entrance)
-    #          blood_messages_trigger.destroy()
-    #          blood_messages_triggers.remove(blood_messages_trigger)
-    #          pen.clear()
-    #          hallway_one_text_level(levels[163])
-    #
-    # for blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, broken_glass_three, exam_entrance in zip(blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes, exam_entrances):
-    #     if player.is_collision(broken_glass_two):
-    #         broken_glass.destroy()
-    #         broken_glasses.remove(broken_glass)
-    #         broken_glass_two.destroy()
-    #         broken_glass_twos.remove(broken_glass_two)
-    #         broken_glass_three.destroy()
-    #         broken_glass_threes.remove(broken_glass_three)
-    #         dead_body.destroy()
-    #         dead_bodies.remove(dead_body)
-    #         monster.destroy()
-    #         monsters.remove(monster)
-    #         blob_monster_warning_door.destroy()
-    #         blob_monster_warning_doors.remove(blob_monster_warning_door)
-    #         bathroom_entrance.destroy()
-    #         bathroom_entrances.remove(bathroom_entrance)
-    #         blood_messages_trigger.destroy()
-    #         blood_messages_triggers.remove(blood_messages_trigger)
-    #         exam_entrance.destroy()
-    #         exam_entrances.remove(exam_entrance)
-    #         pen.clear()
-    #         hallway_one_text_level(levels[164])
-    #
-    # for blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, broken_glass_three, exam_entrance in zip(blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes, exam_entrances):
+             blood_messages_trigger.destroy()
+             blood_messages_triggers.remove(blood_messages_trigger)
+             pen.clear()
+             walls.clear()
+             hallway_one_text_level(levels[181])
+
+    for bathroom_entrance, blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two in zip(bathroom_entrances, blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos):
+        if player.is_collision(broken_glass_two):
+                 broken_glass.destroy()
+                 broken_glasses.remove(broken_glass)
+                 broken_glass_two.destroy()
+                 broken_glass_twos.remove(broken_glass_two)
+                 dead_body.destroy()
+                 dead_bodies.remove(dead_body)
+                 monster.destroy()
+                 monsters.remove(monster)
+                 blob_monster_warning_door.destroy()
+                 blob_monster_warning_doors.remove(blob_monster_warning_door)
+                 bathroom_entrance.destroy()
+                 bathroom_entrances.remove(bathroom_entrance)
+                 blood_messages_trigger.destroy()
+                 blood_messages_triggers.remove(blood_messages_trigger)
+                 pen.clear()
+                 walls.clear()
+                 hallway_one_text_level(levels[182])
+
+    # for blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, exam_entrance in zip(blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, exam_entrances):
     #     if player.is_collision(broken_glass_three):
     #         broken_glass.destroy()
     #         broken_glasses.remove(broken_glass)
     #         broken_glass_two.destroy()
     #         broken_glass_twos.remove(broken_glass_two)
-    #         broken_glass_three.destroy()
-    #         broken_glass_threes.remove(broken_glass_three)
     #         dead_body.destroy()
     #         dead_bodies.remove(dead_body)
     #         monster.destroy()
@@ -12365,19 +13290,16 @@ def run_game():
     #         bathroom_entrances.remove(bathroom_entrance)
     #         blood_messages_trigger.destroy()
     #         blood_messages_triggers.remove(blood_messages_trigger)
-    #         exam_entrance.destroy()
-    #         exam_entrances.remove(exam_entrance)
     #         pen.clear()
-    #         hallway_one_text_level(levels[165])
+    #         walls.clear()
+    #         hallway_one_text_level(levels[183])
 
-    for bathroom_entrance, blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two, broken_glass_three in zip(bathroom_entrances, blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes):
+    for bathroom_entrance, blood_messages_trigger, blob_monster_warning_door, monster, dead_body, broken_glass, broken_glass_two in zip(bathroom_entrances, blood_messages_triggers, blob_monster_warning_doors, monsters, dead_bodies, broken_glasses, broken_glass_twos):
         if player.is_collision(bathroom_entrance):
             broken_glass.destroy()
             broken_glasses.remove(broken_glass)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             monster.destroy()
@@ -12402,7 +13324,11 @@ def run_game():
             setup_maze_0(levels[44])
 
 
-    for blob_monster_warning_door, broken_glass, broken_glass_two, broken_glass_three, dead_body, monster, blood_messages_trigger in zip(blob_monster_warning_doors, broken_glasses, broken_glass_twos, broken_glass_threes, dead_bodies, monsters, blood_messages_triggers):
+
+
+
+
+    for blob_monster_warning_door, broken_glass, broken_glass_two, dead_body, monster, blood_messages_trigger in zip(blob_monster_warning_doors, broken_glasses, broken_glass_twos, dead_bodies, monsters, blood_messages_triggers):
         if player.is_collision(blob_monster_warning_door):
             blob_monster_warning_door.destroy()
             blob_monster_warning_doors.remove(blob_monster_warning_door)
@@ -12410,8 +13336,6 @@ def run_game():
             broken_glasses.remove(broken_glass)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             monster.destroy()
@@ -12442,18 +13366,7 @@ def run_game():
             setup_maze_0(levels[67])
 
 
-
-
-
-
-                                        
-
-
-
-
-
-
-    for monster, blood_messages_trigger, dead_body, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door in zip(monsters, blood_messages_triggers, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors):
+    for monster, blood_messages_trigger, dead_body, broken_glass, broken_glass_two, blob_monster_warning_door in zip(monsters, blood_messages_triggers, dead_bodies, broken_glasses, broken_glass_twos, blob_monster_warning_doors):
         if player.is_collision(monster):
             monster.destroy()
             monsters.remove(monster)
@@ -12465,8 +13378,6 @@ def run_game():
             broken_glasses.remove(broken_glass)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             blob_monster_warning_door.destroy()
             blob_monster_warning_doors.remove(blob_monster_warning_door)
             pen.clear()
@@ -12520,14 +13431,12 @@ def run_game():
 
 
 
-    for blob_monster_death_final, blob_monster_text_exit_final, broken_glass_two, broken_glass_three, blood_messages_trigger in zip(blob_monster_death_finals, blob_monster_text_exit_finals, broken_glass_twos, broken_glass_threes, blood_messages_triggers):
+    for blob_monster_death_final, blob_monster_text_exit_final, broken_glass_two, blood_messages_trigger in zip(blob_monster_death_finals, blob_monster_text_exit_finals, broken_glass_twos, blood_messages_triggers):
         if player.is_collision(blob_monster_text_exit_final):
             blob_monster_death_final.destroy()
             blob_monster_death_finals.remove(blob_monster_death_final)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             blood_messages_trigger.destroy()
             blood_messages_triggers.remove(blood_messages_trigger)
             pen.clear()
@@ -12541,14 +13450,12 @@ def run_game():
 
 
     for others in other:
-        for monster, dead_body, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger in zip(monsters, dead_bodies, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers):
+        for monster, dead_body, broken_glass, broken_glass_two, blob_monster_warning_door, blood_messages_trigger in zip(monsters, dead_bodies, broken_glasses, broken_glass_twos, blob_monster_warning_doors, blood_messages_triggers):
          if player.is_collision(others):
             broken_glass.destroy()
             broken_glasses.remove(broken_glass)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             blob_monster_warning_door.destroy()
             blob_monster_warning_doors.remove(blob_monster_warning_door)
             dead_body.destroy()
@@ -12596,14 +13503,12 @@ def run_game():
 
     for secondroomentrance in secondroomentrances:
 
-        for monster, blood_messages_trigger, dead_body, blob_monster_warning_door, broken_glass, broken_glass_two, broken_glass_three in zip(monsters, blood_messages_triggers, dead_bodies, blob_monster_warning_doors, broken_glasses, broken_glass_twos, broken_glass_threes):
+        for monster, blood_messages_trigger, dead_body, blob_monster_warning_door, broken_glass, broken_glass_two in zip(monsters, blood_messages_triggers, dead_bodies, blob_monster_warning_doors, broken_glasses, broken_glass_twos):
           if player.is_collision(secondroomentrance):
             broken_glass.destroy()
             broken_glasses.remove(broken_glass)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             blob_monster_warning_door.destroy()
             blob_monster_warning_doors.remove(blob_monster_warning_door)
             blood_messages_trigger.destroy()
@@ -12618,7 +13523,7 @@ def run_game():
 
 
 
-    for blood_messages_trigger, monster, broken_glass, broken_glass_two, broken_glass_three, dead_body, blob_monster_warning_door in zip(blood_messages_triggers, monsters, broken_glasses, broken_glass_twos, broken_glass_threes, dead_bodies, blob_monster_warning_doors):
+    for blood_messages_trigger, monster, broken_glass, broken_glass_two, dead_body, blob_monster_warning_door in zip(blood_messages_triggers, monsters, broken_glasses, broken_glass_twos, dead_bodies, blob_monster_warning_doors):
         if player.is_collision(blood_messages_trigger):
             blob_monster_warning_door.destroy()
             blob_monster_warning_doors.remove(blob_monster_warning_door)
@@ -12626,8 +13531,6 @@ def run_game():
             broken_glasses.remove(broken_glass)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             blood_messages_trigger.destroy()
@@ -12664,51 +13567,77 @@ def run_game():
             walls.clear()
             setup_maze_0(levels[42])
 
+    #
+    for step_on_glass_one, step_on_glass_exit_one in zip(step_on_glass_ones, step_on_glass_exit_ones):
+        if player.is_collision(step_on_glass_exit_one):
+            step_on_glass_one.destroy()
+            step_on_glass_ones.remove(step_on_glass_one)
+            pen.clear()
+            walls.clear()
+            hallway_one_text_level(levels[184])
+    #
+    for step_on_glass_two, step_on_glass_exit_two in zip(step_on_glass_twos, step_on_glass_exit_twos):
+        if player.is_collision(step_on_glass_exit_two):
+            step_on_glass_two.destroy()
+            step_on_glass_twos.remove(step_on_glass_two)
+            pen.clear()
+            walls.clear()
+            # setup_maze_0(levels[1])
+            hallway_one_text_level(levels[185])
 
-    # for step_on_glass_one, step_on_glass_exit_one in zip(step_on_glass_ones, step_on_glass_exit_ones):
-    #     if player.is_collision(step_on_glass_exit_one):
-    #         step_on_glass_one.destroy()
-    #         step_on_glass_ones.remove(step_on_glass_one)
-    #         pen.clear()
-    #         hallway_one_text_level(levels[166])
-    #
-    # for step_on_glass_two, step_on_glass_exit_two in zip(step_on_glass_twos, step_on_glass_exit_twos):
-    #     if player.is_collision(step_on_glass_exit_two):
-    #         step_on_glass_two.destroy()
-    #         step_on_glass_twos.remove(step_on_glass_two)
-    #         pen.clear()
-    #         setup_maze_0(levels[169])
-    #
-    # for step_on_glass_one, step_on_glass_one_second_one in zip(step_on_glass_ones, step_on_glass_one_second_ones):
-    #     if player.is_collision(step_on_glass_one_second_one):
-    #         step_on_glass_one.destroy()
-    #         step_on_glass_ones.remove(step_on_glass_one)
-    #         pen.clear()
-    #         hallway_one_text_level(levels[167])
-    #
-    # for step_on_glass_two, step_on_glass_one_second_two in zip(step_on_glass_twos, step_on_glass_one_second_twos):
-    #     if player.is_collision(step_on_glass_one_second_two):
-    #         step_on_glass_two.destroy()
-    #         step_on_glass_twos.remove(step_on_glass_two)
-    #         pen.clear()
-    #         setup_maze_0(levels[170])
-    #
+    for glass_final_death_exit_door, glass_final_death in zip(glass_final_death_exit_doors, glass_final_deaths):
+        if player.is_collision(glass_final_death_exit_door):
+            glass_final_death.destroy()
+            glass_final_deaths.remove(glass_final_death)
+            pen.clear()
+            walls.clear()
+            hallway_one_text_level(levels[186])
+
+    for glass_final_death_exit_death_two, glass_final_death_two in zip(glass_final_death_exit_death_twos, glass_final_death_twos):
+        if player.is_collision(glass_final_death_exit_door):
+            glass_final_death_two.destroy()
+            glass_final_death_twos.remove(glass_final_death_two)
+            pen.clear()
+            walls.clear()
+            setup_maze_0(levels[1])
+
+
+
+    for step_on_glass_one, step_on_glass_one_second_one in zip(step_on_glass_ones, step_on_glass_one_second_ones):
+        if player.is_collision(step_on_glass_one_second_one):
+            step_on_glass_one.destroy()
+            step_on_glass_ones.remove(step_on_glass_one)
+            pen.clear()
+            walls.clear()
+            hallway_one_text_level(levels[184])
+
+    for step_on_glass_two, step_on_glass_one_second_two in zip(step_on_glass_twos, step_on_glass_one_second_twos):
+        if player.is_collision(step_on_glass_one_second_two):
+            step_on_glass_two.destroy()
+            step_on_glass_twos.remove(step_on_glass_two)
+            pen.clear()
+            walls.clear()
+            # setup_maze_0(levels[1])
+            hallway_one_text_level(levels[185])
+    # #
     #
     # for step_on_glass_one, step_on_glass_one_third_one in zip(step_on_glass_ones, step_on_glass_one_third_ones):
     #     if player.is_collision(step_on_glass_one_third_one):
     #         step_on_glass_one.destroy()
     #         step_on_glass_ones.remove(step_on_glass_one)
     #         pen.clear()
-    #         hallway_one_text_level(levels[168])
+    #         walls.clear()
+    #         hallway_one_text_level(levels[186])
     #
     # for step_on_glass_two, step_on_glass_one_third_two in zip(step_on_glass_twos, step_on_glass_one_third_twos):
     #     if player.is_collision(step_on_glass_one_third_two):
     #         step_on_glass_two.destroy()
     #         step_on_glass_twos.remove(step_on_glass_two)
     #         pen.clear()
-    #         setup_maze_0(levels[171])
-
-
+    #         walls.clear()
+    #         setup_maze_after_glass(levels[189])
+    #
+    #
 
 
 
@@ -12860,14 +13789,12 @@ def run_game():
             walls.clear()
             setup_maze_0(levels[5])
 
-    for C1_door, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger, monster, dead_body in zip(C1_doors, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers, monsters, dead_bodies):
+    for C1_door, broken_glass, broken_glass_two, blob_monster_warning_door, blood_messages_trigger, monster, dead_body in zip(C1_doors, broken_glasses, broken_glass_twos, blob_monster_warning_doors, blood_messages_triggers, monsters, dead_bodies):
         if player.is_collision(C1_door):
             broken_glass.destroy()
             broken_glasses.remove(broken_glass)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             blob_monster_warning_door.destroy()
             blob_monster_warning_doors.remove(blob_monster_warning_door)
             blood_messages_trigger.destroy()
@@ -12911,7 +13838,7 @@ def run_game():
 
     # for C2_password_locked, monster  hallway_blood_messages_trigger, C1_door, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, dead_body in zip(C2_password_lockeds, monsters, hallway_blood_messages_triggers, C1_doors, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, dead_bodies):
 
-    for C2_password_locked, monster, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger, C1_door, dead_body in zip(C2_password_lockeds, monsters, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers, C1_doors, dead_bodies):
+    for C2_password_locked, monster, broken_glass, broken_glass_two, blob_monster_warning_door, blood_messages_trigger, C1_door, dead_body in zip(C2_password_lockeds, monsters, broken_glasses, broken_glass_twos, blob_monster_warning_doors, blood_messages_triggers, C1_doors, dead_bodies):
         if player.is_collision(C2_password_locked):
             monster.destroy()
             monsters.remove(monster)
@@ -12921,8 +13848,6 @@ def run_game():
             broken_glasses.remove(broken_glass)
             broken_glass_two.destroy()
             broken_glass_twos.remove(broken_glass_two)
-            broken_glass_three.destroy()
-            broken_glass_threes.remove(broken_glass_three)
             blob_monster_warning_door.destroy()
             blob_monster_warning_doors.remove(blob_monster_warning_door)
             blood_messages_trigger.destroy()
@@ -12937,7 +13862,7 @@ def run_game():
             walls.clear()
             hallway_one_text_level(levels[56])
     #
-    # for C2_password_locked, hallway_blood_messages_trigger, C1_door, broken_glass, broken_glass_two, broken_glass_three, blob_monster_warning_door, blood_messages_trigger, monster, dead_body in zip(C2_password_lockeds, hallway_blood_messages_triggers, C1_doors, broken_glasses, broken_glass_twos, broken_glass_threes, blob_monster_warning_doors, blood_messages_triggers, monsters, dead_bodies):
+    # for C2_password_locked, hallway_blood_messages_trigger, C1_door, broken_glass, broken_glass_two, blob_monster_warning_door, blood_messages_trigger, monster, dead_body in zip(C2_password_lockeds, hallway_blood_messages_triggers, C1_doors, broken_glasses, broken_glass_twos, blob_monster_warning_doors, blood_messages_triggers, monsters, dead_bodies):
     #     if player.is_collision(C2_password_locked):
     #         hallway_blood_messages_trigger.destroy()
     #         hallway_blood_messages_triggers.remove(hallway_blood_messages_trigger)
@@ -12945,8 +13870,6 @@ def run_game():
     #         broken_glasses.remove(broken_glass)
     #         broken_glass_two.destroy()
     #         broken_glass_twos.remove(broken_glass_two)
-    #         broken_glass_three.destroy()
-    #         broken_glass_threes.remove(broken_glass_three)
     #         blob_monster_warning_door.destroy()
     #         blob_monster_warning_doors.remove(blob_monster_warning_door)
     #         blood_messages_trigger.destroy()
@@ -12990,14 +13913,12 @@ def run_game():
     #         blob_monster_one_text_level(levels[66])
 
     for exam_entrance in exam_entrances:
-        for monster, blood_messages_trigger, blob_monster_warning_door, broken_glass, broken_glass_two, broken_glass_three, dead_body in zip(monsters, blood_messages_triggers, blob_monster_warning_doors, broken_glasses, broken_glass_twos, broken_glass_threes, dead_bodies):
+        for monster, blood_messages_trigger, blob_monster_warning_door, broken_glass, broken_glass_two, dead_body in zip(monsters, blood_messages_triggers, blob_monster_warning_doors, broken_glasses, broken_glass_twos, dead_bodies):
          if player.is_collision(exam_entrance):
              broken_glass.destroy()
              broken_glasses.remove(broken_glass)
              broken_glass_two.destroy()
              broken_glass_twos.remove(broken_glass_two)
-             broken_glass_three.destroy()
-             broken_glass_threes.remove(broken_glass_three)
              dead_body.destroy()
              dead_bodies.remove(dead_body)
              blood_messages_trigger.destroy()
@@ -13882,7 +14803,7 @@ def run_game():
             exam_exit_text_threes.remove(exam_exit_text_three)
             pen.clear()
             walls.clear()
-            setup_maze_0(levels[8])
+            setup_maze_next_version(levels[8])
 
 
     for reenter_exam_room_game_over_one, reenter_exam_room_exit_text_one in zip(reenter_exam_room_game_over_ones, reenter_exam_room_exit_text_ones):
@@ -13908,19 +14829,27 @@ def run_game():
             reenter_exam_room_game_over_threes.remove(reenter_exam_room_game_over_three)
             pen.clear()
             walls.clear()
-            setup_maze_0(levels[8])
+            setup_maze_next_version(levels[8])
 
 
 
-    for monstertwo in monster_twos:
+    for monstertwo, blood_messages_trigger, dead_body, glass_shard_one, glass_shard_two in zip(monster_twos, blood_messages_triggers, dead_bodies, glass_pile_ones, glass_pile_twos):
         if player.is_collision(monstertwo):
+            blood_messages_trigger.destroy()
+            blood_messages_triggers.remove(blood_messages_trigger)
+            dead_body.destroy()
+            dead_bodies.remove(dead_body)
             monstertwo.destroy()
             monster_twos.remove(monstertwo)
+            glass_shard_one.destroy()
+            glass_pile_ones.remove(glass_shard_one)
+            glass_shard_two.destroy()
+            glass_pile_twos.remove(glass_shard_two)
             pen.clear()
             walls.clear()
             hallway_version_two(levels[100])
 
-    for glass_shard_one, monstertwo, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(glass_pile_ones, monster_twos, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
+    for glass_shard_one, monstertwo, glass_shard_two, dead_body, blood_messages_trigger in zip(glass_pile_ones, monster_twos, glass_pile_twos, dead_bodies, blood_messages_triggers):
         if player.is_collision(glass_shard_one):
             blood_messages_trigger.destroy()
             blood_messages_triggers.remove(blood_messages_trigger)
@@ -13932,14 +14861,12 @@ def run_game():
             glass_pile_ones.remove(glass_shard_one)
             glass_shard_two.destroy()
             glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
             pen.clear()
             walls.clear()
             hallway_version_two(levels[100])
 
 
-    for glass_shard_two, monstertwo, glass_shard_one, glass_shard_three, dead_body, blood_messages_trigger in zip(glass_pile_twos, monster_twos, glass_pile_ones, glass_pile_threes, dead_bodies, blood_messages_triggers):
+    for glass_shard_two, monstertwo, glass_shard_one, glass_shard_two, dead_body, blood_messages_trigger in zip(glass_pile_twos, monster_twos, glass_pile_ones, glass_pile_twos, dead_bodies, blood_messages_triggers):
         if player.is_collision(glass_shard_two):
             dead_body.destroy()
             dead_bodies.remove(dead_body)
@@ -13949,8 +14876,6 @@ def run_game():
             glass_pile_ones.remove(glass_shard_one)
             glass_shard_two.destroy()
             glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
             blood_messages_trigger.destroy()
             blood_messages_triggers.remove(blood_messages_trigger)
             pen.clear()
@@ -13958,23 +14883,21 @@ def run_game():
             hallway_version_two(levels[100])
 
 
-    for glass_shard_three, monstertwo, glass_shard_one, glass_shard_two, dead_body, blood_messages_trigger in zip(glass_pile_threes, monster_twos, glass_pile_ones, glass_pile_twos, dead_bodies, blood_messages_triggers):
-        if player.is_collision(glass_shard_three):
-            dead_body.destroy()
-            dead_bodies.remove(dead_body)
-            monstertwo.destroy()
-            monster_twos.remove(monstertwo)
-            glass_shard_one.destroy()
-            glass_pile_ones.remove(glass_shard_one)
-            glass_shard_two.destroy()
-            glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
-            blood_messages_trigger.destroy()
-            blood_messages_triggers.remove(blood_messages_trigger)
-            pen.clear()
-            walls.clear()
-            hallway_version_two(levels[100])
+    # for glass_shard_three, monstertwo, glass_shard_one, glass_shard_two, dead_body, blood_messages_trigger in zip(glass_pile_threes, monster_twos, glass_pile_ones, glass_pile_twos, dead_bodies, blood_messages_triggers):
+    #     if player.is_collision(glass_shard_three):
+    #         dead_body.destroy()
+    #         dead_bodies.remove(dead_body)
+    #         monstertwo.destroy()
+    #         monster_twos.remove(monstertwo)
+    #         glass_shard_one.destroy()
+    #         glass_pile_ones.remove(glass_shard_one)
+    #         glass_shard_two.destroy()
+    #         glass_pile_twos.remove(glass_shard_two)
+    #         blood_messages_trigger.destroy()
+    #         blood_messages_triggers.remove(blood_messages_trigger)
+    #         pen.clear()
+    #         walls.clear()
+    #         hallway_version_two(levels[100])
 
     for blob_monster_hallway_two_death_one, blob_monster_hall_death_two_game_over_one in zip(blob_monster_hallway_two_death_ones, blob_monster_hall_death_two_game_over_ones):
         if player.is_collision(blob_monster_hall_death_two_game_over_one):
@@ -14000,10 +14923,10 @@ def run_game():
             blob_monster_second_deaths.remove(blob_monster_second_death)
             pen.clear()
             walls.clear()
-            setup_maze_0(levels[8])
+            setup_maze_next_version(levels[8])
 
 
-    for bathroom_hall_two, monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(bathroom_hall_twos, monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
+    for bathroom_hall_two, monstertwo, glass_shard_one, glass_shard_two, dead_body, blood_messages_trigger in zip(bathroom_hall_twos, monster_twos, glass_pile_ones, glass_pile_twos, dead_bodies, blood_messages_triggers):
         if player.is_collision(bathroom_hall_two):
             monstertwo.destroy()
             monster_twos.remove(monstertwo)
@@ -14011,8 +14934,6 @@ def run_game():
             glass_pile_ones.remove(glass_shard_one)
             glass_shard_two.destroy()
             glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             blood_messages_trigger.destroy()
@@ -14029,10 +14950,10 @@ def run_game():
             bathroom_text_locked_hall_twos.remove(bathroom_text_locked_hall_two)
             pen.clear()
             walls.clear()
-            setup_maze_0(levels[120])
+            setup_maze_next_version(levels[120])
 
 
-    for C1_second_door, monstertwo, dead_body, glass_shard_one, glass_shard_two, glass_shard_three, blood_messages_trigger in zip(C1_second_doors, monster_twos, dead_bodies, glass_pile_ones, glass_pile_twos, glass_pile_threes, blood_messages_triggers):
+    for C1_second_door, monstertwo, dead_body, glass_shard_one, glass_shard_two, blood_messages_trigger in zip(C1_second_doors, monster_twos, dead_bodies, glass_pile_ones, glass_pile_twos, blood_messages_triggers):
         if player.is_collision(C1_second_door):
             monstertwo.destroy()
             monster_twos.remove(monstertwo)
@@ -14042,8 +14963,6 @@ def run_game():
             glass_pile_ones.remove(glass_shard_one)
             glass_shard_two.destroy()
             glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
             blood_messages_trigger.destroy()
             blood_messages_triggers.remove(blood_messages_trigger)
             pen.clear()
@@ -14074,7 +14993,7 @@ def run_game():
             C1_locked_text_threes.remove(C1_locked_text_three)
             pen.clear()
             walls.clear()
-            setup_maze_0(levels[118])
+            setup_maze_next_version(levels[118])
 
     for bathroom_hall_two in bathroom_hall_twos:
         if player.is_collision(bathroom_hall_two):
@@ -14088,13 +15007,13 @@ def run_game():
             bathroom_text_locked_hall_twos.remove(bathroom_text_locked_hall_two)
             pen.clear()
             walls.clear()
-            setup_maze_0(levels[119])
+            setup_maze_next_version(levels[119])
 
 
 
     for C2_entrance in C2_entrances:
 
-      for monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
+      for monstertwo, glass_shard_one, glass_shard_two, dead_body, blood_messages_trigger in zip(monster_twos, glass_pile_ones, glass_pile_twos, dead_bodies, blood_messages_triggers):
 
         if player.is_collision(C2_entrance):
             monstertwo.destroy()
@@ -14103,8 +15022,6 @@ def run_game():
             glass_pile_ones.remove(glass_shard_one)
             glass_shard_two.destroy()
             glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             blood_messages_trigger.destroy()
@@ -14392,7 +15309,7 @@ def run_game():
 
 
 
-    for C1_second_door, dead_body, monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, blood_messages_trigger in zip(C1_second_doors, dead_bodies, monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, blood_messages_triggers ):
+    for C1_second_door, dead_body, monstertwo, glass_shard_one, glass_shard_two, blood_messages_trigger in zip(C1_second_doors, dead_bodies, monster_twos, glass_pile_ones, glass_pile_twos, blood_messages_triggers ):
         if player.is_collision(C1_second_door):
             dead_body.destroy()
             dead_bodies.remove(dead_body)
@@ -14402,8 +15319,6 @@ def run_game():
             glass_pile_ones.remove(glass_shard_one)
             glass_shard_two.destroy()
             glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
             blood_messages_trigger.destroy()
             blood_messages_triggers.remove(blood_messages_trigger)
             pen.clear()
@@ -14433,7 +15348,7 @@ def run_game():
             C1_locked_text_threes.remove(C1_locked_text_three)
             pen.clear()
             walls.clear()
-            setup_maze_0(levels[113])
+            setup_maze_next_version(levels[113])
 
     for C2_exit in C2_exits:
         if player.is_collision(C2_exit):
@@ -14506,7 +15421,7 @@ def run_game():
             setup_maze_1(levels[12])
 
 
-    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two, glass_pieces_final_three in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos, glass_pieces_final_threes):
+    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos):
         if player.is_collision(hand_monster_hallway):
             hand_monster_hallway.destroy()
             hand_monster_hallways.remove(hand_monster_hallway)
@@ -14518,8 +15433,6 @@ def run_game():
             glass_pieces_final_ones.remove(glass_pieces_final_one)
             glass_pieces_final_two.destroy()
             glass_pieces_final_twos.remove(glass_pieces_final_two)
-            glass_pieces_final_three.destroy()
-            glass_pieces_final_threes.remove(glass_pieces_final_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             pen.clear()
@@ -14527,7 +15440,7 @@ def run_game():
             hallway_last_version(levels[143])
 
 
-    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two, glass_pieces_final_three in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos, glass_pieces_final_threes):
+    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos):
         if player.is_collision(hand_monster_hallway2):
             hand_monster_hallway.destroy()
             hand_monster_hallways.remove(hand_monster_hallway)
@@ -14539,8 +15452,6 @@ def run_game():
             glass_pieces_final_ones.remove(glass_pieces_final_one)
             glass_pieces_final_two.destroy()
             glass_pieces_final_twos.remove(glass_pieces_final_two)
-            glass_pieces_final_three.destroy()
-            glass_pieces_final_threes.remove(glass_pieces_final_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             pen.clear()
@@ -14548,7 +15459,7 @@ def run_game():
             hallway_last_version(levels[143])
 
 
-    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two, glass_pieces_final_three in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos, glass_pieces_final_threes):
+    for  hand_monster_hallway,  hand_monster_hallway2,  hand_monster_hallway3, dead_body, glass_pieces_final_one,glass_pieces_final_two in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones,glass_pieces_final_twos):
         if player.is_collision(hand_monster_hallway3):
             hand_monster_hallway.destroy()
             hand_monster_hallways.remove(hand_monster_hallway)
@@ -14560,8 +15471,6 @@ def run_game():
             glass_pieces_final_ones.remove(glass_pieces_final_one)
             glass_pieces_final_two.destroy()
             glass_pieces_final_twos.remove(glass_pieces_final_two)
-            glass_pieces_final_three.destroy()
-            glass_pieces_final_threes.remove(glass_pieces_final_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             pen.clear()
@@ -14582,7 +15491,7 @@ def run_game():
 
 
     for exit_hallway in exit_hallways:
-      for hand_monster_hallway, hand_monster_hallway2, hand_monster_hallway3, dead_body, glass_pieces_final_one, glass_pieces_final_two, glass_pieces_final_three in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones, glass_pieces_final_twos, glass_pieces_final_threes):
+      for hand_monster_hallway, hand_monster_hallway2, hand_monster_hallway3, dead_body, glass_pieces_final_one, glass_pieces_final_two in zip(hand_monster_hallways, hand_monster_hallways2, hand_monster_hallways3, dead_bodies, glass_pieces_final_ones, glass_pieces_final_twos):
         if player.is_collision(exit_hallway):
               hand_monster_hallway.destroy()
               hand_monster_hallways.remove(hand_monster_hallway)
@@ -14594,8 +15503,6 @@ def run_game():
               glass_pieces_final_ones.remove(glass_pieces_final_one)
               glass_pieces_final_two.destroy()
               glass_pieces_final_twos.remove(glass_pieces_final_two)
-              glass_pieces_final_three.destroy()
-              glass_pieces_final_threes.remove(glass_pieces_final_three)
               dead_body.destroy()
               dead_bodies.remove(dead_body)
               pen.clear()
@@ -14735,8 +15642,12 @@ def run_game():
 
 
 
-    for exit_to_pool, spider, spider_monster_hallway2, spider_monster_hallway3, spiderweb_last_hallway, monsters_last_hallway in zip(exit_to_pools, spiders, spider_monster_hallways2, spider_monster_hallways3, spiderweb_last_hallways, monsters_last_hallways):
+    for hand_monster_last_hallway2, hand_monster_last_hallway3, exit_to_pool, spider, spider_monster_hallway2, spider_monster_hallway3, spiderweb_last_hallway, monsters_last_hallway in zip(hand_monster_last_hallways2, hand_monster_last_hallways3, exit_to_pools, spiders, spider_monster_hallways2, spider_monster_hallways3, spiderweb_last_hallways, monsters_last_hallways):
         if player.is_collision(exit_to_pool):
+              hand_monster_last_hallway2.destroy()
+              hand_monster_last_hallways2.remove(hand_monster_last_hallway2)
+              hand_monster_last_hallway3.destroy()
+              hand_monster_last_hallways3.remove(hand_monster_last_hallway3)
               spiderweb_last_hallway.destroy()
               spiderweb_last_hallways.remove(spiderweb_last_hallway)
               monsters_last_hallway.destroy()
@@ -14815,11 +15726,48 @@ def run_game():
             door_to_exit_games.remove(door_to_exit_game)
             pen.clear()
             walls.clear()
-            pool_area(levels[157])
+            pool_area(levels[177])#157
+
+
+
+
+
+    for finish_game_exit_door_eight, finish_game_eight in zip(finish_game_exit_door_eights, finish_game_eights):
+       if player.is_collision(finish_game_exit_door_eight):
+          finish_game_eight.destroy()
+          finish_game_eights.remove(finish_game_eight)
+          pen.clear()
+          walls.clear()
+          pool_area(levels[178])
+
+    for finish_game_exit_door_seven, finish_game_seven in zip(finish_game_exit_door_sevens, finish_game_sevens):
+       if player.is_collision(finish_game_exit_door_seven):
+          finish_game_seven.destroy()
+          finish_game_sevens.remove(finish_game_seven)
+          pen.clear()
+          walls.clear()
+          pool_area(levels[179])
+
+    for finish_game_exit_door_six, finish_game_six in zip(finish_game_exit_door_sixes, finish_game_sixes):
+       if player.is_collision(finish_game_exit_door_six):
+          finish_game_six.destroy()
+          finish_game_sixes.remove(finish_game_six)
+          pen.clear()
+          walls.clear()
+          pool_area(levels[180])
+
+
+    for finish_game_exit_door_five, finish_game_five in zip(finish_game_exit_door_fives, finish_game_fives):
+      if player.is_collision(finish_game_exit_door_five):
+          finish_game_five.destroy()
+          finish_game_fives.remove(finish_game_five)
+          pen.clear()
+          walls.clear()
+          pool_area(levels[157])
 
 
     for finish_game_exit_door_one, finish_game_one in zip(finish_game_exit_door_ones, finish_game_ones):
-        if player.is_collision(finish_game_exit_door_one):
+      if player.is_collision(finish_game_exit_door_one):
           finish_game_one.destroy()
           finish_game_ones.remove(finish_game_one)
           pen.clear()
@@ -14827,12 +15775,12 @@ def run_game():
           pool_area(levels[158])
 
     for finish_game_exit_door_two, finish_game_two in zip(finish_game_exit_door_twos, finish_game_twos):
-        if player.is_collision(finish_game_exit_door_two):
-          finish_game_two.destroy()
-          finish_game_twos.remove(finish_game_two)
-          pen.clear()
-          walls.clear()
-          pool_area(levels[159])
+      if player.is_collision(finish_game_exit_door_two):
+         finish_game_two.destroy()
+         finish_game_twos.remove(finish_game_two)
+         pen.clear()
+         walls.clear()
+         pool_area(levels[159])
 
     for finish_game_exit_door_three, finish_game_three in zip(finish_game_exit_door_threes, finish_game_threes):
       if player.is_collision(finish_game_exit_door_two):
@@ -14855,19 +15803,19 @@ def run_game():
         pool_area(levels[162])
 
     for end_screen, end_screen_door in zip(end_screens, end_screen_doors):
-      if player.is_collision(end_screen_door):
-            end_screen.destroy()
-            end_screens.remove(end_screen)
-            pen.clear()
-            walls.clear()
-            pool_area(levels[161])
+       if player.is_collision(end_screen_door):
+         end_screen.destroy()
+         end_screens.remove(end_screen)
+         pen.clear()
+         walls.clear()
+         pool_area(levels[161])
 
 
 
 
 
     for  monsters_last_hallway, spiderweb_last_hallway, spider, spider_monster_hallway2, spider_monster_hallway3 in zip(monsters_last_hallways, spiderweb_last_hallways, spiders, spider_monster_hallways2, spider_monster_hallways3):
-        if player.is_collision(monsters_last_hallway):
+       if player.is_collision(monsters_last_hallway):
             spiderweb_last_hallway.destroy()
             spiderweb_last_hallways.remove(spiderweb_last_hallway)
             monsters_last_hallway.destroy()
@@ -14884,7 +15832,7 @@ def run_game():
 
 
     for blob_monster_hallway_game_over_text, blob_monster_hallway_game_over_text_exit in zip(blob_monster_hallway_game_over_texts, blob_monster_hallway_game_over_text_exits):
-        if player.is_collision(blob_monster_hallway_game_over_text_exit):
+       if player.is_collision(blob_monster_hallway_game_over_text_exit):
             blob_monster_hallway_game_over_text.destroy()
             blob_monster_hallway_game_over_texts.remove(blob_monster_hallway_game_over_text)
             pen.clear()
@@ -14893,7 +15841,7 @@ def run_game():
 
 
     for blob_monster_hallway_game_over_two_text, blob_monster_hallway_game_over_text_exit_two in zip(blob_monster_hallway_game_over_two_texts, blob_monster_hallway_game_over_text_exit_twos):
-        if player.is_collision(blob_monster_hallway_game_over_text_exit_two):
+       if player.is_collision(blob_monster_hallway_game_over_text_exit_two):
             blob_monster_hallway_game_over_two_text.destroy()
             blob_monster_hallway_game_over_two_texts.remove(blob_monster_hallway_game_over_two_text)
             pen.clear()
@@ -14901,15 +15849,15 @@ def run_game():
             pool_hallway_game_over(levels[169])
 
     for blob_monster_hallway_game_over_three_text, blob_monster_hallway_game_over_text_exit_three in zip(blob_monster_hallway_game_over_three_texts, blob_monster_hallway_game_over_text_exit_threes):
-        if player.is_collision(blob_monster_hallway_game_over_text_exit_three):
+       if player.is_collision(blob_monster_hallway_game_over_text_exit_three):
             blob_monster_hallway_game_over_three_text.destroy()
             blob_monster_hallway_game_over_three_texts.remove(blob_monster_hallway_game_over_three_text)
             pen.clear()
             walls.clear()
             setup_maze_exit(levels[13])
 
-    for exam_room_reenter_door_one, monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(exam_room_reenter_door_ones, monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
-        if player.is_collision(exam_room_reenter_door_one):
+    for exam_room_reenter_door_one, monstertwo, glass_shard_one, glass_shard_two, dead_body, blood_messages_trigger in zip(exam_room_reenter_door_ones, monster_twos, glass_pile_ones, glass_pile_twos, dead_bodies, blood_messages_triggers):
+       if player.is_collision(exam_room_reenter_door_one):
             exam_room_reenter_door_one.destroy()
             exam_room_reenter_door_ones.remove(exam_room_reenter_door_one)
             monstertwo.destroy()
@@ -14918,8 +15866,6 @@ def run_game():
             glass_pile_ones.remove(glass_shard_one)
             glass_shard_two.destroy()
             glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             blood_messages_trigger.destroy()
@@ -14928,8 +15874,8 @@ def run_game():
             walls.clear()
             reenter_exam_room_game_over(levels[174])
 
-    for exam_room_reenter_door_two, monstertwo, glass_shard_one, glass_shard_two, glass_shard_three, dead_body, blood_messages_trigger in zip(exam_room_reenter_door_twos, monster_twos, glass_pile_ones, glass_pile_twos, glass_pile_threes, dead_bodies, blood_messages_triggers):
-        if player.is_collision(exam_room_reenter_door_two):
+    for exam_room_reenter_door_two, monstertwo, glass_shard_one, glass_shard_two, dead_body, blood_messages_trigger in zip(exam_room_reenter_door_twos, monster_twos, glass_pile_ones, glass_pile_twos, dead_bodies, blood_messages_triggers):
+       if player.is_collision(exam_room_reenter_door_two):
             exam_room_reenter_door_two.destroy()
             exam_room_reenter_door_twos.remove(exam_room_reenter_door_two)
             monstertwo.destroy()
@@ -14938,8 +15884,6 @@ def run_game():
             glass_pile_ones.remove(glass_shard_one)
             glass_shard_two.destroy()
             glass_pile_twos.remove(glass_shard_two)
-            glass_shard_three.destroy()
-            glass_pile_threes.remove(glass_shard_three)
             dead_body.destroy()
             dead_bodies.remove(dead_body)
             blood_messages_trigger.destroy()
@@ -14970,7 +15914,7 @@ def run_game():
 
 
 
-    wn.update()
+  wn.update()
 
 
 

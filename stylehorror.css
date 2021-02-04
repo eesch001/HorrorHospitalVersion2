@@ -1,0 +1,25 @@
+
+
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+
+}
+
+
+
+.horrortitle{
+  font-family: 'Special Elite', cursive;
+  font-size: 125px;
+  color: white;
+
+}
