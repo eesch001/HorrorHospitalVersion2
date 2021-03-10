@@ -7,8 +7,7 @@ import random
 import math
 # import keyboard
 import turtle
-
-#import winsound
+import winsound
 # Blood message: Icons made by <a href="https://www.flaticon.com/free-icon/blood_2068417" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 
@@ -85,7 +84,7 @@ wn.listen()
 wn.onkeypress(toggle_pause, "p")
 
 
-#winsound.PlaySound("Dreaming.wav", winsound.SND_LOOP|winsound.SND_ASYNC)
+winsound.PlaySound("Dreaming.wav", winsound.SND_LOOP|winsound.SND_ASYNC)
 
 
 
@@ -285,7 +284,7 @@ class Pen(turtle.Turtle):
     def __init__(self):
         turtle.Turtle.__init__(self)
         self.shape("square")
-        self.color("white")
+        self.color("")
         self.penup()
         self.speed(0)
 
